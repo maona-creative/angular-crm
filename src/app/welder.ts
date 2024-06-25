@@ -17,7 +17,7 @@ export interface Welder {
     start_time_email: number
     totalUnreachable2: string
     totalUnreachable: string
-    call: string
+    calltype: string
     wrongtel: string
     expensivness: string
     costPerHour: number

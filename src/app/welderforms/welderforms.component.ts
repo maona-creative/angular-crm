@@ -2,8 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { RouterOutlet } from '@angular/router';
 import { WeldertableComponent } from '../weldertable/weldertable.component';
-import {FormGroup, FormControl} from '@angular/forms';
-import {ReactiveFormsModule, Validators} from '@angular/forms';
+import { FormGroup, FormControl} from '@angular/forms';
+import { ReactiveFormsModule, Validators} from '@angular/forms';
+import { Available, TotalUnreachable, WrongTel } from './interface/dropdown';
+import { CallAction, Expensivness, Car } from './interface/dropdown';
+import { CallType } from './interface/dropdown';
+import { CommonModule } from '@angular/common';
+
 
 
 
@@ -17,6 +22,10 @@ import { InputTextModule } from 'primeng/inputtext';
 import { InputNumberModule } from 'primeng/inputnumber';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import { CalendarModule } from 'primeng/calendar';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { DropdownModule } from 'primeng/dropdown';
+
+
 
 
 @Component({
@@ -34,6 +43,10 @@ import { CalendarModule } from 'primeng/calendar';
     InputMaskModule,
     InputSwitchModule,
     CalendarModule,
+    InputTextareaModule,
+    DropdownModule,
+    CommonModule
+  
   
 
    
@@ -42,9 +55,36 @@ import { CalendarModule } from 'primeng/calendar';
   templateUrl: './welderforms.component.html',
   styleUrl: './welderforms.component.css'
 })
-export class WelderformsComponent  {
+export class WelderformsComponent implements OnInit {
 
-  welderForm = new FormGroup({
+ 
+
+  //Dropdown for available
+  available: Available[] = [];
+
+  //Dropdown for call action
+  callaction: CallAction[] = [];
+
+  //Dropdown for call
+  calltype: CallType[] = []; 
+
+  //Dropdown for total unreachable
+  totalunreachable: TotalUnreachable[] = [];
+
+  //Dropdown for wrong tel
+  wrongtel: WrongTel[] = [];
+
+  //Dropdown for expensivness
+  expensivness: Expensivness[] = [];
+
+  //Dropdown for Car
+  car: Car[] = [];
+
+
+  datetime24h: Date[] | undefined;
+
+
+    welderForm: FormGroup = new FormGroup({
     id: new FormControl(''),
     Super_First_name: new FormControl('', Validators.required),
     Super_Surname: new FormControl('', Validators.required),
@@ -63,7 +103,7 @@ export class WelderformsComponent  {
     start_time_email: new FormControl(''),
     totalUnreachable2: new FormControl(''),
     totalUnreachable: new FormControl(''),
-    call: new FormControl(''),
+    calltype: new FormControl(''),
     wrongtel: new FormControl(''),
     expensivness: new FormControl(''),
     costPerHour: new FormControl(''),
@@ -80,14 +120,75 @@ export class WelderformsComponent  {
 
   });
 
- 
-
   constructor(
     private router: Router
    ) {}
 
-  
-  
+   ngOnInit(): void {
+    this.available = [
+      { name: 'No info'},
+      { name: 'Free'},
+      { name: 'No'},
+      { name: 'Soon Available'},
+      { name: 'Available'}
+    ];
 
+    this.callaction = [
+      { name: 'appointment'},
+      { name: 'email'},
+      { name: 'cb(int)'},
+      { name: 'cb(not)'},
+      { name: 'our'},
+      { name: 'cb(think)'},
+      { name: 'cb(free)'},
+      { name: 'not answered'}
+    ];
 
+    this.calltype = [
+      { name: 'No info'},
+      { name: 'Talk'},
+      { name: 'Not_ringing'},
+      { name: 'Dialing'},
+      { name: 'Switched off'},
+      { name: 'Busy'},
+      { name: 'Not_answered'},
+      { name: 'Voice_mail'}
+    ];
+
+    this.totalunreachable = [
+      { name: '--------'},
+      { name: 'No info'},
+      { name: 'Yes'},
+      { name: 'No'},
+      { name: 'Total_lack_of_dialing'}
+    ];
+
+    this.wrongtel = [
+       { name: '--------'},
+       { name: 'No info'},
+       { name: 'No'},
+       { name: 'Yes'},
+       { name: '1'},
+       { name: '0'},
+       { name: 'Unservice_number'}
+    ];
+
+    this.expensivness = [
+      { name: 'No info'},
+      { name: 'Excellent specialist (verified)'},
+      { name: 'Excellent specialist (unverified)'},
+      { name: 'Qualification unconfirmed'},
+      { name: 'Expensive but does not match the cost'}
+    ];
+
+    this.car = [
+      { name: 'No info'},
+      { name: 'Yes'},
+      { name: 'No'}
+    ]
+
+  
+  }
 }
+
+
