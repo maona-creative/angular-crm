@@ -1,0 +1,22 @@
+.row {
+    margin-bottom: 20px; /* Adds space below each div */
+    /* Optionally, add other styles like padding, border, etc. */
+    padding: 10px;
+    background-color: rgb(208, 230, 238);
+}
+
+.ibox {
+    margin-right: 35px;
+    
+    
+}
+
+.box-input {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.fix {
+    display: flex;
+    margin-top: 10px;
+}

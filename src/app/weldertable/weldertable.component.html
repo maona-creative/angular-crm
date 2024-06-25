@@ -1,0 +1,46 @@
+<p>weldertable works!</p>
+<div class="card">
+    <form (ngSubmit)="onSubmit()">
+        <button pButton 
+        pRipple  
+        class="p-button-success">Add new welder</button>
+      </form>
+  <p-table [columns]="cols" [value]="welders" [tableStyle]="{ 'min-width': '50rem' }">
+      <ng-template pTemplate="header" let-columns>
+          <tr>
+              <th *ngFor="let col of columns">
+               
+                  {{ col.header }}
+              </th>
+          </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-rowData let-columns="columns">
+          <tr>
+              <td *ngFor="let col of columns">
+             <!--     {{ rowData[col.field] }} -->
+             <div [ngSwitch]="col.type">
+                <span *ngSwitchCase="'number'">{{ rowData[col.field] }}</span>
+                <span *ngSwitchCase="'text'">{{ rowData[col.field] }}</span>
+                <input *ngSwitchCase="'checkbox'" type="checkbox" [checked]="rowData[col.field]" class="custom-checkbox" />
+                <p-inputMask *ngSwitchCase="'phone'" placeholder="(999)-999-9999" mask="(999)-999-9999" >{{ (rowData[col.field]) }}</p-inputMask>
+                <textarea rows="3" cols="30" *ngSwitchCase="'textarea'">{{ (rowData[col.field]) }}</textarea>
+              <!--  <a *ngSwitchCase="'email'" href="mailto:{{ rowData[col.field] }}">{{ rowData[col.field] }}</a> -->
+                <p-multiSelect *ngSwitchCase="'multiselect'" 
+                  [options]="jobcategory" 
+                  [(ngModel)]="selectedJobCat" 
+                  optionLabel="name"  
+                  [style]="{'width':'15rem'}" 
+                  placeholder="Select job category">
+             </p-multiSelect>
+             
+             <p-calendar 
+             *ngSwitchCase="'email'"
+             dateFormat="dd.mm.yy" />
+             
+                <span *ngSwitchDefault>{{ rowData[col.field] }}</span>
+              </div> 
+              </td>
+          </tr>
+      </ng-template>
+  </p-table>
+</div>

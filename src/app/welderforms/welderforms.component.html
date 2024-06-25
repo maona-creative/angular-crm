@@ -1,0 +1,169 @@
+<div class="card">
+
+    <nav>
+      <a href="/" class="p-button font-bold">Home</a>
+
+ </nav>
+</div>
+
+<h1>Change newwelder</h1>
+
+<div class="container">
+<form [formGroup]="welderForm">
+  
+    
+      <!-- Делать ввод данных, дизайн позже -->
+    <p-accordion>
+       <p-accordionTab header="Main">
+         <div class="row">
+          <div class="col-md">
+              <label for="Super_First_name"> First name </label>
+              <input id="Super_First_name" type="text" 
+              formControlName="Super_First_name" />
+          </div>
+          
+          <div class="col-md">
+            <label for="Super_Surname"> Surname </label>
+            <input id="Super_Surname" type="text"  
+             formControlName="Super_Surname" />
+          </div>
+          
+          <div class="col">
+          <label for="Super_mail"> Email </label>
+            <input type="email" class="box-input" pInputText formControlName="Super_mail" />
+         
+          <label class="ibox">
+            Date of birth
+            <p-calendar type="text" class="box-input" formControlName="Super_Age" />
+          </label>
+         <span class="fix">
+          <label class="ibox">
+            Telephone
+            <p-inputMask class="box-input" mask="(999)-999-9999" placeholder="(999)-999-9999"   formControlName="Super_Telephon" />
+          </label></span>
+          </div>
+          
+          <div class="row">
+            <label class="ibox">
+              NonGastarbeiter
+              <p-inputSwitch type="boolean" class="box-input" formControlName="NonGastarbeiter" />
+            </label>
+          <label class="ibox">
+            Desired job category
+            <input type="text" pInputText class="box-input" formControlName="Desired_Job_Category" />
+          </label>
+          <label class="ibox">
+            Desired position
+            <input type="text" pInputText class="box-input" formControlName="Desired_position" />
+          </label>
+          
+          </div>
+          <div class="row">
+          <label class="ibox">
+            ASAP
+            <p-inputSwitch type="boolean" class="box-input" formControlName="asap" />
+          </label>
+          <label class="ibox">
+            Available
+            <input type="text" class="box-input" formControlName="available" />
+          </label>
+          <label class="ibox">
+            Comment
+            <input type="text" class="box-input"  formControlName="Comment_1" />
+          </label>
+         
+        </div>
+        </div>
+        </p-accordionTab>
+        <p-accordionTab header="Header II">
+          Content II
+        </p-accordionTab>
+        <p-accordionTab header="Header III">
+          Content III
+        </p-accordionTab>
+      </p-accordion>
+      <button type="submit"  class="p-button font-bold">Submit</button>
+    </form>
+    
+</div>
+
+ <!-- <form [formGroup]="welderForm">
+  <div class="p-grid p-justify-center">
+    <div class="p-col-12 p-md-6">
+      
+      <p-accordion>
+        <p-accordionTab header="Main">
+          
+        <div class="row">
+          
+            <label class="ibox">
+              First name 
+                <input type="text" class="box-input" pInputText formControlName="Super_First_name" />
+            </label>
+            
+            <label class="ibox">
+              Surname
+              <input type="text" class="box-input" pInputText formControlName="Super_Surname" />
+            </label>
+          <label class="ibox">
+            Email
+            <input type="email" class="box-input" pInputText formControlName="Super_mail" />
+          </label>
+          <label class="ibox">
+            Date of birth
+            <p-calendar type="text" class="box-input" formControlName="Super_Age" />
+          </label>
+         <span class="fix">
+          <label class="ibox">
+            Telephone
+            <p-inputMask class="box-input" mask="(999)-999-9999" placeholder="(999)-999-9999"   formControlName="Super_Telephon" />
+          </label></span>
+
+          </div>
+          <div class="row">
+            <label class="ibox">
+              NonGastarbeiter
+              <p-inputSwitch type="boolean" class="box-input" formControlName="NonGastarbeiter" />
+            </label>
+          <label class="ibox">
+            Desired job category
+            <input type="text" pInputText class="box-input" formControlName="Desired_Job_Category" />
+          </label>
+          <label class="ibox">
+            Desired position
+            <input type="text" pInputText class="box-input" formControlName="Desired_position" />
+          </label>
+          
+          </div>
+          <div class="row">
+          <label class="ibox">
+            ASAP
+            <p-inputSwitch type="boolean" class="box-input" formControlName="asap" />
+          </label>
+          <label class="ibox">
+            Available
+            <input type="text" class="box-input" formControlName="available" />
+          </label>
+          <label class="ibox">
+            Comment
+            <input type="text" class="box-input"  formControlName="Comment_1" />
+          </label>
+         
+        </div>
+        </p-accordionTab>
+        <p-accordionTab header="Header II">
+          Content II
+        </p-accordionTab>
+        <p-accordionTab header="Header III">
+          Content III
+        </p-accordionTab>
+      </p-accordion>
+    </div>
+  </div>
+ 
+-->
+
+
+
+
+ 
