@@ -1,132 +1,354 @@
 {
-    "welders": [
-      {
-        "id": "1",
-        "Super_First_name": "John",
-        "Super_Surname": "Osipov",
-        "Super_mail": "john@example.com",
-        "Desired_Job_Category": "Tööstus / Tootmine",
-        "Desired_position": "Keevitaja, Metallitööline, Tööstuse lihttööline, Tootmistööline.",
-        "Super_Telephone": "(372) 894-6543",
-        "asap": true,
-        "Comment_1": "test",
-        "Super_Age": "12.08.1980",
-        "NonGastarbeiter": true,
-        "available": "free",
-        "tatle": "email",
-        "tatle_email": "Email",
-        "start_time": "10.03.2024",
-        "start_time_email": "10.03.2024",
-        "totalUnreachable2": "No info",
-        "totalUnreachable": "No info",
-        "call": "Voice mail",
-        "wrongtel": "Unservice number",
-        "expensivness": "Qualification unconfirmed",
-        "costPerHour": "4",
-        "costPerHourComm": "no comment",
-        "car": "No info",
-        "filedFormDate": "10.03.2024",
-        "idPassportDate": "10.03.2024",
-        "assignedDate": "10.03.2024",
-        "workSiteDate": "10.03.2024",
-        "freeComment1": "comment",
-        "freeComment2": "comment"
+  "welders": [
+    {
+      "id": "1",
+      "Super_First_name": "John",
+      "Super_Surname": "Osipov",
+      "Super_mail": "john@example.com",
+      "Desired_Job_Category": "Tööstus / Tootmine",
+      "Desired_position": "Keevitaja, Metallitööline, Tööstuse lihttööline, Tootmistööline.",
+      "Super_Telephone": "(372) 894-6543",
+      "asap": true,
+      "Comment_1": "test",
+      "Super_Age": "12.08.1980",
+      "NonGastarbeiter": true,
+      "available": {
+        "name": "Free"
       },
-      {
-        "id": "2",
-        "Super_First_name": "Jane",
-        "Super_Surname": "Datov",
-        "Super_mail": "jane@example.com",
-        "Desired_Job_Category": "Промышленность / Производство",
-        "Desired_position": "Сварщик",
-        "Super_Telephone": "(372) 987-6541",
-        "asap": true,
-        "Comment_1": "test",
-        "Super_Age": "12.08.1980",
-        "NonGastarbeiter": true,
-        "available": "free",
-        "tatle": "cb(int)",
-        "tatle_email": "Offer",
-        "start_time": "15.02.2023 11:30",
-        "start_time_email": "15.02.2023 12:40",
-        "totalUnreachable2": "No info",
-        "totalUnreachable": "No info",
-        "call": "Talk",
-        "wrongtel": "Yes",
-        "expensivness": "Excellent specialist (verified)",
-        "costPerHour": "4",
-        "costPerHourComm": "no comment",
-        "car": "Yes",
-        "filedFormDate": "15.02.2023",
-        "idPassportDate": "15.02.2023",
-        "assignedDate": "15.02.2023",
-        "workSiteDate": "15.02.2023",
-        "freeComment1": "no comment",
-        "freeComment2": "test comment"
+      "tatle": {
+        "name": "email"
       },
-      {
-        "id": "3",
-        "Super_First_name": "Igor",
-        "Super_Surname": "Leipkans",
-        "Super_mail": "john@example.com",
-        "Desired_Job_Category": "Tööstus / Tootmine",
-        "Desired_position": "Keevitaja, Metallitööline, Tööstuse lihttööline, Tootmistööline.",
-        "Super_Telephone": "(372) 987-6546",
-        "asap": false,
-        "Comment_1": " ",
-        "Super_Age": "13.08.1980",
-        "NonGastarbeiter": true,
-        "available": "free",
-        "tatle": "cb(think)",
-        "tatle_email": "Contract",
-        "start_time": "22.05.2023 15:40",
-        "start_time_email": "22.05.2023 15:40",
-        "totalUnreachable2": "Yes",
-        "totalUnreachable": "Yes",
-        "call": "Not ringing",
-        "wrongtel": "Yes",
-        "expensivness": "Excellent specialist (unverified)",
-        "costPerHour": "4",
-        "costPerHourComm": "no comment",
-        "car": "Yes",
-        "filedFormDate": "10.05.2024",
-        "idPassportDate": "10.05.2024",
-        "assignedDate": "10.05.2024",
-        "workSiteDate": "10.05.2024",
-        "freeComment1": "test comment",
-        "freeComment2": "test comment"
+      "tatle_email": {
+        "name": "our"
       },
-      {
-        "id": "4",
-        "Super_First_name": "Man",
-        "Super_Surname": "ManSurname",
-        "Super_mail": "mail@mail.ee",
-        "Desired_Job_Category": "job",
-        "Desired_position": "job",
-        "Super_Telephone": "(372) 894-3215",
-        "asap": true,
-        "Comment_1": "Comment works",
-        "Super_Age": "14.08.1980",
-        "NonGastarbeiter": true,
-        "available": "free",
-        "tatle": "email",
-        "tatle_email": "string",
-        "start_time": "06.06.2024 16:40",
-        "start_time_email": "06.06.2024 16:4",
-        "totalUnreachable2": "No",
-        "totalUnreachable": "No",
-        "call": "Not ringing",
-        "wrongtel": "No",
-        "expensivness": "No info",
-        "costPerHour": "4",
-        "costPerHourComm": "no comment",
-        "car": "No",
-        "filedFormDate": "13.05.2024",
-        "idPassportDate": "13.05.2024",
-        "assignedDate": "13.05.2024",
-        "workSiteDate": "13.05.2024",
-        "freeComment1": "no comment",
-        "freeComment2": "no comment"
-      }
-    ]
-  }
+      "start_date": "22.05.2023",
+      "start_time": "15:40",
+      "start_date_email": "22.05.2023",
+      "start_time_email": "15:40",
+      "totalUnreachable2": {
+        "name": "Yes"
+      },
+      "totalUnreachable": {
+        "name": "Yes"
+      },
+      "calltype": {
+        "name": "Talk"
+      },
+      "wrongtel": "Unservice number",
+      "expensivness": "Qualification unconfirmed",
+      "costPerHour": "4",
+      "costPerHourComm": "no comment",
+      "car": "No info",
+      "filedFormDate": "10.03.2024",
+      "idPassportDate": "10.03.2024",
+      "assignedDate": "10.03.2024",
+      "workSiteDate": "10.03.2024",
+      "freeComment1": "comment",
+      "freeComment2": "comment"
+    },
+    {
+      "id": "2",
+      "Super_First_name": "Jane",
+      "Super_Surname": "Datov",
+      "Super_mail": "jane@example.com",
+      "Desired_Job_Category": "Промышленность / Производство",
+      "Desired_position": "Сварщик",
+      "Super_Telephone": "(372) 987-6541",
+      "asap": true,
+      "Comment_1": "test",
+      "Super_Age": "12.08.1980",
+      "NonGastarbeiter": true,
+      "available": {
+        "name": "Free"
+      },
+      "tatle": {
+        "name": "email"
+      },
+      "tatle_email": {
+        "name": "our"
+      },
+      "start_date": "22.05.2023",
+      "start_time": "15:40",
+      "start_date_email": "22.05.2023",
+      "start_time_email": "15:40",
+      "totalUnreachable2": "No info",
+      "totalUnreachable": "No info",
+      "calltype": {
+        "name": "Talk"
+      },
+      "wrongtel": "Yes",
+      "expensivness": "Excellent specialist (verified)",
+      "costPerHour": "4",
+      "costPerHourComm": "no comment",
+      "car": "Yes",
+      "filedFormDate": "15.02.2023",
+      "idPassportDate": "15.02.2023",
+      "assignedDate": "15.02.2023",
+      "workSiteDate": "15.02.2023",
+      "freeComment1": "no comment",
+      "freeComment2": "test comment"
+    },
+    {
+      "id": "3",
+      "Super_First_name": "Igor",
+      "Super_Surname": "Leipkans",
+      "Super_mail": "john@example.com",
+      "Desired_Job_Category": "Tööstus / Tootmine",
+      "Desired_position": "Keevitaja, Metallitööline, Tööstuse lihttööline, Tootmistööline.",
+      "Super_Telephone": "(372) 987-6546",
+      "asap": false,
+      "Comment_1": " ",
+      "Super_Age": "13.08.1980",
+      "NonGastarbeiter": true,
+      "available": {
+        "name": "Free"
+      },
+      "tatle": {
+        "name": "cb(think)"
+      },
+      "tatle_email": {
+        "name": "our"
+      },
+      "start_date": "22.05.2023",
+      "start_time": "15:40",
+      "start_date_email": "22.05.2023",
+      "start_time_email": "15:40",
+      "totalUnreachable2": {
+        "name": "Yes"
+      },
+      "totalUnreachable": {
+        "name": "Yes"
+      },
+      "calltype": {
+        "name": "Talk"
+      },
+      "wrongtel": "Yes",
+      "expensivness": "Excellent specialist (unverified)",
+      "costPerHour": "4",
+      "costPerHourComm": "no comment",
+      "car": "Yes",
+      "filedFormDate": "10.05.2024",
+      "idPassportDate": "10.05.2024",
+      "assignedDate": "10.05.2024",
+      "workSiteDate": "10.05.2024",
+      "freeComment1": "test comment",
+      "freeComment2": "test comment"
+    },
+    {
+      "id": "4",
+      "Super_First_name": "Man",
+      "Super_Surname": "ManSurname",
+      "Super_mail": "mail@mail.ee",
+      "Desired_Job_Category": "job",
+      "Desired_position": "job",
+      "Super_Telephone": "(372) 894-3215",
+      "asap": true,
+      "Comment_1": "Comment works",
+      "Super_Age": "14.08.1980",
+      "NonGastarbeiter": true,
+      "available": {
+        "name": "Free"
+      },
+      "tatle": {
+        "name": "cb(think)"
+      },
+      "tatle_email": {
+        "name": "our"
+      },
+      "start_date": "22.05.2023",
+      "start_time": "15:40",
+      "start_date_email": "22.05.2023",
+      "start_time_email": "15:40",
+      "totalUnreachable2": {
+        "name": "Yes"
+      },
+      "totalUnreachable": {
+        "name": "Yes"
+      },
+      "calltype": {
+        "name": "Talk"
+      },
+      "wrongtel": "No",
+      "expensivness": "No info",
+      "costPerHour": "4",
+      "costPerHourComm": "no comment",
+      "car": "No",
+      "filedFormDate": "13.05.2024",
+      "idPassportDate": "13.05.2024",
+      "assignedDate": "13.05.2024",
+      "workSiteDate": "13.05.2024",
+      "freeComment1": "no comment",
+      "freeComment2": "no comment"
+    },
+    {
+      "id": "",
+      "Super_First_name": "Man",
+      "Super_Surname": "Manny",
+      "Super_mail": "man@mail.ee",
+      "Desired_Job_Category": "test",
+      "Desired_position": "test",
+      "Super_Telephone": "(372)-999-9999",
+      "asap": true,
+      "Comment_1": "test",
+      "Super_Age": "2000-01-13T22:00:00.000Z",
+      "NonGastarbeiter": true,
+      "available": {
+        "name": "Free"
+      },
+      "tatle": {
+        "name": "email"
+      },
+      "tatle_email": {
+        "name": "our"
+      },
+      "start_date": "22.05.2023",
+      "start_time": "15:40",
+      "start_date_email": "22.05.2023",
+      "start_time_email": "15:40",
+      "totalUnreachable2": {
+        "name": "Yes"
+      },
+      "totalUnreachable": "",
+      "calltype": {
+        "name": "Talk"
+      },
+      "wrongtel": {
+        "name": "No info"
+      },
+      "expensivness": {
+        "name": "No info"
+      },
+      "costPerHour": 50,
+      "costPerHourComm": "test",
+      "car": {
+        "name": "Yes"
+      },
+      "filedFormDate": "2024-06-18T21:00:00.000Z",
+      "idPassportDate": "2024-06-03T21:00:00.000Z",
+      "assignedDate": "2024-06-07T21:00:00.000Z",
+      "workSiteDate": "2024-06-02T21:00:00.000Z",
+      "freeComment1": "test",
+      "freeComment2": "test"
+    },
+    {
+      "id": "",
+      "Super_First_name": "Man",
+      "Super_Surname": "Manny",
+      "Super_mail": "man@mail.ee",
+      "Desired_Job_Category": "test",
+      "Desired_position": "test",
+      "Super_Telephone": "(372)-999-9999",
+      "asap": true,
+      "Comment_1": "test",
+      "Super_Age": "2000-01-13T22:00:00.000Z",
+      "NonGastarbeiter": true,
+      "available": {
+        "name": "Free"
+      },
+      "tatle": {
+        "name": "email"
+      },
+      "tatle_email": {
+        "name": "our"
+      },
+      "start_date": "22.05.2023",
+      "start_time": "15:40",
+      "start_date_email": "22.05.2023",
+      "start_time_email": "15:40",
+      "totalUnreachable2": {
+        "name": "Yes"
+      },
+      "totalUnreachable": "",
+      "calltype": {
+        "name": "Talk"
+      },
+      "wrongtel": {
+        "name": "No info"
+      },
+      "expensivness": {
+        "name": "No info"
+      },
+      "costPerHour": 50,
+      "costPerHourComm": "test",
+      "car": {
+        "name": "Yes"
+      },
+      "filedFormDate": "2024-06-18T21:00:00.000Z",
+      "idPassportDate": "2024-06-03T21:00:00.000Z",
+      "assignedDate": "2024-06-07T21:00:00.000Z",
+      "workSiteDate": "2024-06-02T21:00:00.000Z",
+      "freeComment1": "test",
+      "freeComment2": "test"
+    },
+    {
+      "id": "",
+      "Super_First_name": "Ivan",
+      "Super_Surname": "Petrov",
+      "Super_mail": "ivan@petrov.com",
+      "Desired_Job_Category": "",
+      "Desired_position": "",
+      "Super_Telephone": "",
+      "asap": true,
+      "Comment_1": "",
+      "Super_Age": "2020-08-26T21:00:00.000Z",
+      "NonGastarbeiter": true,
+      "available": {
+        "name": "No"
+      },
+      "tatle": "",
+      "tatle_email": "",
+      "start_date": "22.05.2023",
+      "start_time": "15:40",
+      "start_date_email": "22.05.2023",
+      "start_time_email": "15:40",
+      "totalUnreachable2": "",
+      "totalUnreachable": "",
+      "calltype": "",
+      "wrongtel": "",
+      "expensivness": "",
+      "costPerHour": "",
+      "costPerHourComm": "",
+      "car": "",
+      "filedFormDate": "",
+      "idPassportDate": "",
+      "assignedDate": "",
+      "workSiteDate": "",
+      "freeComment1": "",
+      "freeComment2": ""
+    },
+    {
+      "id": "",
+      "Super_First_name": "Nick",
+      "Super_Surname": "Simens",
+      "Super_mail": "",
+      "Desired_Job_Category": "",
+      "Desired_position": "",
+      "Super_Telephone": "",
+      "asap": "",
+      "Comment_1": "",
+      "Super_Age": "2000-03-12T22:00:00.000Z",
+      "NonGastarbeiter": "",
+      "available": "",
+      "tatle": "",
+      "tatle_email": "",
+      "start_date": "22.05.2023",
+      "start_time": "15:40",
+      "start_date_email": "22.05.2023",
+      "start_time_email": "15:40",
+      "totalUnreachable2": "",
+      "totalUnreachable": "",
+      "calltype": "",
+      "wrongtel": "",
+      "expensivness": "",
+      "costPerHour": "",
+      "costPerHourComm": "",
+      "car": "",
+      "filedFormDate": "",
+      "idPassportDate": "",
+      "assignedDate": "",
+      "workSiteDate": "",
+      "freeComment1": "",
+      "freeComment2": ""
+    }
+  ]
+}

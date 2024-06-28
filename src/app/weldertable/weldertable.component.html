@@ -22,21 +22,10 @@
                 <span *ngSwitchCase="'number'">{{ rowData[col.field] }}</span>
                 <span *ngSwitchCase="'text'">{{ rowData[col.field] }}</span>
                 <input *ngSwitchCase="'checkbox'" type="checkbox" [checked]="rowData[col.field]" class="custom-checkbox" />
-                <p-inputMask *ngSwitchCase="'phone'" placeholder="(999)-999-9999" mask="(999)-999-9999" >{{ (rowData[col.field]) }}</p-inputMask>
-                <textarea rows="3" cols="30" *ngSwitchCase="'textarea'">{{ (rowData[col.field]) }}</textarea>
-              <!--  <a *ngSwitchCase="'email'" href="mailto:{{ rowData[col.field] }}">{{ rowData[col.field] }}</a> -->
-                <p-multiSelect *ngSwitchCase="'multiselect'" 
-                  [options]="jobcategory" 
-                  [(ngModel)]="selectedJobCat" 
-                  optionLabel="name"  
-                  [style]="{'width':'15rem'}" 
-                  placeholder="Select job category">
-             </p-multiSelect>
-             
-             <p-calendar 
-             *ngSwitchCase="'email'"
-             dateFormat="dd.mm.yy" />
-             
+                <p-inputMask *ngSwitchCase="'phone'"  [style]="{'width':'50px'}" placeholder="(999)-999-9999" mask="(999)-999-9999" >{{ (rowData[col.field]) }}</p-inputMask>
+                <textarea rows="3" cols="30" *ngSwitchCase="'textarea'">{{ rowData[col.field] }}</textarea>
+                <span *ngSwitchCase="'date'" dateFormat="dd.mm.yy">{{ rowData[col.field] }}</span>
+                <span *ngSwitchCase="'object'">{{ rowData[col.field]?.name }}</span>
                 <span *ngSwitchDefault>{{ rowData[col.field] }}</span>
               </div> 
               </td>

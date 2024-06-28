@@ -2,13 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { RouterOutlet } from '@angular/router';
 import { WeldertableComponent } from '../weldertable/weldertable.component';
-import { FormGroup, FormControl} from '@angular/forms';
+import { FormGroup, FormControl, FormBuilder} from '@angular/forms';
 import { ReactiveFormsModule, Validators} from '@angular/forms';
 import { Available, TotalUnreachable, WrongTel } from './interface/dropdown';
 import { CallAction, Expensivness, Car } from './interface/dropdown';
 import { CallType } from './interface/dropdown';
 import { CommonModule } from '@angular/common';
-
 
 
 
@@ -24,6 +23,7 @@ import { InputSwitchModule } from 'primeng/inputswitch';
 import { CalendarModule } from 'primeng/calendar';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { DropdownModule } from 'primeng/dropdown';
+import { WelderformsService } from './welderforms.service';
 
 
 
@@ -59,16 +59,16 @@ export class WelderformsComponent implements OnInit {
 
  
 
-  //Dropdown for available
+  //Dropdown for Available
   available: Available[] = [];
 
-  //Dropdown for call action
+  //Dropdown for tatle email
   callaction: CallAction[] = [];
 
-  //Dropdown for call
+  //Dropdown for CALL
   calltype: CallType[] = []; 
 
-  //Dropdown for total unreachable
+  //Dropdown for Not answered
   totalunreachable: TotalUnreachable[] = [];
 
   //Dropdown for wrong tel
@@ -91,15 +91,17 @@ export class WelderformsComponent implements OnInit {
     Super_mail: new FormControl('', Validators.email),
     Desired_Job_Category: new FormControl(''),
     Desired_position: new FormControl(''),
-    Super_Telephon: new FormControl(''),
+    Super_Telephone: new FormControl(''),
     asap: new FormControl(''),
     Comment_1: new FormControl(''),
-    Super_Age: new FormControl(''),
+    Super_Age: new FormControl<Date | null>(null),
     NonGastarbeiter: new FormControl(''),
     available: new FormControl(''),
     tatle: new FormControl(''),
     tatle_email: new FormControl(''),
+    start_date: new FormControl(''),
     start_time: new FormControl(''),
+    start_date_email: new FormControl(''),
     start_time_email: new FormControl(''),
     totalUnreachable2: new FormControl(''),
     totalUnreachable: new FormControl(''),
@@ -121,8 +123,12 @@ export class WelderformsComponent implements OnInit {
   });
 
   constructor(
-    private router: Router
-   ) {}
+    private router: Router,
+    private fb: FormBuilder,
+    private welderformsService: WelderformsService
+   ) {
+
+   }
 
    ngOnInit(): void {
     this.available = [
@@ -188,6 +194,19 @@ export class WelderformsComponent implements OnInit {
     ]
 
   
+  }
+
+ async onSubmit(): Promise<void> {
+    const formData = this.welderForm.value;
+
+    try {
+      const responseData = await this.welderformsService.submitWelderForms(formData);
+      console.log('Form submitted successfully', responseData);
+    } catch (error) {
+      console.error('Error submitting form', error);
+    }
+
+    
   }
 }
 

@@ -9,10 +9,7 @@
 <h1>Change newwelder</h1>
 
 <div class="container">
-<form [formGroup]="welderForm">
-  
-    
-     
+<form [formGroup]="welderForm" (ngSubmit)="onSubmit()">
     <p-accordion [activeIndex]="0">
        <p-accordionTab header="Main">
          <div class="row">
@@ -34,7 +31,7 @@
           
            <div class="col">
            <label for="Super_mail">Email</label>
-           <input type="email" class="form-control"
+           <input id="Super_mail" type="email" class="form-control"
            formControlName="Super_mail" />
            </div>
         </div>
@@ -43,18 +40,18 @@
           <div class="row">
             <div class="col-md-2">
              <label for="Super_Age">Date of birth</label>
-             <p-calendar type="text" class="form-control" formControlName="Super_Age" />
+             <p-calendar id="Super_Age" type="date" formControlName="Super_Age" />
             </div>
           
            <div class="col-md-3">
-             <label for="Super_Telephon">Telephone</label>
-             <p-inputMask class="form-control" mask="(999)-999-9999" placeholder="(999)-999-9999"   formControlName="Super_Telephon" />
+             <label for="Super_Telephone">Telephone</label>
+             <p-inputMask  id="Super_Telephone" type="text" class="form-control" mask="(999)-999-9999" placeholder="(999)-999-9999"   formControlName="Super_Telephone" />
           </div>
          
           
           <div class="col-md-2">
             <label for="NonGastarbeiter">NonGastarbeiter</label>
-              <p-inputSwitch type="boolean" class="form-control"
+              <p-inputSwitch id="NonGastarbeiter" type="boolean" class="form-control"
               formControlName="NonGastarbeiter" />
           </div>
         </div>
@@ -62,20 +59,20 @@
         <div class="row">
           <div class="col">
             <label for="Desired_Job_Category">Desired job category</label>
-            <input type="text" class="form-control"
+            <input id="Desired_Job_Category" type="text" class="form-control"
             formControlName="Desired_Job_Category" />
           </div>
           
           
             <div class="col">
             <label for="Desired_position">Desired position</label>
-            <input type="text" class="form-control"
+            <input id="Desired_position" type="text" class="form-control"
             formControlName="Desired_position" />
           </div>
 
           <div class="col-md-2">
             <label for="asap">ASAP</label>
-            <p-inputSwitch type="boolean" class="form-control"
+            <p-inputSwitch id="asap" type="boolean" class="form-control"
             formControlName="asap" />
           </div>
        </div>
@@ -87,6 +84,7 @@
         <div class="col-md-2">
           <label for="available">Available</label>
           <p-dropdown 
+          id="available"
           class="form-control"
           formControlName="available"
           [options]="available"
@@ -110,6 +108,7 @@
             <div class="col-md-2">
               <label for="tatle">Call action</label>
               <p-dropdown 
+              id="tatle"
               class="form-control"
               formControlName="tatle"
               [options]="callaction"
@@ -118,8 +117,18 @@
             </div>
 
             <div class="col-md-2">
+              <label for="start_date">Start date</label>
+              <p-calendar
+                id="start_date"
+                class="form-control"
+                formControlName="start_date" 
+                />
+            </div>
+
+            <div class="col-md-2">
               <label for="start_time">Start time</label>
               <p-calendar
+                id="start_time"
                 class="form-control"
                 formControlName="start_time"
                 [showTime]="true" 
@@ -131,6 +140,7 @@
             <div class="col-md-2">
               <label for="tatle_email">Email action</label>
               <p-dropdown 
+              id="tatle_email"
               class="form-control"
               formControlName="tatle_email"
               [options]="callaction"
@@ -138,8 +148,19 @@
               placeholder="Select option" />
             </div>
             <div class="col-md-2">
+              <label for="start_date_email">Start date email</label>
+              <p-calendar
+              id="start_date_email"
+              class="form-control"
+              formControlName="start_date_email"
+             
+              />
+            </div>
+
+            <div class="col-md-2">
               <label for="start_time_email">Start time email</label>
               <p-calendar
+              id="start_time_email"
               class="form-control"
               formControlName="start_time_email"
               [showTime]="true" 
@@ -155,7 +176,7 @@
             <div class="col-md-2">
               <label for="calltype">CALL</label>
               <p-dropdown
-              
+              id="calltype"
               formControlName="calltype"
               [options]="calltype"
               optionLabel="name"
@@ -164,6 +185,7 @@
             <div class="col-md-2">
               <label for="totalUnreachable2">Not answered</label>
               <p-dropdown 
+              id="totalUnreachable2"
               formControlName="totalUnreachable2"
               [options]="totalunreachable"
               optionLabel="name"
@@ -175,11 +197,22 @@
             <div class="col-md-2">
               <label for="wrongtel">Wrong Tel</label>
               <p-dropdown 
+              id="wrongtel"
               formControlName="wrongtel"
               [options]="wrongtel"
               optionLabel="name"
               placeholder="Select option" />
             </div>
+            <div class="col-md-2">
+              <label for="totalUnreachable">Total lack of dialing</label>
+              <p-dropdown 
+              id="totalUnreachable"
+              formControlName="totalUnreachable"
+              [options]="totalunreachable"
+              optionLabel="name"
+              placeholder="Select option" />
+            </div>
+
           </div>
         </p-accordionTab>
 
@@ -188,6 +221,7 @@
           <div class="col-md-2">
             <label for="expensivness">Expensivness</label>
             <p-dropdown 
+            id="expensivness"
             formControlName="expensivness"
             [options]="expensivness"
             optionLabel="name"
@@ -196,12 +230,13 @@
 
           <div class="col-md-2">
             <label for="costPerHour">Cost per hour</label>
-            <p-inputNumber inputId="integeronly" formControlName="costPerHour" />
+            <p-inputNumber id="costPerHour"
+            inputId="integeronly" formControlName="costPerHour" />
           </div>
             
           <div class="col-md-4">
             <label for="costPerHourComm">Comment</label>
-            <textarea rows="5" cols="30" pInputTextarea  type="textarea" class="form-control"
+            <textarea id="costPerHourComm" rows="5" cols="30" pInputTextarea  type="textarea" class="form-control"
             formControlName="costPerHourComm"></textarea>
           </div>
 
@@ -211,6 +246,7 @@
           <div class="col-md-2">
             <label for="car">Car</label>
             <p-dropdown 
+            id="car"
             type="text"
             formControlName="car"
             [options]="car"
@@ -222,33 +258,33 @@
           <div class="row">
           <div class="col-md-2">
             <label for="filedFormDate">FiledForm Date</label>
-            <p-calendar type="text" class="form-control" formControlName="filedFormDate" />
+            <p-calendar id="filedFormDate" type="text" class="form-control" formControlName="filedFormDate" />
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-2">
             <label for="idPassportDate">ID/Passport Date</label>
-            <p-calendar type="text" class="form-control" formControlName="idPassportDate" />
+            <p-calendar id="idPassportDate" type="text" class="form-control" formControlName="idPassportDate" />
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-2">
             <label for="assignedDate">Assigned Date</label>
-            <p-calendar type="text" class="form-control" formControlName="assignedDate" />
+            <p-calendar id="assignedDate" type="text" class="form-control" formControlName="assignedDate" />
           </div>
         </div>
         <div class="row">
           <div class="col-md-2">
             <label for="workSiteDate">Worksite Date</label>
-            <p-calendar type="text" class="form-control" formControlName="workSiteDate" />
+            <p-calendar id="workSiteDate" type="text" class="form-control" formControlName="workSiteDate" />
           </div>
         </div>
         <div class="row">
           <div class="col">
             <label for="freeComment1">FreeComment1</label>
-            <textarea rows="5" cols="30" pInputTextarea  type="textarea" class="form-control"
+            <textarea id="freeComment1" rows="5" cols="30" pInputTextarea  type="textarea" class="form-control"
             formControlName="freeComment1"></textarea>
           </div>
         </div>
@@ -256,7 +292,7 @@
         <div class="row">
           <div class="col">
             <label for="freeComment2">FreeComment2</label>
-            <textarea rows="5" cols="30" pInputTextarea  type="textarea" class="form-control"
+            <textarea id="freeComment2" rows="5" cols="30" pInputTextarea  type="textarea" class="form-control"
             formControlName="freeComment2"></textarea>
           </div>
         </div>
@@ -268,7 +304,6 @@
     
 </div>
 
- 
 
 
  
