@@ -282,33 +282,43 @@
     },
     {
       "id": "",
-      "Super_First_name": "Ivan",
-      "Super_Surname": "Petrov",
-      "Super_mail": "ivan@petrov.com",
+      "Super_First_name": "Man",
+      "Super_Surname": "Ivanov",
+      "Super_mail": "",
       "Desired_Job_Category": "",
       "Desired_position": "",
       "Super_Telephone": "",
-      "asap": true,
+      "asap": false,
       "Comment_1": "",
-      "Super_Age": "2020-08-26T21:00:00.000Z",
-      "NonGastarbeiter": true,
+      "Super_Age": null,
+      "NonGastarbeiter": false,
       "available": {
-        "name": "No"
+        "name": "No info"
       },
       "tatle": "",
       "tatle_email": "",
-      "start_date": "22.05.2023",
-      "start_time": "15:40",
-      "start_date_email": "22.05.2023",
-      "start_time_email": "15:40",
-      "totalUnreachable2": "",
-      "totalUnreachable": "",
-      "calltype": "",
-      "wrongtel": "",
+      "start_date": "",
+      "start_time": "",
+      "start_date_email": "",
+      "start_time_email": "",
+      "totalUnreachable2": {
+        "name": "No info"
+      },
+      "totalUnreachable": {
+        "name": "--------"
+      },
+      "calltype": {
+        "name": "No info"
+      },
+      "wrongtel": {
+        "name": "--------"
+      },
       "expensivness": "",
       "costPerHour": "",
       "costPerHourComm": "",
-      "car": "",
+      "car": {
+        "name": "No info"
+      },
       "filedFormDate": "",
       "idPassportDate": "",
       "assignedDate": "",
@@ -318,31 +328,43 @@
     },
     {
       "id": "",
-      "Super_First_name": "Nick",
-      "Super_Surname": "Simens",
+      "Super_First_name": "Mark",
+      "Super_Surname": "Surname",
       "Super_mail": "",
       "Desired_Job_Category": "",
       "Desired_position": "",
       "Super_Telephone": "",
-      "asap": "",
+      "asap": false,
       "Comment_1": "",
-      "Super_Age": "2000-03-12T22:00:00.000Z",
-      "NonGastarbeiter": "",
-      "available": "",
+      "Super_Age": "2024-07-22T21:00:00.000Z",
+      "NonGastarbeiter": false,
+      "available": {
+        "name": "No info"
+      },
       "tatle": "",
       "tatle_email": "",
-      "start_date": "22.05.2023",
-      "start_time": "15:40",
-      "start_date_email": "22.05.2023",
-      "start_time_email": "15:40",
-      "totalUnreachable2": "",
-      "totalUnreachable": "",
-      "calltype": "",
-      "wrongtel": "",
+      "start_date": "",
+      "start_time": "",
+      "start_date_email": "",
+      "start_time_email": "",
+      "totalUnreachable2": {
+        "name": "No info"
+      },
+      "totalUnreachable": {
+        "name": "--------"
+      },
+      "calltype": {
+        "name": "No info"
+      },
+      "wrongtel": {
+        "name": "--------"
+      },
       "expensivness": "",
       "costPerHour": "",
       "costPerHourComm": "",
-      "car": "",
+      "car": {
+        "name": "No info"
+      },
       "filedFormDate": "",
       "idPassportDate": "",
       "assignedDate": "",

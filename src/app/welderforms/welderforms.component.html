@@ -40,7 +40,10 @@
           <div class="row">
             <div class="col-md-2">
              <label for="Super_Age">Date of birth</label>
-             <p-calendar id="Super_Age" type="date" formControlName="Super_Age" />
+             <p-calendar id="Super_Age" 
+             type="date" 
+             dateFormat="dd.mm.yy"
+             formControlName="Super_Age" />
             </div>
           
            <div class="col-md-3">
@@ -89,6 +92,7 @@
           formControlName="available"
           [options]="available"
           optionLabel="name"
+  
           placeholder="Select option" />
         </div>
     </div>

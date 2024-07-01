@@ -1,5 +1,6 @@
 export interface Available {
    name: string;
+   
 }
 
 export interface CallAction {

@@ -60,25 +60,58 @@ export class WelderformsComponent implements OnInit {
  
 
   //Dropdown for Available
-  available: Available[] = [];
+  available: Available[] = [
+    { name: 'No info'},
+    { name: 'Free'},
+    { name: 'No'},
+    { name: 'Soon Available'},
+    { name: 'Available'}
+  ];
 
-  //Dropdown for tatle email
+  //Dropdown for tatle
   callaction: CallAction[] = [];
 
   //Dropdown for CALL
-  calltype: CallType[] = []; 
+  calltype: CallType[] = [
+      { name: 'No info'},
+      { name: 'Talk'},
+      { name: 'Not_ringing'},
+      { name: 'Dialing'},
+      { name: 'Switched off'},
+      { name: 'Busy'},
+      { name: 'Not_answered'},
+      { name: 'Voice_mail'}
+  ]; 
 
   //Dropdown for Not answered
-  totalunreachable: TotalUnreachable[] = [];
+  totalunreachable: TotalUnreachable[] = [
+      { name: '--------'},
+      { name: 'No info'},
+      { name: 'Yes'},
+      { name: 'No'},
+      { name: 'Total_lack_of_dialing'}
+  ];
 
   //Dropdown for wrong tel
-  wrongtel: WrongTel[] = [];
+  wrongtel: WrongTel[] = [
+    { name: '--------'},
+    { name: 'No info'},
+    { name: 'No'},
+    { name: 'Yes'},
+    { name: '1'},
+    { name: '0'},
+    { name: 'Unservice_number'}
+  ];
 
   //Dropdown for expensivness
   expensivness: Expensivness[] = [];
 
   //Dropdown for Car
-  car: Car[] = [];
+  car: Car[] = [
+      { name: 'No info'},
+      { name: 'Yes'},
+      { name: 'No'}
+  ];
 
 
   datetime24h: Date[] | undefined;
@@ -92,25 +125,25 @@ export class WelderformsComponent implements OnInit {
     Desired_Job_Category: new FormControl(''),
     Desired_position: new FormControl(''),
     Super_Telephone: new FormControl(''),
-    asap: new FormControl(''),
+    asap: new FormControl(false),
     Comment_1: new FormControl(''),
     Super_Age: new FormControl<Date | null>(null),
-    NonGastarbeiter: new FormControl(''),
-    available: new FormControl(''),
+    NonGastarbeiter: new FormControl(false),
+    available: new FormControl(this.available[0]),
     tatle: new FormControl(''),
     tatle_email: new FormControl(''),
     start_date: new FormControl(''),
     start_time: new FormControl(''),
     start_date_email: new FormControl(''),
     start_time_email: new FormControl(''),
-    totalUnreachable2: new FormControl(''),
-    totalUnreachable: new FormControl(''),
-    calltype: new FormControl(''),
-    wrongtel: new FormControl(''),
+    totalUnreachable2: new FormControl(this.totalunreachable[1]), // verbose_name='Not answered'
+    totalUnreachable: new FormControl(this.totalunreachable[0]), // verbose_name='Total lack of dealing'
+    calltype: new FormControl(this.calltype[0]),
+    wrongtel: new FormControl(this.wrongtel[0]),
     expensivness: new FormControl(''),
     costPerHour: new FormControl(''),
     costPerHourComm: new FormControl(''),
-    car: new FormControl(''),
+    car: new FormControl(this.car[0]),
     filedFormDate: new FormControl(''),
     idPassportDate: new FormControl(''),
     assignedDate: new FormControl(''),
@@ -130,15 +163,15 @@ export class WelderformsComponent implements OnInit {
 
    }
 
-   ngOnInit(): void {
+   /*ngOnInit(): void {
     this.available = [
-      { name: 'No info'},
-      { name: 'Free'},
-      { name: 'No'},
-      { name: 'Soon Available'},
-      { name: 'Available'}
-    ];
-
+      { name: 'No info', value: 'No info'},
+      { name: 'Free', value: 'Free'},
+      { name: 'No', value: 'No'},
+      { name: 'Soon Available', value: 'Soon Available'},
+      { name: 'Available', value: 'Available'}
+    ];*/
+    ngOnInit(): void {
     this.callaction = [
       { name: 'appointment'},
       { name: 'email'},
@@ -148,35 +181,6 @@ export class WelderformsComponent implements OnInit {
       { name: 'cb(think)'},
       { name: 'cb(free)'},
       { name: 'not answered'}
-    ];
-
-    this.calltype = [
-      { name: 'No info'},
-      { name: 'Talk'},
-      { name: 'Not_ringing'},
-      { name: 'Dialing'},
-      { name: 'Switched off'},
-      { name: 'Busy'},
-      { name: 'Not_answered'},
-      { name: 'Voice_mail'}
-    ];
-
-    this.totalunreachable = [
-      { name: '--------'},
-      { name: 'No info'},
-      { name: 'Yes'},
-      { name: 'No'},
-      { name: 'Total_lack_of_dialing'}
-    ];
-
-    this.wrongtel = [
-       { name: '--------'},
-       { name: 'No info'},
-       { name: 'No'},
-       { name: 'Yes'},
-       { name: '1'},
-       { name: '0'},
-       { name: 'Unservice_number'}
     ];
 
     this.expensivness = [
