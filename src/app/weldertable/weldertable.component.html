@@ -5,7 +5,16 @@
         pRipple  
         class="p-button-success">Add new welder</button>
       </form>
-  <p-table [columns]="cols" [value]="welders" [tableStyle]="{ 'min-width': '50rem' }">
+  <p-table 
+  [columns]="cols" 
+  [value]="welders" 
+  [tableStyle]="{ 'min-width': '50rem' }" 
+  [scrollable]="true" 
+  scrollHeight="800px"
+  [rows]="5"
+  [paginator]="true"
+  [rowsPerPageOptions]="[5, 10, 20]"
+  >
       <ng-template pTemplate="header" let-columns>
           <tr>
               <th *ngFor="let col of columns">

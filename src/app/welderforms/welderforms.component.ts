@@ -132,9 +132,9 @@ export class WelderformsComponent implements OnInit {
     available: new FormControl(this.available[0]),
     tatle: new FormControl(''),
     tatle_email: new FormControl(''),
-    start_date: new FormControl(''),
+    start_date: new FormControl<Date | null>(null),
     start_time: new FormControl(''),
-    start_date_email: new FormControl(''),
+    start_date_email: new FormControl<Date | null>(null),
     start_time_email: new FormControl(''),
     totalUnreachable2: new FormControl(this.totalunreachable[1]), // verbose_name='Not answered'
     totalUnreachable: new FormControl(this.totalunreachable[0]), // verbose_name='Total lack of dealing'
@@ -144,10 +144,10 @@ export class WelderformsComponent implements OnInit {
     costPerHour: new FormControl(''),
     costPerHourComm: new FormControl(''),
     car: new FormControl(this.car[0]),
-    filedFormDate: new FormControl(''),
-    idPassportDate: new FormControl(''),
-    assignedDate: new FormControl(''),
-    workSiteDate: new FormControl(''),
+    filedFormDate: new FormControl<Date | null>(null),
+    idPassportDate: new FormControl<Date | null>(null),
+    assignedDate: new FormControl<Date | null>(null),
+    workSiteDate: new FormControl<Date | null>(null),
     freeComment1: new FormControl(''),
     freeComment2: new FormControl('')
 
@@ -163,14 +163,7 @@ export class WelderformsComponent implements OnInit {
 
    }
 
-   /*ngOnInit(): void {
-    this.available = [
-      { name: 'No info', value: 'No info'},
-      { name: 'Free', value: 'Free'},
-      { name: 'No', value: 'No'},
-      { name: 'Soon Available', value: 'Soon Available'},
-      { name: 'Available', value: 'Available'}
-    ];*/
+   
     ngOnInit(): void {
     this.callaction = [
       { name: 'appointment'},
@@ -199,6 +192,8 @@ export class WelderformsComponent implements OnInit {
 
   
   }
+
+ 
 
  async onSubmit(): Promise<void> {
     const formData = this.welderForm.value;

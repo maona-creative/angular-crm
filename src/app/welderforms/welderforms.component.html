@@ -41,8 +41,9 @@
             <div class="col-md-2">
              <label for="Super_Age">Date of birth</label>
              <p-calendar id="Super_Age" 
-             type="date" 
+             dataType="string" 
              dateFormat="dd.mm.yy"
+             [showTime]="false"
              formControlName="Super_Age" />
             </div>
           
@@ -125,6 +126,9 @@
               <p-calendar
                 id="start_date"
                 class="form-control"
+                dataType="string" 
+                dateFormat="dd.mm.yy"
+                [showTime]="false"
                 formControlName="start_date" 
                 />
             </div>
@@ -156,6 +160,9 @@
               <p-calendar
               id="start_date_email"
               class="form-control"
+              dataType="string" 
+              dateFormat="dd.mm.yy"
+              [showTime]="false"
               formControlName="start_date_email"
              
               />
@@ -262,27 +269,50 @@
           <div class="row">
           <div class="col-md-2">
             <label for="filedFormDate">FiledForm Date</label>
-            <p-calendar id="filedFormDate" type="text" class="form-control" formControlName="filedFormDate" />
+            <p-calendar id="filedFormDate" 
+            type="text" 
+            class="form-control" 
+            dataType="string" 
+            dateFormat="dd.mm.yy"
+            [showTime]="false"
+            formControlName="filedFormDate" />
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-2">
             <label for="idPassportDate">ID/Passport Date</label>
-            <p-calendar id="idPassportDate" type="text" class="form-control" formControlName="idPassportDate" />
+            <p-calendar id="idPassportDate" 
+            type="text" 
+            class="form-control" 
+            dataType="string" 
+            dateFormat="dd.mm.yy"
+            [showTime]="false"
+            formControlName="idPassportDate" />
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-2">
             <label for="assignedDate">Assigned Date</label>
-            <p-calendar id="assignedDate" type="text" class="form-control" formControlName="assignedDate" />
+            <p-calendar id="assignedDate"
+             type="text" 
+             class="form-control" 
+             dataType="string" 
+             dateFormat="dd.mm.yy"
+             [showTime]="false"
+             formControlName="assignedDate" />
           </div>
         </div>
         <div class="row">
           <div class="col-md-2">
             <label for="workSiteDate">Worksite Date</label>
-            <p-calendar id="workSiteDate" type="text" class="form-control" formControlName="workSiteDate" />
+            <p-calendar id="workSiteDate"
+             type="text" class="form-control"
+             dataType="string" 
+             dateFormat="dd.mm.yy"
+             [showTime]="false"
+              formControlName="workSiteDate" />
           </div>
         </div>
         <div class="row">
