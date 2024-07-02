@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 
 
 
+
 // PrimeNg import
 
 import { MenuModule } from 'primeng/menu';
@@ -24,6 +25,10 @@ import { CalendarModule } from 'primeng/calendar';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { DropdownModule } from 'primeng/dropdown';
 import { WelderformsService } from './welderforms.service';
+import { IgxTimePickerComponent, IgxInputGroupModule,
+	IgxIconModule, IgxTimePickerModule, } from 'igniteui-angular';
+import { PickerInteractionMode } from 'igniteui-angular';
+
 
 
 
@@ -45,7 +50,12 @@ import { WelderformsService } from './welderforms.service';
     CalendarModule,
     InputTextareaModule,
     DropdownModule,
-    CommonModule
+    CommonModule,
+    IgxTimePickerComponent,
+    IgxInputGroupModule,
+    IgxIconModule,
+    IgxTimePickerModule,
+    
   
   
 
@@ -55,10 +65,19 @@ import { WelderformsService } from './welderforms.service';
   templateUrl: './welderforms.component.html',
   styleUrl: './welderforms.component.css'
 })
+
+
 export class WelderformsComponent implements OnInit {
 
+  
+  public mode: PickerInteractionMode = PickerInteractionMode.DropDown;
+  public format = 'hh:mm tt';
+  
+  
  
 
+
+  
   //Dropdown for Available
   available: Available[] = [
     { name: 'No info'},
@@ -133,7 +152,7 @@ export class WelderformsComponent implements OnInit {
     tatle: new FormControl(''),
     tatle_email: new FormControl(''),
     start_date: new FormControl<Date | null>(null),
-    start_time: new FormControl(''),
+    start_time: new FormControl<Date | null>(null),
     start_date_email: new FormControl<Date | null>(null),
     start_time_email: new FormControl(''),
     totalUnreachable2: new FormControl(this.totalunreachable[1]), // verbose_name='Not answered'

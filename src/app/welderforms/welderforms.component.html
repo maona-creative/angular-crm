@@ -6,7 +6,7 @@
  </nav>
 </div>
 
-<h1>Change newwelder</h1>
+<h2>Change newwelder</h2>
 
 <div class="container">
 <form [formGroup]="welderForm" (ngSubmit)="onSubmit()">
@@ -135,13 +135,22 @@
 
             <div class="col-md-2">
               <label for="start_time">Start time</label>
-              <p-calendar
+              <igx-time-picker
                 id="start_time"
-                class="form-control"
                 formControlName="start_time"
-                [showTime]="true" 
-                />
+                [itemsDelta]="{hours:1, minutes:5}"
+                [inputFormat]="format"
+                dataType="string"
+                mode="dialog"
+              
+
+                
+                >
+                </igx-time-picker>
+               
             </div>
+
+           
           </div>
 
           <div class="row">
@@ -170,12 +179,19 @@
 
             <div class="col-md-2">
               <label for="start_time_email">Start time email</label>
-              <p-calendar
-              id="start_time_email"
-              class="form-control"
-              formControlName="start_time_email"
-              [showTime]="true" 
-              />
+              <igx-time-picker
+                id="start_time_email"
+                #timePicker
+                formControlName="start_time_email"
+               
+                mode="dialog"
+                dataType="string"
+                [inputFormat]="format"
+
+               
+                >
+                
+                </igx-time-picker>
             </div>
           </div>
        

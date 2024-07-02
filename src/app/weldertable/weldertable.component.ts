@@ -20,6 +20,7 @@ import { CardModule } from 'primeng/card';
 import { CalendarModule } from 'primeng/calendar';
 import { ButtonModule } from 'primeng/button';
 
+
 @Component({
   selector: 'app-weldertable',
   standalone: true,
@@ -37,7 +38,8 @@ import { ButtonModule } from 'primeng/button';
     CalendarModule,
     ButtonModule,
     AppComponent,
-    WelderformsComponent
+    WelderformsComponent,
+  
   ],
   templateUrl: './weldertable.component.html',
   styleUrl: './weldertable.component.css'
@@ -68,6 +70,8 @@ export class WeldertableComponent {
    jobcategory!: Jobcategory[];
  
    selectedJobCat!: Jobcategory[];
+
+   metaKey: boolean = true;
 
    ngOnInit(): void {
     this.welderService.getWelders().subscribe((welders) => {

@@ -8,12 +8,17 @@
   <p-table 
   [columns]="cols" 
   [value]="welders" 
-  [tableStyle]="{ 'min-width': '50rem' }" 
+  styleClass="p-datatable-gridlines"  
+  [tableStyle]="{ 'min-width': '150rem' }" 
+  [resizableColumns]="true"
   [scrollable]="true" 
   scrollHeight="800px"
-  [rows]="5"
+  [rows]="7"
   [paginator]="true"
   [rowsPerPageOptions]="[5, 10, 20]"
+  selectionMode="single" 
+  [(selection)]="selectedWelders"
+  
   >
       <ng-template pTemplate="header" let-columns>
           <tr>
