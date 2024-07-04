@@ -19,10 +19,10 @@ export interface Welder {
     available: Available
     tatle: string
     tatle_email: CallAction
-    start_date: number
-    start_time: number
-    start_date_email: number
-    start_time_email: number
+    start_date: string
+    start_time: string
+    start_date_email: string
+    start_time_email: string
     totalUnreachable2: TotalUnreachable
     totalUnreachable: string
     calltype: string

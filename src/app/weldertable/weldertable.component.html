@@ -39,11 +39,17 @@
                 <p-inputMask *ngSwitchCase="'phone'" placeholder="(999)-999-9999" mask="(999)-999-9999" >{{ (rowData[col.field]) }}</p-inputMask>
                 <textarea rows="3" cols="30" *ngSwitchCase="'textarea'">{{ rowData[col.field] }}</textarea>
                 <span *ngSwitchCase="'date'" dateFormat="dd.mm.yy">{{ rowData[col.field] }}</span>
+                <span *ngSwitchCase="'time'" dateFormat="HH:mm">{{ rowData[col.field] }}</span>
                 <span *ngSwitchCase="'object'">{{ rowData[col.field]?.name }}</span>
                 <span *ngSwitchDefault>{{ rowData[col.field] }}</span>
               </div> 
               </td>
           </tr>
       </ng-template>
+      <ng-template pTemplate="summary">
+        <div class="p-d-flex p-ai-center p-jc-between">
+            In total there are {{welders ? welders.length : 0 }} welders.
+        </div>
+    </ng-template>
   </p-table>
 </div>

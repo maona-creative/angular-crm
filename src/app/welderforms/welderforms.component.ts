@@ -8,7 +8,7 @@ import { Available, TotalUnreachable, WrongTel } from './interface/dropdown';
 import { CallAction, Expensivness, Car } from './interface/dropdown';
 import { CallType } from './interface/dropdown';
 import { CommonModule } from '@angular/common';
-
+import { DatePipe } from '@angular/common';
 
 
 
@@ -55,6 +55,7 @@ import { PickerInteractionMode } from 'igniteui-angular';
     IgxInputGroupModule,
     IgxIconModule,
     IgxTimePickerModule,
+    DatePipe
     
   
   
@@ -71,7 +72,7 @@ export class WelderformsComponent implements OnInit {
 
   
   public mode: PickerInteractionMode = PickerInteractionMode.DropDown;
-  public format = 'hh:mm tt';
+  public format = 'HH:mm';
   
   
  
@@ -152,7 +153,7 @@ export class WelderformsComponent implements OnInit {
     tatle: new FormControl(''),
     tatle_email: new FormControl(''),
     start_date: new FormControl<Date | null>(null),
-    start_time: new FormControl<Date | null>(null),
+    start_time: new FormControl<string | null>(null),
     start_date_email: new FormControl<Date | null>(null),
     start_time_email: new FormControl(''),
     totalUnreachable2: new FormControl(this.totalunreachable[1]), // verbose_name='Not answered'

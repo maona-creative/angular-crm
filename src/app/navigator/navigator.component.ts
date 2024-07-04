@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { Router } from '@angular/router';
 import { WelderformsComponent } from '../welderforms/welderforms.component';
@@ -9,6 +9,7 @@ import { FinmetalformsComponent } from '../finmetalforms/finmetalforms.component
 import { ButtonModule } from 'primeng/button';
 import { MenuItem } from 'primeng/api';
 import { MenubarModule } from 'primeng/menubar';
+
 
 @Component({
   selector: 'app-navigator',
@@ -26,7 +27,7 @@ import { MenubarModule } from 'primeng/menubar';
   templateUrl: './navigator.component.html',
   styleUrl: './navigator.component.css'
 })
-export class NavigatorComponent {
+export class NavigatorComponent implements OnInit {
   
   items: MenuItem[] | undefined;
 
@@ -38,14 +39,16 @@ export class NavigatorComponent {
     this.items = [
         {
             label: 'Welders',
-            icon: 'pi pi-palette',
+            icon: 'pi pi-list',
             items: [
                 {
                     label: 'Add new welder',
+                    icon: 'pi pi-user-plus',
                     route: '/welder-forms'
                 },
                 {
                     label: 'Welder table',
+                    icon: 'pi pi-file',
                     route: '/welder-table'
                 }
             ]
@@ -53,7 +56,7 @@ export class NavigatorComponent {
 
         {
         label: 'FinMetal',
-        icon: 'pi pi-palette',
+        icon: 'pi pi-list',
         items: [
             {
                 label: 'Add new finmetal',

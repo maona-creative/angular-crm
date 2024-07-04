@@ -1,1 +1,53 @@
 <p>finmetalforms works!</p>
+<div class="card">
+
+    <nav>
+      <a href="/">Home</a>
+
+ </nav>
+</div>
+<h2>Change finmetal</h2>
+<div class="formgrid grid">
+  <form [formGroup]="finmetalForm" (ngSubmit)="onSubmit()">
+    <p-accordion [activeIndex]="0">
+      <p-accordionTab header="Company"></p-accordionTab>
+      <p-accordionTab header="Working"></p-accordionTab>
+      <p-accordionTab header="Address site kompass|finder"></p-accordionTab>
+      <p-accordionTab header="Name, phone, mail (1-3)"></p-accordionTab>
+      <p-accordionTab header="Company details"></p-accordionTab>
+      <p-accordionTab header="MASTER name, phone, mail"></p-accordionTab>
+      <p-accordionTab header="Name, phone, mail (4-14)"></p-accordionTab>
+      <p-accordionTab header="Conditions"></p-accordionTab>
+      <p-accordionTab header="Pay details"></p-accordionTab>
+
+
+
+      <p-accordionTab header="Night shift">
+        <div class="field col-12 md:col-6">
+          <label for="firstname6">Firstname</label>
+          <input id="firstname6" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+      </div>
+      </p-accordionTab>
+      <p-accordionTab header="Profession">
+        <div class="field col-12 md:col-6">
+          <label for="firstname6">Firstname</label>
+          <input id="firstname6" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+      </div>
+      </p-accordionTab>
+
+      <p-accordionTab header="New question">
+
+      </p-accordionTab>
+      <p-accordionTab header="Order"></p-accordionTab>
+      <p-accordionTab header="Call"></p-accordionTab>
+      <p-accordionTab header="4 year statistics"></p-accordionTab>
+      <p-accordionTab header="Departures"></p-accordionTab>
+      <p-accordionTab header="Calls"></p-accordionTab>
+      <p-accordionTab header="Apartments"></p-accordionTab>
+      <p-accordionTab header="Call Periods"></p-accordionTab>
+      <p-accordionTab header="Matched workers"></p-accordionTab>
+      <p-accordionTab header="Projects"></p-accordionTab>
+      </p-accordion>
+</form>
+</div>
+

@@ -21,6 +21,8 @@ import { CalendarModule } from 'primeng/calendar';
 import { ButtonModule } from 'primeng/button';
 
 
+
+
 @Component({
   selector: 'app-weldertable',
   standalone: true,
@@ -94,8 +96,8 @@ export class WeldertableComponent {
       { field: 'available', header: 'Available', type: "object" },
       { field: 'tatle', header: 'Call action', type: "object" },
       { field: 'tatle_email', header: 'Email action', type: "object" },
-      { field: 'start_date', header: 'Start date', type: "text" },
-      { field: 'start_time', header: 'Start time', type: "text" },
+      { field: 'start_date', header: 'Start date', type: "date" },
+      { field: 'start_time', header: 'Start time', type: "time" },
       { field: 'start_date_email', header: 'Start date email', type: "text" },
       { field: 'start_time_email', header: 'Start time email', type: "text" },
       { field: 'totalUnreachable', header: 'Total lack of dialing', type: "object" },
