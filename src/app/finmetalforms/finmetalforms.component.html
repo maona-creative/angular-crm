@@ -7,12 +7,234 @@
  </nav>
 </div>
 <h2>Change finmetal</h2>
-<div class="formgrid grid">
+
   <form [formGroup]="finmetalForm" (ngSubmit)="onSubmit()">
     <p-accordion [activeIndex]="0">
-      <p-accordionTab header="Company"></p-accordionTab>
-      <p-accordionTab header="Working"></p-accordionTab>
-      <p-accordionTab header="Address site kompass|finder"></p-accordionTab>
+      <p-accordionTab header="Company">
+        <div class="formgrid grid">
+        <div class="field col-12 md:col-2">
+         <label for="competitor">Competitors</label>
+         <input id="competitor" formControlName='competitor' type="text"  class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-2">
+          <label for="phone">Phone</label>
+          <input id="phone" formControlName='phone' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-2">
+          <label for="partner_availability">Partners</label><br>
+          <p-dropdown 
+          id="partner_availabilit"
+          formControlName="partner_availability"
+          [options]="partner_availability"
+          optionLabel="name"
+          placeholder="Select option"
+          ></p-dropdown>
+        </div>
+        <div class="field col-12 md:col-2">
+          <label for="partner_description">Part Com</label>
+           <textarea rows="5" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+           formControlName="partner_description"></textarea>
+        </div>
+        <div class="field col-12 md:col-2">
+          <label for="partner_description_comm">Part Com2 </label>
+           <textarea rows="5" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+           formControlName="partner_description_comm"></textarea>
+        </div>
+        <div class="field col-12 md:col-2">
+          <label for="call_month">Call month</label>
+             <p-calendar id="call_month" 
+             dataType="string" 
+             dateFormat="dd.mm.yy"
+             [showTime]="false"
+             [iconDisplay]="'input'"
+             [showIcon]="true"
+             formControlName="call_month" />
+        </div>
+        <div class="field col-12 md:col-2">
+          <label for="order_month">Order month</label>
+             <p-calendar id="order_month" 
+             dataType="string" 
+             dateFormat="dd.mm.yy"
+             [showTime]="false"
+             [iconDisplay]="'input'"
+             [showIcon]="true"
+             formControlName="order_month" />
+        </div>
+        <div class="field col-12 md:col-2">
+          <label for="bankrupt">Bankrupt</label><br>
+              <p-inputSwitch id="bankrupt" type="boolean" 
+              formControlName="bankrupt" />
+          </div>
+        </div>
+      </p-accordionTab>
+
+      <p-accordionTab header="Working">
+        <div class="formgrid grid">
+         <div class="field col-12 md:col-3">
+          <label for="profession">Profession</label><br>
+          <p-dropdown 
+          id="profession"
+          formControlName="profession"
+          [options]="profession"
+          optionLabel="name"
+          placeholder="Select option"
+          ></p-dropdown>
+         </div>
+         <div class="field col-12 md:col-3">
+          <label for="welding">Welding</label><br>
+          <p-dropdown 
+          id="welding"
+          formControlName="welding"
+          [options]="welding"
+          optionLabel="name"
+          placeholder="Select option"
+          ></p-dropdown>
+         </div>
+         <div class="field col-12 md:col-3">
+          <label for="metal">.Metal.</label><br>
+          <p-dropdown 
+          id="metal"
+          formControlName="metal"
+          [options]="metal"
+          optionLabel="name"
+          placeholder="Select option"
+          ></p-dropdown>
+         </div>
+         <div class="field col-12 md:col-3">
+          <label for="type_work">. Work.</label><br>
+          <p-dropdown 
+          id="type_work"
+          formControlName="type_work"
+          [options]="type_work"
+          optionLabel="name"
+          placeholder="Select option"
+          ></p-dropdown>
+         </div>
+         <div class="field col-12 md:col-3">
+          <label for="profession_description">Prof Com</label>
+          <textarea rows="5" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+          formControlName="profession_description"></textarea>
+         </div>
+         <div class="field col-12 md:col-3">
+          <label for="welding_description">Weld Com</label>
+          <textarea rows="5" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+          formControlName="welding_description"></textarea>
+         </div>
+         <div class="field col-12 md:col-3">
+          <label for="metal_description">Metal Com</label>
+          <textarea rows="5" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+          formControlName="metal_description"></textarea>
+         </div>
+         <div class="field col-12 md:col-3">
+          <label for="type_work_description">Work Com</label>
+          <textarea rows="5" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+          formControlName="type_work_description"></textarea>
+         </div>
+         <div class="field col-12">
+          <label for="workingMode">Reverse working mode</label><br>
+              <p-inputSwitch id="workingMode" type="boolean" 
+              formControlName="workingMode" />
+          </div>
+          <div class="field col-12 md:col-3">
+            <label for="professionn2">Profession 2</label><br>
+            <p-dropdown 
+            id="professionn2"
+            formControlName="professionn2"
+            [options]="profession"
+            optionLabel="name"
+            placeholder="Select option"
+            ></p-dropdown>
+           </div>
+           <div class="field col-12 md:col-3">
+            <label for="welding2">Welding 2</label><br>
+            <p-dropdown 
+            id="welding2"
+            formControlName="welding2"
+            [options]="welding"
+            optionLabel="name"
+            placeholder="Select option"
+            ></p-dropdown>
+           </div>
+           <div class="field col-12 md:col-3">
+            <label for="metal2">.Metal 2.</label><br>
+            <p-dropdown 
+            id="metal2"
+            formControlName="metal2"
+            [options]="metal"
+            optionLabel="name"
+            placeholder="Select option"
+            ></p-dropdown>
+           </div>
+           <div class="field col-12 md:col-3">
+            <label for="type_work2">. Work 2.</label><br>
+            <p-dropdown 
+            id="type_work2"
+            formControlName="type_work2"
+            [options]="type_work"
+            optionLabel="name"
+            placeholder="Select option"
+            ></p-dropdown>
+           </div>
+           <div class="field col-12 md:col-3">
+            <label for="profession_description2">Prof Com 2</label>
+            <textarea rows="5" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+            formControlName="profession_description2"></textarea>
+           </div>
+           <div class="field col-12 md:col-3">
+            <label for="welding_description2">Weld Com 2</label>
+            <textarea rows="5" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+            formControlName="welding_description2"></textarea>
+           </div>
+           <div class="field col-12 md:col-3">
+            <label for="metal_description2">Metal Com 2</label>
+            <textarea rows="5" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+            formControlName="metal_description2"></textarea>
+           </div>
+           <div class="field col-12 md:col-3">
+            <label for="type_work_description2">Work Com 2</label>
+            <textarea rows="5" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+            formControlName="type_work_description2"></textarea>
+           </div>
+        </div>
+      </p-accordionTab>
+      <p-accordionTab header="Address site kompass|finder">
+        <div class="formgrid grid">
+          <div class="field col-12 md:col-6">
+            <label for="start_time">COMM: Metals</label>
+            <textarea rows="5" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+            formControlName="start_time"></textarea>
+           </div>
+           <div class="field col-12 md:col-6">
+            <label for="start_time2">COMM: Tianmga</label>
+            <textarea rows="5" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+            formControlName="start_time2"></textarea>
+           </div>
+           <div class="field col-12">
+            <label for="representative">Representative (foreignKey)</label>
+            <input id="representative" formControlName='representative' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+          </div>
+          <div class="field col-12 md:col-3">
+            <label for="price">Price</label><br>
+            <p-inputNumber id="price"
+            inputId="integeronly" formControlName="price" />
+          </div>
+          <div class="field col-12 md:col-3">
+            <label for="price_comment">Price comment</label>
+            <textarea rows="5" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+            formControlName="price_comment"></textarea>
+           </div>
+           <div class="field col-12 md:col-3">
+            <label for="price_a_plus">PriceA+</label><br>
+            <p-inputNumber id="price_a_plus"
+            inputId="integeronly" formControlName="price_a_plus" />
+          </div>
+          <div class="field col-12 md:col-3">
+            <label for="price_a_minus">PriceA-</label><br>
+            <p-inputNumber id="price_a_minus"
+            inputId="integeronly" formControlName="price_a_minus" />
+          </div>
+        </div>
+      </p-accordionTab>
       <p-accordionTab header="Name, phone, mail (1-3)"></p-accordionTab>
       <p-accordionTab header="Company details"></p-accordionTab>
       <p-accordionTab header="MASTER name, phone, mail"></p-accordionTab>
@@ -49,5 +271,5 @@
       <p-accordionTab header="Projects"></p-accordionTab>
       </p-accordion>
 </form>
-</div>
+
 

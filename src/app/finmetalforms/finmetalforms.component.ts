@@ -6,10 +6,16 @@ import { MenuItem } from 'primeng/api';
 import { TabMenuModule } from 'primeng/tabmenu';
 import {  FormGroup, FormControl, FormBuilder } from '@angular/forms';
 import { ReactiveFormsModule, Validators} from '@angular/forms';
+import { PA_AVA, pa_AVA_options, PROF, prof_options, WEL, wel_options, 
+  MET, met_options, WORK, work_options } from './interface/object';
 
-
+//PrimeNg import
 import { ButtonModule } from 'primeng/button';
 import { AccordionModule } from 'primeng/accordion';
+import { DropdownModule } from 'primeng/dropdown';
+import { CalendarModule } from 'primeng/calendar';
+import { InputSwitchModule } from 'primeng/inputswitch';
+import { InputNumberModule } from 'primeng/inputnumber';
 
 
 @Component({
@@ -21,7 +27,13 @@ import { AccordionModule } from 'primeng/accordion';
     RouterOutlet,
     TabMenuModule,
     AccordionModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    DropdownModule,
+    CalendarModule,
+    InputSwitchModule,
+    InputNumberModule
+    
+  
 
     
   
@@ -31,7 +43,14 @@ import { AccordionModule } from 'primeng/accordion';
 })
 export class FinmetalformsComponent {
 
-  //Dropdown for Partners 
+  datetime24h: Date[] | undefined;
+
+  partner_availability: PA_AVA[] = pa_AVA_options; 
+  profession: PROF[] = prof_options;
+  welding: WEL[] = wel_options;
+  metal: MET[] = met_options;
+  type_work: WORK[] = work_options;
+
   
 
   finmetalForm: FormGroup = new FormGroup({
@@ -42,22 +61,22 @@ export class FinmetalformsComponent {
     bankrupt: new FormControl(false), // boolean
     partner_description: new FormControl('', Validators.maxLength(512)), // verbose_name='Part Com'
     partner_description_comm: new FormControl('', Validators.maxLength(512)), //Part Com2
-    call_month: new FormControl('', ), //Call month, Date
-    order_month: new FormControl(''), //Order month, Date
+    call_month: new FormControl<Date | null>(null), //Call month, Date
+    order_month: new FormControl<Date | null>(null), //Order month, Date
     //Working tab
-    profession: new FormControl('',  Validators.maxLength(22)), //Profession, choices=PROF, default 'No info'
-    welding: new FormControl('', Validators.maxLength(15)), //choices=WEL, verbose_name='Welding', default='--------'
-    metal: new FormControl('', Validators.maxLength(15 )), //choices=MET, verbose_name='.  Metal  .', default='No info'
-    type_work: new FormControl('', Validators.maxLength(15 )), // choices=WORK, verbose_name='. Work .', default='--------'
+    profession: new FormControl(this.profession[0]), //Profession, choices=PROF, default 'No info'
+    welding: new FormControl(this.welding[0]), //choices=WEL, verbose_name='Welding', default='--------'
+    metal: new FormControl(this.metal[0]), //choices=MET, verbose_name='.  Metal  .', default='No info'
+    type_work: new FormControl(this.type_work[0]), // choices=WORK, verbose_name='. Work .', default='--------'
     profession_description: new FormControl('', Validators.maxLength(512)), //verbose_name='Prof Com'
     welding_description: new FormControl('', Validators.maxLength(512)), //verbose_name='Weld Com'
     metal_description: new FormControl('',  Validators.maxLength(512)), //verbose_name='Met Com'
     type_work_description: new FormControl('', Validators.maxLength(512)), //verbose_name='Work Com'
     workingMode: new FormControl(false), //verbose_name='Reverse working mode' yes/no
-    professionn2: new FormControl('',  Validators.maxLength(22)), //choices=PROF, verbose_name='Profession 2'
-    welding2: new FormControl('', Validators.maxLength(15)), //choices=WEL, verbose_name='Welding 2', default='No info'
-    metal2: new FormControl('', Validators.maxLength(15)), // choices=MET, verbose_name='.  Metal 2  .', default='No info'
-    type_work2: new FormControl('', Validators.maxLength(15)), //choices=WORK, verbose_name='. Work 2 .'
+    professionn2: new FormControl(this.profession[0]), //choices=PROF, verbose_name='Profession 2'
+    welding2: new FormControl(this.welding[0]), //choices=WEL, verbose_name='Welding 2', default='No info'
+    metal2: new FormControl(this.metal[0]), // choices=MET, verbose_name='.  Metal 2  .', default='No info'
+    type_work2: new FormControl(this.type_work[0]), //choices=WORK, verbose_name='. Work 2 .'
     profession_description2: new FormControl('', Validators.maxLength(512)), // verbose_name='Prof Com 2'
     welding_description2: new FormControl('', Validators.maxLength(512)), // verbose_name='Weld Com 2
     metal_description2: new FormControl('', Validators.maxLength(512)), //verbose_name='Met Com 2'
@@ -69,8 +88,8 @@ export class FinmetalformsComponent {
     representative: new FormControl(''), //account.Representative, models.ForeignKey
     price: new FormControl('', Validators.maxLength(16)), // verbose_name='Price'
     price_comment: new FormControl(''), //verbose_name='Price comment'
-    price_a_plus: new FormControl('', Validators.maxLength(512) ), //verbose_name='PriceA+'
-    price_a_minus: new FormControl('', Validators.maxLength(512)), //verbose_name='PriceA-'
+    price_a_plus: new FormControl('', Validators.maxLength(16) ), //verbose_name='PriceA+'
+    price_a_minus: new FormControl('', Validators.maxLength(16)), //verbose_name='PriceA-'
     location: new FormControl('', ), //ForeignKey('account.Location'
     locationApproved: new FormControl(false), //verbose_name='Location approved'
     locationCountry: new FormControl('', Validators.maxLength(50)), //verbose_name='Country'
