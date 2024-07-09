@@ -1,30 +1,32 @@
+import { PA_AVA, PROF, WEL, MET, WORK, POSITION, DAIL, Cl, LAN, HOS, DOC, LEB, CTA, ACT, ACT2, CONTROLL, WE, 
+    MP, CARREQUIREMENT, FROMWHICHCOMPANYSENT, FROMWHICHSALESMANORDER, WORKPLACE, WORKEQUIPMENT, TOTALUNREACHABLE
+ } from "./finmetalforms/interface/object"
+
 export interface Finmetal {
-
-
     
     id?: number
     competitor?: string
     phone?: string
-    partner_availability?: object
+    partner_availability?: PA_AVA
     bankrupt?: boolean
     partner_description?: string // verbose_name='Part Com'
     partner_description_comm?: string //Part Com2
     call_month?: string //Call month, Date
     order_month?: string//Order month, Date
     //Working tab
-    profession?: object //Profession, choices=PROF, default 'No info'
-    welding?: object //choices=WEL, verbose_name='Welding', default='--------'
-    metal?: object //choices=MET, verbose_name='.  Metal  .', default='No info'
-    type_work?: object // choices=WORK, verbose_name='. Work .', default='--------'
+    profession?: PROF //Profession, choices=PROF, default 'No info'
+    welding?: WEL //choices=WEL, verbose_name='Welding', default='--------'
+    metal?: MET //choices=MET, verbose_name='.  Metal  .', default='No info'
+    type_work?: WORK // choices=WORK, verbose_name='. Work .', default='--------'
     profession_description?: string //verbose_name='Prof Com'
     welding_description?: string //verbose_name='Weld Com'
     metal_description?: string //verbose_name='Met Com'
     type_work_description?: string//verbose_name='Work Com'
     workingMode?: boolean //verbose_name='Reverse working mode' yes/no
-    professionn2?: object //choices=PROF, verbose_name='Profession 2'
-    welding2?: object //choices=WEL, verbose_name='Welding 2', default='No info'
-    metal2?: object // choices=MET, verbose_name='.  Metal 2  .', default='No info'
-    type_work2?: object //choices=WORK, verbose_name='. Work 2 .'
+    professionn2?: PROF //choices=PROF, verbose_name='Profession 2'
+    welding2?: WEL //choices=WEL, verbose_name='Welding 2', default='No info'
+    metal2?: MET // choices=MET, verbose_name='.  Metal 2  .', default='No info'
+    type_work2?: WORK //choices=WORK, verbose_name='. Work 2 .'
     profession_description2?: string // verbose_name='Prof Com 2'
     welding_description2?: string // verbose_name='Weld Com 2
     metal_description2?: string //verbose_name='Met Com 2'
@@ -48,17 +50,17 @@ export interface Finmetal {
     
     //Name, phone, mail
     name1?: string //verbose_name='Name 1'
-    profession1?: object //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
+    profession1?: POSITION //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
     mail1?: string //verbose_name='Email 1'
     phone1?: string //verbose_name='Phone 1'
     status1?: boolean 
     name2?: string //verbose_name='Name 2'
-    profession2?: object//choices=POSITION, blank=False, verbose_name='Position 2', default='...'
+    profession2?: POSITION//choices=POSITION, blank=False, verbose_name='Position 2', default='...'
     mail2?: string //verbose_name='Email 2'
     phone2?: string //verbose_name='Phone 1'
     status2?: boolean 
     name3?: string //verbose_name='Name 3'
-    profession3?: object //choices=POSITION, blank=False, verbose_name='Position 3', default='...'
+    profession3?: POSITION //choices=POSITION, blank=False, verbose_name='Position 3', default='...'
     mail3?: string //verbose_name='Email 3'
     phone3?: string //verbose_name='Phone 3'
     status3?: boolean 
@@ -71,11 +73,11 @@ export interface Finmetal {
 
 
     //Master name, phone, mail
-    dial1M?:object //choices=DAIL, verbose_name='Dail Yes/No', default='---'
-    dial2M?:object //choices=DAIL, verbose_name='Dail Yes/No', default='---'
-    dial3M?:object //choices=DAIL, verbose_name='Dail Yes/No', default='---'
-    dial4M?:object //choices=DAIL, verbose_name='Dail Yes/No', default='---'
-    dial5M?:object //choices=DAIL, verbose_name='Dail Yes/No', default='---'
+    dial1M?: DAIL //choices=DAIL, verbose_name='Dail Yes/No', default='---'
+    dial2M?: DAIL //choices=DAIL, verbose_name='Dail Yes/No', default='---'
+    dial3M?: DAIL //choices=DAIL, verbose_name='Dail Yes/No', default='---'
+    dial4M?: DAIL //choices=DAIL, verbose_name='Dail Yes/No', default='---'
+    dial5M?: DAIL//choices=DAIL, verbose_name='Dail Yes/No', default='---'
     profession1M?: string // choices=POSITION,verbose_name='master Position 1', default='...'
     profession2M?: string // choices=POSITION,verbose_name='master Position 2', default='...'
     profession3M?: string // choices=POSITION,verbose_name='master Position 3', default='...'
@@ -94,74 +96,74 @@ export interface Finmetal {
 
     //name, phone. mail 4-14
     name4?: string //verbose_name='Name 1'
-    profession4?: object //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
+    profession4?: POSITION //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
     mail4?: string //verbose_name='Email 1'
     phone4?: string //verbose_name='Phone 1'
     status4?: boolean 
     name5?: string //verbose_name='Name 1'
-    profession5?: object //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
+    profession5?: POSITION //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
     mail5?: string //verbose_name='Email 1'
     phone5?: string //verbose_name='Phone 1'
     status5?: boolean 
     name6?: string //verbose_name='Name 1'
-    profession6?: object //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
+    profession6?: POSITION //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
     mail6?: string //verbose_name='Email 1'
     phone6?: string //verbose_name='Phone 1'
     status6?: boolean 
     name7?: string //verbose_name='Name 1'
-    profession7?: object //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
+    profession7?: POSITION //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
     mail7?: string //verbose_name='Email 1'
     phone7?: string //verbose_name='Phone 1'
     status7?: boolean 
     name8?: string //verbose_name='Name 1'
-    profession8?: object//choices=POSITION, blank=False, verbose_name='Position 1', default='...'
+    profession8?: POSITION//choices=POSITION, blank=False, verbose_name='Position 1', default='...'
     mail8?: string //verbose_name='Email 1'
     phone8?: string //verbose_name='Phone 1'
     status8?: boolean 
     
     name9?: string //verbose_name='Name 1'
-    profession9?: object //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
+    profession9?: POSITION //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
     mail9?: string //verbose_name='Email 1'
     phone9?: string //verbose_name='Phone 1'
     status9?: boolean 
 
     name10?: string //verbose_name='Name 1'
-    profession10?: object //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
+    profession10?: POSITION //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
     mail10?: string //verbose_name='Email 1'
     phone10?: string //verbose_name='Phone 1'
     status10?: boolean 
 
     name11?: string //verbose_name='Name 1'
-    profession11?: object //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
+    profession11?: POSITION //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
     mail11?: string //verbose_name='Email 1'
     phone11?: string //verbose_name='Phone 1'
     status11?: boolean 
 
     name12?: string //verbose_name='Name 1'
-    profession12?: object //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
+    profession12?: POSITION //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
     mail12?: string //verbose_name='Email 1'
     phone12?: string //verbose_name='Phone 1'
     status12?: boolean 
 
     name13?: string //verbose_name='Name 1'
-    profession13?: object //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
+    profession13?: POSITION //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
     mail13?: string //verbose_name='Email 1'
     phone13?: string //verbose_name='Phone 1'
     status13?: boolean 
 
     name14?: string //verbose_name='Name 1'
-    profession14?: object //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
+    profession14?: POSITION //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
     mail14?: string //verbose_name='Email 1'
     phone14?: string //verbose_name='Phone 1'
     status14?: boolean
 
     //Conditions
-    clock?: object //choices=Cl, verbose_name='. Hours .', default='No info'
+    clock?: Cl //choices=Cl, verbose_name='. Hours .', default='No info'
     hours_s?: string //verbose_name='. HoursS .'
     hours_n?: string //verbose_name='. HoursN .
-    language?: object //choices=LAN, verbose_name='Language', default='No info'
-    housing?: object //choices=HOS, verbose_name='Apartment', default='No info'
-    documents?: object//choices=DOC, verbose_name='. Docs .', default='No info'
+    language?: LAN //choices=LAN, verbose_name='Language', default='No info'
+    housing?: HOS //choices=HOS, verbose_name='Apartment', default='No info'
+    documents?: DOC//choices=DOC, verbose_name='. Docs .', default='No info'
     clock_description?: string // verbose_name='Hours Com'
     language_description?: string //verbose_name='Lang Com'
     housing_description?: string // verbose_name='Apa Com'
@@ -195,51 +197,51 @@ export interface Finmetal {
     nightShiftRate?: number //verbose_name='Rate'
 
     //profession
-    leybl?: object//choices=LEB, verbose_name='Label', default='--------'
+    leybl?: LEB//choices=LEB, verbose_name='Label', default='--------'
     leybl_description?: string //verbose_name='Labl Com'
-    ction?: object //choices=CTA, verbose_name='Order', default='No info'
+    ction?: CTA //choices=CTA, verbose_name='Order', default='No info'
     ction_start_time?: string //datetime verbose_name='Ord date'
     ction_description?: string //verbose_name='Ord comm'
-    action?: object// choices=ACT, verbose_name='Call action', default='No info'
+    action?: ACT// choices=ACT, verbose_name='Call action', default='No info'
     action_start_time?: string //verbose_name='Call date'
     action_start_time2?: string //verbose_name='Call time'
     action_description?: string //verbose_name='Call comm
-    action2?: object//choices=ACT2, verbose_name='Email action', default='No info
+    action2?: ACT2//choices=ACT2, verbose_name='Email action', default='No info
     action2_start_time?: string //verbose_name='Email date'
     action2_start_time2?: string //verbose_name='Email time'
     action2_description?: string //verbose_name='Email comm'
     date_pup?: string //verbose_name='Auto save'
 
     //new question
-    controll?: object //choices=CONTROLL, verbose_name='Сontrol 1', default='No info'
-    control2?: object //choices=CONTROLL, verbose_name='Сontrol 2', default='No info'
-    control3?: object //choices=CONTROLL, verbose_name='Сontrol 3', default='No info'
+    controll?: CONTROLL //choices=CONTROLL, verbose_name='Сontrol 1', default='No info'
+    control2?: CONTROLL //choices=CONTROLL, verbose_name='Сontrol 2', default='No info'
+    control3?: CONTROLL //choices=CONTROLL, verbose_name='Сontrol 3', default='No info'
     orderLossReason?: string // verbose_name='Order Loss Reason
     asap?: boolean 
     de_trop?: boolean //verbose_name='de trop
     h8?: boolean //H8
     fin?: boolean //fin
-    we?: object //choices=WE, verbose_name='Weekend', default='...'
-    mp?: object //choices=MP, verbose_name='MaxPrice €/h', default='...',
+    we?: WE //choices=WE, verbose_name='Weekend', default='...'
+    mp?: MP //choices=MP, verbose_name='MaxPrice €/h', default='...',
 
     //order
-    carRequirement?: object // choices=CARREQUIREMENT, verbose_name='Car Requirement', default='No info'
+    carRequirement?: CARREQUIREMENT // choices=CARREQUIREMENT, verbose_name='Car Requirement', default='No info'
     workerQuanityRequirement?: string //verbose_name='Qnt Reg'
     workerQuanityRequirementComment?: string //verbose_name='Comment'
-    fromWhichCompanySent?: object //choices=FROMWHICHCOMPANYSENT, verbose_name='From which company sent', default='No info'
+    fromWhichCompanySent?: FROMWHICHCOMPANYSENT //choices=FROMWHICHCOMPANYSENT, verbose_name='From which company sent', default='No info'
     fromWhichCompanySentComment?: string // verbose_name='comment'
-    fromWhichSalesmanOrder?: object //choices=FROMWHICHSALESMANORDER, verbose_name='From which salesman order', default='No info
-    workPlace?: object //choices=WORKPLACE, verbose_name='Work Place', default='No info'
+    fromWhichSalesmanOrder?: FROMWHICHSALESMANORDER //choices=FROMWHICHSALESMANORDER, verbose_name='From which salesman order', default='No info
+    workPlace?: WORKPLACE //choices=WORKPLACE, verbose_name='Work Place', default='No info'
     workStartDate?: string //verbose_name='Work StartDate'
     workDuration?: string //verbose_name='Work Duration'
     workDescription?: string //verbose_name='Work Description'
-    workEquipment?: object //choices=WORKEQUIPMENT, verbose_name='Work Equipment', default='No info'
+    workEquipment?: WORKEQUIPMENT //choices=WORKEQUIPMENT, verbose_name='Work Equipment', default='No info'
     workEquipmentComment?: string //verbose_name='Comment'
     workCity?: string //verbose_name='Work City'
     workAddress?: string //verbose_name='Work Address'
 
     //call
-    totalUnreachable?: object // choices=TOTALUNREACHABLE, verbose_name='Total lack of dialing', default='No info'
+    totalUnreachable?: TOTALUNREACHABLE // choices=TOTALUNREACHABLE, verbose_name='Total lack of dialing', default='No info'
 
    //4 years statistics
    isNew?: boolean

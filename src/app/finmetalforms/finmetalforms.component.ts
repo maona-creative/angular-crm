@@ -7,7 +7,12 @@ import { TabMenuModule } from 'primeng/tabmenu';
 import {  FormGroup, FormControl, FormBuilder } from '@angular/forms';
 import { ReactiveFormsModule, Validators} from '@angular/forms';
 import { PA_AVA, pa_AVA_options, PROF, prof_options, WEL, wel_options, 
-  MET, met_options, WORK, work_options } from './interface/object';
+  MET, met_options, WORK, work_options, POSITION, position_options, DAIL, dail_options, 
+  Cl, cl_options, LAN, lan_options, HOS, hos_options, DOC, doc_opinions, LEB, leb_options, 
+CTA, cta_options, ACT, act_options, ACT2, act2_options, CONTROLL, control_options,
+WE, we_options, MP, mp_options, CARREQUIREMENT, carrequirement_options, FROMWHICHCOMPANYSENT,
+ fromcompanysent, FROMWHICHSALESMANORDER, fromsalesman_options, WORKEQUIPMENT, workplace_options,
+workequipment_options, WORKPLACE, TOTALUNREACHABLE, totalunreachable_options} from './interface/object';
 
 //PrimeNg import
 import { ButtonModule } from 'primeng/button';
@@ -16,6 +21,12 @@ import { DropdownModule } from 'primeng/dropdown';
 import { CalendarModule } from 'primeng/calendar';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import { InputNumberModule } from 'primeng/inputnumber';
+
+
+import {MatDatepickerModule} from '@angular/material/datepicker';
+
+
+
 
 
 @Component({
@@ -31,7 +42,9 @@ import { InputNumberModule } from 'primeng/inputnumber';
     DropdownModule,
     CalendarModule,
     InputSwitchModule,
-    InputNumberModule
+    InputNumberModule,
+    MatDatepickerModule,
+    
     
   
 
@@ -50,7 +63,18 @@ export class FinmetalformsComponent {
   welding: WEL[] = wel_options;
   metal: MET[] = met_options;
   type_work: WORK[] = work_options;
+  position: POSITION[] = position_options;
+  dialM: DAIL[] = dail_options;
+  professionM: POSITION[] = position_options;
+  clock: Cl[] = cl_options;
+  language: LAN[] = lan_options;
+  housing: HOS[] = hos_options;
+  documents: DOC[] = doc_opinions;
+  
 
+
+
+ 
   
 
   finmetalForm: FormGroup = new FormGroup({
@@ -100,17 +124,17 @@ export class FinmetalformsComponent {
     
     //Name, phone, mail
     name1: new FormControl('', Validators.maxLength(512)), //verbose_name='Name 1'
-    profession1: new FormControl(''), //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
+    profession1: new FormControl(this.position[0]), //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
     mail1: new FormControl('', Validators.maxLength(512)), //verbose_name='Email 1'
-    phone1: new FormControl('', Validators.maxLength(512)), //verbose_name='Phone 1'
+    phone1: new FormControl('', Validators.pattern('^[- +()0-9]+$')), //verbose_name='Phone 1'
     status1: new FormControl(true), 
     name2: new FormControl('', Validators.maxLength(512)), //verbose_name='Name 2'
-    profession2: new FormControl(''), //choices=POSITION, blank=False, verbose_name='Position 2', default='...'
+    profession2: new FormControl(this.position[0]), //choices=POSITION, blank=False, verbose_name='Position 2', default='...'
     mail2: new FormControl('', Validators.maxLength(512)), //verbose_name='Email 2'
     phone2: new FormControl('', Validators.maxLength(512)), //verbose_name='Phone 1'
     status2: new FormControl(true), 
     name3: new FormControl('', Validators.maxLength(512)), //verbose_name='Name 3'
-    profession3: new FormControl(''), //choices=POSITION, blank=False, verbose_name='Position 3', default='...'
+    profession3: new FormControl(this.position[0]), //choices=POSITION, blank=False, verbose_name='Position 3', default='...'
     mail3: new FormControl('', Validators.maxLength(512)), //verbose_name='Email 3'
     phone3: new FormControl('', Validators.maxLength(512)), //verbose_name='Phone 3'
     status3: new FormControl(true), 
@@ -123,96 +147,96 @@ export class FinmetalformsComponent {
 
 
     //Master name, phone, mail
-    dial1M: new FormControl('', Validators.maxLength(10)), //choices=DAIL, verbose_name='Dail Yes/No', default='---'
-    dial2M: new FormControl('', Validators.maxLength(10)), //choices=DAIL, verbose_name='Dail Yes/No', default='---'
-    dial3M: new FormControl('', Validators.maxLength(10)), //choices=DAIL, verbose_name='Dail Yes/No', default='---'
-    dial4M: new FormControl('', Validators.maxLength(10)), //choices=DAIL, verbose_name='Dail Yes/No', default='---'
-    dial5M: new FormControl('', Validators.maxLength(10)), //choices=DAIL, verbose_name='Dail Yes/No', default='---'
-    profession1M: new FormControl('', Validators.maxLength(512)), // choices=POSITION,verbose_name='master Position 1', default='...'
-    profession2M: new FormControl('', Validators.maxLength(512)), // choices=POSITION,verbose_name='master Position 2', default='...'
-    profession3M: new FormControl('', Validators.maxLength(512)), // choices=POSITION,verbose_name='master Position 3', default='...'
-    profession4M: new FormControl('', Validators.maxLength(512)), // choices=POSITION,verbose_name='master Position 4', default='...'
-    profession5M: new FormControl('', Validators.maxLength(512)), // choices=POSITION,verbose_name='master Position 5', default='...'
+    dial1M: new FormControl(this.dialM[0]), //choices=DAIL, verbose_name='Dail Yes/No', default='---'
+    dial2M: new FormControl(this.dialM[0]), //choices=DAIL, verbose_name='Dail Yes/No', default='---'
+    dial3M: new FormControl(this.dialM[0]), //choices=DAIL, verbose_name='Dail Yes/No', default='---'
+    dial4M: new FormControl(this.dialM[0]), //choices=DAIL, verbose_name='Dail Yes/No', default='---'
+    dial5M: new FormControl(this.dialM[0]), //choices=DAIL, verbose_name='Dail Yes/No', default='---'
+    profession1M: new FormControl(this.professionM[0]), // choices=POSITION,verbose_name='master Position 1', default='...'
+    profession2M: new FormControl(this.professionM[0]), // choices=POSITION,verbose_name='master Position 2', default='...'
+    profession3M: new FormControl(this.professionM[0]), // choices=POSITION,verbose_name='master Position 3', default='...'
+    profession4M: new FormControl(this.professionM[0]), // choices=POSITION,verbose_name='master Position 4', default='...'
+    profession5M: new FormControl(this.professionM[0]), // choices=POSITION,verbose_name='master Position 5', default='...'
     phone1M: new FormControl('', Validators.maxLength(512)), // verbose_name='master Phone 1'
     phone2M: new FormControl('', Validators.maxLength(512)), // verbose_name='master Phone 2'
     phone3M: new FormControl('', Validators.maxLength(512)), // verbose_name='master Phone 3'
     phone4M: new FormControl('', Validators.maxLength(512)), // verbose_name='master Phone 4'
     phone5M: new FormControl('', Validators.maxLength(512)), // verbose_name='master Phone 5'
-    mail1M: new FormControl('', Validators.maxLength(512)), //verbose_name='master Email 1
-    mail2M: new FormControl('', Validators.maxLength(512)), //verbose_name='master Email 2
-    mail3M: new FormControl('', Validators.maxLength(512)), //verbose_name='master Email 3
-    mail4M: new FormControl('', Validators.maxLength(512)), //verbose_name='master Email 4
-    mail5M: new FormControl('', Validators.maxLength(512)), //verbose_name='master Email 5
+    mail1M: new FormControl('', Validators.email), //verbose_name='master Email 1
+    mail2M: new FormControl('', Validators.email), //verbose_name='master Email 2
+    mail3M: new FormControl('', Validators.email), //verbose_name='master Email 3
+    mail4M: new FormControl('', Validators.email), //verbose_name='master Email 4
+    mail5M: new FormControl('', Validators.email), //verbose_name='master Email 5
 
-    //name, phone. mail 4-14
+    //name, phone, mail 4-14
     name4: new FormControl('', Validators.maxLength(512)), //verbose_name='Name 1'
-    profession4: new FormControl(''), //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
+    profession4: new FormControl(this.position[0]), //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
     mail4: new FormControl('', Validators.maxLength(512)), //verbose_name='Email 1'
     phone4: new FormControl('', Validators.maxLength(512)), //verbose_name='Phone 1'
     status4: new FormControl(true), 
     name5: new FormControl('', Validators.maxLength(512)), //verbose_name='Name 1'
-    profession5: new FormControl(''), //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
+    profession5: new FormControl(this.position[0]), //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
     mail5: new FormControl('', Validators.maxLength(512)), //verbose_name='Email 1'
     phone5: new FormControl('', Validators.maxLength(512)), //verbose_name='Phone 1'
     status5: new FormControl(true), 
     name6: new FormControl('', Validators.maxLength(512)), //verbose_name='Name 1'
-    profession6: new FormControl(''), //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
+    profession6: new FormControl(this.position[0]), //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
     mail6: new FormControl('', Validators.maxLength(512)), //verbose_name='Email 1'
     phone6: new FormControl('', Validators.maxLength(512)), //verbose_name='Phone 1'
     status6: new FormControl(true), 
     name7: new FormControl('', Validators.maxLength(512)), //verbose_name='Name 1'
-    profession7: new FormControl(''), //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
+    profession7: new FormControl(this.position[0]), //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
     mail7: new FormControl('', Validators.maxLength(512)), //verbose_name='Email 1'
     phone7: new FormControl('', Validators.maxLength(512)), //verbose_name='Phone 1'
     status7: new FormControl(true), 
     name8: new FormControl('', Validators.maxLength(512)), //verbose_name='Name 1'
-    profession8: new FormControl(''), //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
+    profession8: new FormControl(this.position[0]), //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
     mail8: new FormControl('', Validators.maxLength(512)), //verbose_name='Email 1'
     phone8: new FormControl('', Validators.maxLength(512)), //verbose_name='Phone 1'
     status8: new FormControl(true), 
     
     name9: new FormControl('', Validators.maxLength(512)), //verbose_name='Name 1'
-    profession9: new FormControl(''), //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
+    profession9: new FormControl(this.position[0]), //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
     mail9: new FormControl('', Validators.maxLength(512)), //verbose_name='Email 1'
     phone9: new FormControl('', Validators.maxLength(512)), //verbose_name='Phone 1'
     status9: new FormControl(true), 
 
     name10: new FormControl('', Validators.maxLength(512)), //verbose_name='Name 1'
-    profession10: new FormControl(''), //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
+    profession10: new FormControl(this.position[0]), //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
     mail10: new FormControl('', Validators.maxLength(512)), //verbose_name='Email 1'
     phone10: new FormControl('', Validators.maxLength(512)), //verbose_name='Phone 1'
     status10: new FormControl(true), 
 
     name11: new FormControl('', Validators.maxLength(512)), //verbose_name='Name 1'
-    profession11: new FormControl(''), //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
+    profession11: new FormControl(this.position[0]), //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
     mail11: new FormControl('', Validators.maxLength(512)), //verbose_name='Email 1'
     phone11: new FormControl('', Validators.maxLength(512)), //verbose_name='Phone 1'
     status11: new FormControl(true), 
 
     name12: new FormControl('', Validators.maxLength(512)), //verbose_name='Name 1'
-    profession12: new FormControl(''), //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
+    profession12: new FormControl(this.position[0]), //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
     mail12: new FormControl('', Validators.maxLength(512)), //verbose_name='Email 1'
     phone12: new FormControl('', Validators.maxLength(512)), //verbose_name='Phone 1'
     status12: new FormControl(true), 
 
     name13: new FormControl('', Validators.maxLength(512)), //verbose_name='Name 1'
-    profession13: new FormControl(''), //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
+    profession13: new FormControl(this.position[0]), //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
     mail13: new FormControl('', Validators.maxLength(512)), //verbose_name='Email 1'
     phone13: new FormControl('', Validators.maxLength(512)), //verbose_name='Phone 1'
     status13: new FormControl(true), 
 
     name14: new FormControl('', Validators.maxLength(512)), //verbose_name='Name 1'
-    profession14: new FormControl(''), //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
+    profession14: new FormControl(this.position[0]), //choices=POSITION, blank=False, verbose_name='Position 1', default='...'
     mail14: new FormControl('', Validators.maxLength(512)), //verbose_name='Email 1'
     phone14: new FormControl('', Validators.maxLength(512)), //verbose_name='Phone 1'
     status14: new FormControl(true),
 
     //Conditions
-    clock: new FormControl('', Validators.maxLength(15)), //choices=Cl, verbose_name='. Hours .', default='No info'
+    clock: new FormControl(this.clock[0]), //choices=Cl, verbose_name='. Hours .', default='No info'
     hours_s: new FormControl('', Validators.maxLength(15)), //verbose_name='. HoursS .'
     hours_n: new FormControl('', Validators.maxLength(15)), //verbose_name='. HoursN .
-    language: new FormControl('', Validators.maxLength(15)), //choices=LAN, verbose_name='Language', default='No info'
-    housing: new FormControl('',  Validators.maxLength(15)), //choices=HOS, verbose_name='Apartment', default='No info'
+    language: new FormControl(this.language[0]), //choices=LAN, verbose_name='Language', default='No info'
+    housing: new FormControl(this.housing[0]), //choices=HOS, verbose_name='Apartment', default='No info'
     documents: new FormControl('', Validators.maxLength(15)), //choices=DOC, verbose_name='. Docs .', default='No info'
     clock_description: new FormControl('', Validators.maxLength(512)), // verbose_name='Hours Com'
     language_description: new FormControl('', Validators.maxLength(512)), //verbose_name='Lang Com'
@@ -227,16 +251,17 @@ export class FinmetalformsComponent {
     billAndHoursReport: new FormControl(false), //verbose_name='Bill and hours report'
     workingDays: new FormControl(''), //verbose_name='Working days BIT mask: Mon/2, Tue/4, Wed/8, Thu/16, Fri/32, Sat/64, Sun/128   Example: mon-fri 2+4+8+16+32=62, mon-sat 2+4+8+16+32+64=126')
     eInvoiceEmailEnabled: new FormControl(false), //verbose_name='eInvoice email enabled'
+    eInvoiceAddress: new FormControl(''), //verbose_name='eInvoice address'
     eInvoiceOperatorCode: new FormControl('', Validators.maxLength(15)), // verbose_name='eInvoice operator code'
     eInvoiceEnabled: new FormControl(false), //verbose_name='eInvoice enabled'
     lunch: new FormControl(''), // verbose_name='lunch', number
     lunchPaidUnpaid: new FormControl(false), //verbose_name='Lunch Paid'
-    coffeePause: new FormControl(''), // verbose_name='coffee pause 1'
-    coffeePausePaidUnpaid: new FormControl(''), //verbose_name='CoffeePause 1 Paid'
-    coffeePause2: new FormControl(''), // verbose_name='coffee pause 2'
-    coffeePausePaidUnpaid2: new FormControl(''), //verbose_name='CoffeePause 2 Paid'
-    coffeePause3: new FormControl(''), // verbose_name='coffee pause 3'
-    coffeePausePaidUnpaid3: new FormControl(''), //verbose_name='CoffeePause 3 Paid'
+    coffeePause: new FormControl(''), //number, verbose_name='coffee pause 1'
+    coffeePausePaidUnpaid: new FormControl(false), //verbose_name='CoffeePause 1 Paid'
+    coffeePause2: new FormControl(''), //number, verbose_name='coffee pause 2'
+    coffeePausePaidUnpaid2: new FormControl(false), //verbose_name='CoffeePause 2 Paid'
+    coffeePause3: new FormControl(''), //number, verbose_name='coffee pause 3'
+    coffeePausePaidUnpaid3: new FormControl(false), //verbose_name='CoffeePause 3 Paid'
     automaticAccountingSystem: new FormControl(false), // verbose_name='automatic Accounting System'
 
     //night shift
@@ -244,7 +269,7 @@ export class FinmetalformsComponent {
     nightShiftPaid: new FormControl(false), //verbose_name='Paid'
     nightShiftStart: new FormControl(''), // time, verbose_name='Night shift start
     nightShiftEnd: new FormControl(''), // time, verbose_name='Night shift end'
-    nightShiftRate: new FormControl('', Validators.maxLength(16)), //verbose_name='Rate'
+    nightShiftRate: new FormControl('', Validators.maxLength(16)), //verbose_name='Rate', number
 
     //profession
     leybl: new FormControl(''), //choices=LEB, verbose_name='Label', default='--------'
@@ -382,6 +407,7 @@ export class FinmetalformsComponent {
   constructor(
     private router: Router,
     private fb: FormBuilder,
+    
    ) {}
 
 

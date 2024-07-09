@@ -9,16 +9,16 @@
 <h2>Change finmetal</h2>
 
   <form [formGroup]="finmetalForm" (ngSubmit)="onSubmit()">
-    <p-accordion [activeIndex]="0">
+    <p-accordion [activeIndex]="9">
       <p-accordionTab header="Company">
         <div class="formgrid grid">
         <div class="field col-12 md:col-2">
-         <label for="competitor">Competitors</label>
-         <input id="competitor" formControlName='competitor' type="text"  class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
-        </div>
-        <div class="field col-12 md:col-2">
-          <label for="phone">Phone</label>
-          <input id="phone" formControlName='phone' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+           <label for="competitor">Competitors</label>
+           <input id="competitor" formControlName='competitor' type="text"  class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+         </div>
+         <div class="field col-12 md:col-2">
+           <label for="phone">Phone</label>
+           <input id="phone" formControlName='phone' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
         </div>
         <div class="field col-12 md:col-2">
           <label for="partner_availability">Partners</label><br>
@@ -197,19 +197,20 @@
            </div>
         </div>
       </p-accordionTab>
+      <!-- Address site kompass tab -->
       <p-accordionTab header="Address site kompass|finder">
         <div class="formgrid grid">
           <div class="field col-12 md:col-6">
             <label for="start_time">COMM: Metals</label>
             <textarea rows="5" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
             formControlName="start_time"></textarea>
-           </div>
-           <div class="field col-12 md:col-6">
+          </div>
+          <div class="field col-12 md:col-6">
             <label for="start_time2">COMM: Tianmga</label>
             <textarea rows="5" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
             formControlName="start_time2"></textarea>
-           </div>
-           <div class="field col-12">
+          </div>
+          <div class="field col-12">
             <label for="representative">Representative (foreignKey)</label>
             <input id="representative" formControlName='representative' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
           </div>
@@ -222,8 +223,8 @@
             <label for="price_comment">Price comment</label>
             <textarea rows="5" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
             formControlName="price_comment"></textarea>
-           </div>
-           <div class="field col-12 md:col-3">
+          </div>
+          <div class="field col-12 md:col-3">
             <label for="price_a_plus">PriceA+</label><br>
             <p-inputNumber id="price_a_plus"
             inputId="integeronly" formControlName="price_a_plus" />
@@ -233,28 +234,683 @@
             <p-inputNumber id="price_a_minus"
             inputId="integeronly" formControlName="price_a_minus" />
           </div>
+          <div class="field col-12">
+            <label for="location">Location (foreignKey)</label>
+            <input id="location" formControlName='location' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+          </div>
+          <div class="field col-12 md:col-2">
+            <label for="locationApproved">Location approved</label><br>
+                <p-inputSwitch id="locationApproved" type="boolean" 
+                formControlName="locationApproved" />
+          </div>
+          <div class="field col-12 md:col-2">
+              <label for="locationCountry">Country</label>
+              <input id="locationCountry" formControlName='locationCountry' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+          </div>
+          <div class="field col-12 md:col-2">
+              <label for="locationCity">City</label>
+              <input id="locationCity" formControlName='locationCity' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+          </div>
+          <div class="field col-12 md:col-2">
+              <label for="locationAddress">Address</label>
+              <input id="locationAddress" formControlName='locationAddress' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+          </div>
+          <div class="field col-12 md:col-2">
+              <label for="locationPostalCode">Postal code</label>
+              <input id="locationPostalCode" formControlName='locationPostalCode' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+          </div>
+          <div class="field col-12 md:col-2">
+              <label for="locationGmap">Gmap street</label>
+              <input id="locationGmap" formControlName='locationGmap' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+          </div>
+        </div>
+
+        <!-- Name, phone, mail -->
+      </p-accordionTab>
+      <p-accordionTab header="Name, phone, mail (1-3)">
+        <div class="formgrid grid">
+          <!-- For person 1 -->
+          <div class="field col-12 md:col-2">
+            <label for="name1">Name 1</label>
+            <input id="name1" formControlName='name1' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+          </div>
+          <div class="field col-12 md:col-3">
+            <label for="profession1">Position</label><br>
+            <p-dropdown 
+            id="profession1"
+            formControlName="profession1"
+            [options]="position"
+            optionLabel="name"
+            placeholder="Select option"
+            >
+          </p-dropdown>
+        </div>
+          <div class="field col-12 md:col-2">
+            <label for="mail1">Mail 1</label>
+            <input id="mail1" formControlName='mail1' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+          </div>
+          <div class="field col-12 md:col-2">
+            <label for="phone1">Phone 1</label>
+            <input id="phone1" formControlName='phone1' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+          </div>
+          <div class="field col-12 md:col-2">
+            <label for="status1">Status 1</label><br>
+                <p-inputSwitch id="status1" type="boolean" 
+                formControlName="status1" />
+            </div>
+            <!-- For person 2 -->
+            <div class="field col-12 md:col-2">
+              <label for="name2">Name 2</label>
+              <input id="name2" formControlName='name2' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+            </div>
+            <div class="field col-12 md:col-3">
+              <label for="profession2">Position</label><br>
+              <p-dropdown 
+              id="profession2"
+              formControlName="profession2"
+              [options]="position"
+              optionLabel="name"
+              placeholder="Select option"
+              >
+            </p-dropdown>
+          </div>
+            <div class="field col-12 md:col-2">
+              <label for="mail2">Mail 2</label>
+              <input id="mail2" formControlName='mail2' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+            </div>
+            <div class="field col-12 md:col-2">
+              <label for="phone2">Phone 2</label>
+              <input id="phone2" formControlName='phone2' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+            </div>
+            <div class="field col-12 md:col-2">
+              <label for="status2">Status 2</label><br>
+                  <p-inputSwitch id="status2" type="boolean" 
+                  formControlName="status2" />
+              </div>
+              <!-- For person 3 -->
+              <div class="field col-12 md:col-2">
+                <label for="name3">Name 3</label>
+                <input id="name3" formControlName='name3' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+              </div>
+              <div class="field col-12 md:col-3">
+                <label for="profession3">Position</label><br>
+                <p-dropdown 
+                id="profession3"
+                formControlName="profession3"
+                [options]="position"
+                optionLabel="name"
+                placeholder="Select option"
+                >
+              </p-dropdown>
+            </div>
+              <div class="field col-12 md:col-2">
+                <label for="mail3">Mail 3</label>
+                <input id="mail3" formControlName='mail3' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+              </div>
+              <div class="field col-12 md:col-2">
+                <label for="phone3">Phone 3</label>
+                <input id="phone3" formControlName='phone3' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+              </div>
+              <div class="field col-12 md:col-2">
+                <label for="status3">Status 3</label><br>
+                    <p-inputSwitch id="status3" type="boolean" 
+                    formControlName="status3" />
+                </div>
         </div>
       </p-accordionTab>
-      <p-accordionTab header="Name, phone, mail (1-3)"></p-accordionTab>
-      <p-accordionTab header="Company details"></p-accordionTab>
-      <p-accordionTab header="MASTER name, phone, mail"></p-accordionTab>
-      <p-accordionTab header="Name, phone, mail (4-14)"></p-accordionTab>
-      <p-accordionTab header="Conditions"></p-accordionTab>
-      <p-accordionTab header="Pay details"></p-accordionTab>
 
-
-
-      <p-accordionTab header="Night shift">
-        <div class="field col-12 md:col-6">
-          <label for="firstname6">Firstname</label>
-          <input id="firstname6" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
-      </div>
+       <!-- Company details (not full) -->
+      <p-accordionTab header="Company details">
+        <div class="formgrid grid">
+          <div class="field col-12 md:col-4">
+            <label for="title">Company</label>
+            <input id="title" formControlName='title' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+          </div>
+          <div class="field col-12 md:col-4">
+            <label for="url_kompass">Web-reg</label>
+            <input id="url_kompass" formControlName='url_kompass' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+          </div>
+          <div class="field col-12 md:col-4">
+            <label for="mailCC">MailCC</label>
+            <input id="mailCC" formControlName='mailCC' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+          </div>
+        </div>
       </p-accordionTab>
-      <p-accordionTab header="Profession">
-        <div class="field col-12 md:col-6">
-          <label for="firstname6">Firstname</label>
-          <input id="firstname6" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+      <!-- MASTER name, phone, mail -->
+      <p-accordionTab header="MASTER name, phone, mail">
+        <div class="formgrid grid">
+          <!-- First row -->
+          <div class="field col-12 md:col-3">
+            <label for="dial1M">Dail Yes/No</label><br>
+            <p-dropdown 
+            id="dial1M"
+            formControlName="dial1M"
+            [options]="dialM"
+            optionLabel="name"
+            placeholder="Select option"
+            >
+          </p-dropdown>
+        </div>
+        <div class="field col-12 md:col-3">
+          <label for="profession1M">Master Position 1</label><br>
+          <p-dropdown 
+          id="profession1M"
+          formControlName="profession1M"
+          [options]="professionM"
+          optionLabel="name"
+          placeholder="Select option"
+          >
+          </p-dropdown>
+        </div>
+        <div class="field col-12 md:col-3">
+        <label for="phone1M">Master Phone 1</label>
+        <input id="phone1M" formControlName='phone1M' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-3">
+        <label for="mail1M">Master Email 1</label>
+        <input id="mail1M" formControlName='mail1M' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <!-- Second row -->
+        <div class="field col-12 md:col-3">
+          <label for="dial2M">Dail Yes/No</label><br>
+          <p-dropdown 
+          id="dial2M"
+          formControlName="dial2M"
+          [options]="dialM"
+          optionLabel="name"
+          placeholder="Select option"
+          >
+        </p-dropdown>
       </div>
+      <div class="field col-12 md:col-3">
+        <label for="profession2M">Master Position 2</label><br>
+        <p-dropdown 
+        id="profession2M"
+        formControlName="profession2M"
+        [options]="professionM"
+        optionLabel="name"
+        placeholder="Select option"
+        >
+        </p-dropdown>
+      </div>
+      <div class="field col-12 md:col-3">
+      <label for="phone2M">Master Phone 2</label>
+      <input id="phone2M" formControlName='phone2M' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+      </div>
+      <div class="field col-12 md:col-3">
+      <label for="mail2M">Master Email 2</label>
+      <input id="mail2M" formControlName='mail2M' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+      </div>
+      <!-- Third row -->
+      <div class="field col-12 md:col-3">
+        <label for="dial3M">Dail Yes/No</label><br>
+        <p-dropdown 
+        id="dial3M"
+        formControlName="dial3M"
+        [options]="dialM"
+        optionLabel="name"
+        placeholder="Select option"
+        >
+      </p-dropdown>
+    </div>
+    <div class="field col-12 md:col-3">
+      <label for="profession3M">Master Position 3</label><br>
+      <p-dropdown 
+      id="profession3M"
+      formControlName="profession3M"
+      [options]="professionM"
+      optionLabel="name"
+      placeholder="Select option"
+      >
+      </p-dropdown>
+    </div>
+    <div class="field col-12 md:col-3">
+    <label for="phone3M">Master Phone 3</label>
+    <input id="phone3M" formControlName='phone3M' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+    </div>
+    <div class="field col-12 md:col-3">
+    <label for="mail3M">Master Email 3</label>
+    <input id="mail3M" formControlName='mail3M' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+    </div>
+    <!-- Fourth row -->
+    <div class="field col-12 md:col-3">
+      <label for="dial4M">Dail Yes/No</label><br>
+      <p-dropdown 
+      id="dial4M"
+      formControlName="dial4M"
+      [options]="dialM"
+      optionLabel="name"
+      placeholder="Select option"
+      >
+    </p-dropdown>
+  </div>
+  <div class="field col-12 md:col-3">
+    <label for="profession4M">Master Position 4</label><br>
+    <p-dropdown 
+    id="profession4M"
+    formControlName="profession4M"
+    [options]="professionM"
+    optionLabel="name"
+    placeholder="Select option"
+    >
+    </p-dropdown>
+  </div>
+  <div class="field col-12 md:col-3">
+  <label for="phone4M">Master Phone 4</label>
+  <input id="phone4M" formControlName='phone4M' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+  </div>
+  <div class="field col-12 md:col-3">
+  <label for="mail4M">Master Email 4</label>
+  <input id="mail4M" formControlName='mail4M' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+  </div>
+  <!-- Fifth row -->
+  <div class="field col-12 md:col-3">
+    <label for="dial5M">Dail Yes/No</label><br>
+    <p-dropdown 
+    id="dial5M"
+    formControlName="dial5M"
+    [options]="dialM"
+    optionLabel="name"
+    placeholder="Select option"
+    >
+  </p-dropdown>
+</div>
+<div class="field col-12 md:col-3">
+  <label for="profession5M">Master Position 5</label><br>
+  <p-dropdown 
+  id="profession5M"
+  formControlName="profession5M"
+  [options]="professionM"
+  optionLabel="name"
+  placeholder="Select option"
+  >
+  </p-dropdown>
+</div>
+<div class="field col-12 md:col-3">
+<label for="phone5M">Master Phone 5</label>
+<input id="phone5M" formControlName='phone5M' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+</div>
+<div class="field col-12 md:col-3">
+<label for="mail5M">Master Email 5</label>
+<input id="mail5M" formControlName='mail5M' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+</div>
+      </div>
+
+      </p-accordionTab>
+      <!-- Name, phone, mail -->
+      <p-accordionTab header="Name, phone, mail (4-14)">
+        <div class="formgrid grid">
+          <!-- Person 1 -->
+          <div class="field col-12 md:col-2">
+            <label for="name4">Name 4</label>
+            <input id="name4" formControlName='name4' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+          </div>
+          <div class="field col-12 md:col-3">
+            <label for="profession4">Position</label><br>
+            <p-dropdown 
+            id="profession4"
+            formControlName="profession4"
+            [options]="position"
+            optionLabel="name"
+            placeholder="Select option"
+            >
+          </p-dropdown>
+        </div>
+          <div class="field col-12 md:col-2">
+            <label for="mail4">Mail 4</label>
+            <input id="mail4" formControlName='mail4' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+          </div>
+          <div class="field col-12 md:col-2">
+            <label for="phone4">Phone 4</label>
+            <input id="phone4" formControlName='phone4' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+          </div>
+          <div class="field col-12 md:col-2">
+            <label for="status4">Status 4</label><br>
+                <p-inputSwitch id="status4" type="boolean" 
+                formControlName="status4" />
+            </div>
+            <!-- Person 5 -->
+            <div class="field col-12 md:col-2">
+              <label for="name5">Name 5</label>
+              <input id="name5" formControlName='name5' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+            </div>
+            <div class="field col-12 md:col-3">
+              <label for="profession5">Position</label><br>
+              <p-dropdown 
+              id="profession5"
+              formControlName="profession5"
+              [options]="position"
+              optionLabel="name"
+              placeholder="Select option"
+              >
+            </p-dropdown>
+          </div>
+            <div class="field col-12 md:col-2">
+              <label for="mail5">Mail 5</label>
+              <input id="mail5" formControlName='mail5' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+            </div>
+            <div class="field col-12 md:col-2">
+              <label for="phone5">Phone 5</label>
+              <input id="phone5" formControlName='phone5' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+            </div>
+            <div class="field col-12 md:col-2">
+              <label for="status5">Status 5</label><br>
+                  <p-inputSwitch id="status5" type="boolean" 
+                  formControlName="status5" />
+              </div>
+              <!-- Person 6 -->
+              <div class="field col-12 md:col-2">
+                <label for="name6">Name 6</label>
+                <input id="name6" formControlName='name6' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+              </div>
+              <div class="field col-12 md:col-3">
+                <label for="profession6">Position</label><br>
+                <p-dropdown 
+                id="profession6"
+                formControlName="profession6"
+                [options]="position"
+                optionLabel="name"
+                placeholder="Select option"
+                >
+              </p-dropdown>
+            </div>
+              <div class="field col-12 md:col-2">
+                <label for="mail6">Mail 6</label>
+                <input id="mail6" formControlName='mail6' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+              </div>
+              <div class="field col-12 md:col-2">
+                <label for="phone6">Phone 6</label>
+                <input id="phone6" formControlName='phone6' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+              </div>
+              <div class="field col-12 md:col-2">
+                <label for="status6">Status 6</label><br>
+                    <p-inputSwitch id="status6" type="boolean" 
+                    formControlName="status6" />
+                </div>
+                <!-- Person 7 -->
+                <div class="field col-12 md:col-2">
+                  <label for="name7">Name 7</label>
+                  <input id="name7" formControlName='name7' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                </div>
+                <div class="field col-12 md:col-3">
+                  <label for="profession7">Position</label><br>
+                  <p-dropdown 
+                  id="profession7"
+                  formControlName="profession7"
+                  [options]="position"
+                  optionLabel="name"
+                  placeholder="Select option"
+                  >
+                </p-dropdown>
+              </div>
+                <div class="field col-12 md:col-2">
+                  <label for="mail7">Mail 7</label>
+                  <input id="mail7" formControlName='mail7' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                </div>
+                <div class="field col-12 md:col-2">
+                  <label for="phone7">Phone 7</label>
+                  <input id="phone7" formControlName='phone7' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                </div>
+                <div class="field col-12 md:col-2">
+                  <label for="status7">Status 7</label><br>
+                      <p-inputSwitch id="status7" type="boolean" 
+                      formControlName="status7" />
+                  </div>
+                  <!-- Person 8 -->
+                  <div class="field col-12 md:col-2">
+                    <label for="name8">Name 8</label>
+                    <input id="name8" formControlName='name8' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                  </div>
+                  <div class="field col-12 md:col-3">
+                    <label for="profession8">Position</label><br>
+                    <p-dropdown 
+                    id="profession8"
+                    formControlName="profession8"
+                    [options]="position"
+                    optionLabel="name"
+                    placeholder="Select option"
+                    >
+                  </p-dropdown>
+                </div>
+                  <div class="field col-12 md:col-2">
+                    <label for="mail8">Mail 8</label>
+                    <input id="mail8" formControlName='mail8' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                  </div>
+                  <div class="field col-12 md:col-2">
+                    <label for="phone8">Phone 8</label>
+                    <input id="phone8" formControlName='phone8' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                  </div>
+                  <div class="field col-12 md:col-2">
+                    <label for="status8">Status 8</label><br>
+                        <p-inputSwitch id="status8" type="boolean" 
+                        formControlName="status8" />
+                    </div>
+              </div>
+      </p-accordionTab>
+
+     <!-- Conditions -->
+      <p-accordionTab header="Conditions">
+        <div class="formgrid grid">
+          <div class="field col-12 md:col-2">
+            <label for="clock">. Hours</label><br>
+            <p-dropdown 
+            id="clock"
+            formControlName="clock"
+            [options]="clock"
+            optionLabel="name"
+            placeholder="Select option"
+            >
+          </p-dropdown>
+        </div>
+        <div class="field col-12 md:col-2">
+          <label for="hours_s">. HoursS .</label>
+          <input id="hours_s" formControlName='hours_s' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-2">
+          <label for="hours_n">. HoursN .</label>
+          <input id="hours_n" formControlName='hours_n' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-2">
+          <label for="language">Language</label><br>
+          <p-dropdown 
+          id="language"
+          formControlName="language"
+          [options]="language"
+          optionLabel="name"
+          placeholder="Select option"
+          >
+        </p-dropdown>
+      </div>
+      <div class="field col-12 md:col-2">
+        <label for="housing">Apartment</label><br>
+        <p-dropdown 
+        id="housing"
+        formControlName="housing"
+        [options]="housing"
+        optionLabel="name"
+        placeholder="Select option"
+        >
+      </p-dropdown>
+    </div>
+    <div class="field col-12 md:col-2">
+      <label for="documents">. Docs .</label><br>
+      <p-dropdown 
+      id="documents"
+      formControlName="documents"
+      [options]="documents"
+      optionLabel="name"
+      placeholder="Select option"
+      >
+    </p-dropdown>
+  </div>
+  <div class="field col-12 md:col-3">
+    <label for="clock_description">Hours Com</label>
+    <textarea rows="2" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+    formControlName="clock_description"></textarea>
+   </div>
+   <div class="field col-12 md:col-3">
+    <label for="language_description">Lang Com</label>
+    <textarea rows="2" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+    formControlName="language_description"></textarea>
+   </div>
+   <div class="field col-12 md:col-3">
+    <label for="housing_description">Apa Com</label>
+    <textarea rows="2" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+    formControlName="housing_description"></textarea>
+   </div>
+   <div class="field col-12 md:col-3">
+    <label for="documents_description">Doc Com</label>
+    <textarea rows="2" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+    formControlName="documents_description"></textarea>
+   </div>
+   <div class="field col-12">
+    <label for="kommenti">Kommenti</label>
+    <textarea rows="5" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+    formControlName="kommenti"></textarea>
+   </div>
+        </div>
+      </p-accordionTab>
+      <!-- Pay details -->
+      <p-accordionTab header="Pay details">
+        <div class="formgrid grid">
+          <div class="field col-12 md:col-4">
+            <label for="payDay">Payment terms</label>
+            <input id="payDay" formControlName='payDay' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+          </div>
+          <div class="field col-12 md:col-4">
+            <label for="payPeriod">Pay period</label>
+            <input id="payPeriod" formControlName='payPeriod' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+          </div>
+          <div class="field col-12 md:col-4">
+            <label for="workingDays">Working days</label>
+            <input id="workingDays" formControlName='workingDays' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+            <small id="username-help">BIT mask: Mon/2, Tue/4, Wed/8, Thu/16, Fri/32, Sat/64, Sun/128</small>
+            <div class="example">
+            <small id="example">Example: mon-fri 2+4+8+16+32=62, mon-sat 2+4+8+16+32+64=126</small>
+           </div>
+          </div>
+          <div class="field col-12 md:col-3">
+            <label for="eInvoiceEmail">eInvoice email</label>
+            <input id="eInvoiceEmail" formControlName='eInvoiceEmail' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+          </div>
+          <div class="field col-12 md:col-2">
+            <label for="billAndHoursReport">Bill and hours report</label><br>
+          <p-inputSwitch id="billAndHoursReport" formControlName="billAndHoursReport"></p-inputSwitch>
+          <span class="ml-2">{{ finmetalForm.get('billAndHoursReport')?.value ? 'Yes' : 'No' }}</span>
+          </div>
+         <div class="field col-12 md:col-2">
+           <label for="eInvoiceEmailEnabled">eInvoice email enabled</label><br>
+            <p-inputSwitch id="eInvoiceEmailEnabled" formControlName="eInvoiceEmailEnabled"></p-inputSwitch>
+             <span class="ml-2">{{ finmetalForm.get('eInvoiceEmailEnabled')?.value ? 'Yes' : 'No' }}</span>
+        </div>
+         <div class="field col-12 md:col-2">
+          <label for="eInvoiceAddress">eInvoice address</label>
+           <input id="eInvoiceAddress" formControlName='eInvoiceAddress' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-2">
+          <label for="eInvoiceOperatorCode">eInvoice operator Code</label>
+          <input id="eInvoiceOperatorCode" formControlName='eInvoiceOperatorCode' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+       </div>
+       <div class="field col-12 md:col-1">
+        <label for="eInvoiceEnabled">eInvoice enabled</label><br>
+        <p-inputSwitch id="eInvoiceEnabled" formControlName="eInvoiceEnabled"></p-inputSwitch>
+         <span class="ml-2">{{ finmetalForm.get('eInvoiceEnabled')?.value ? 'Yes' : 'No' }}</span>
+      </div>
+      <div class="field col-12 md:col-3">
+        <label for="lunch">Lunch</label><br>
+        <p-inputNumber id="lunch"
+         inputId="integeronly" formControlName="lunch" />
+      </div>
+      <div class="field col-12 md:col-3">
+       <label for="lunchPaidUnpaid">Lunch paid</label><br>
+       <p-inputSwitch id="lunchPaidUnpaid" formControlName="lunchPaidUnpaid"></p-inputSwitch>
+        <span class="ml-2">{{ finmetalForm.get('lunchPaidUnpaid')?.value ? 'Yes' : 'No' }}</span>
+     </div>
+     <div class="field col-12 md:col-6"></div>
+     <div class="field col-12 md:col-3">
+      <label for="coffeePause">Coffee pause 1</label><br>
+      <p-inputNumber id="coffeePause"
+       inputId="integeronly" formControlName="coffeePause" />
+    </div>
+    <div class="field col-12 md:col-3">
+     <label for="coffeePausePaidUnpaid">CoffeePause 1 Paid</label><br>
+     <p-inputSwitch id="coffeePausePaidUnpaid" formControlName="coffeePausePaidUnpaid"></p-inputSwitch>
+      <span class="ml-2">{{ finmetalForm.get('coffeePausePaidUnpaid')?.value ? 'Yes' : 'No' }}</span>
+   </div>
+   <div class="field col-12 md:col-6"></div>
+   <div class="field col-12 md:col-3">
+    <label for="coffeePause2">Coffee pause 2</label><br>
+    <p-inputNumber id="coffeePause2"
+     inputId="integeronly" formControlName="coffeePause2" />
+  </div>
+  <div class="field col-12 md:col-3">
+   <label for="coffeePausePaidUnpaid2">CoffeePause 2 Paid</label><br>
+   <p-inputSwitch id="coffeePausePaidUnpaid2" formControlName="coffeePausePaidUnpaid2"></p-inputSwitch>
+    <span class="ml-2">{{ finmetalForm.get('coffeePausePaidUnpaid2')?.value ? 'Yes' : 'No' }}</span>
+ </div>
+ <div class="field col-12 md:col-6"></div>
+ <div class="field col-12 md:col-3">
+  <label for="coffeePause3">Coffee pause 3</label><br>
+  <p-inputNumber id="coffeePause3"
+   inputId="integeronly" formControlName="coffeePause3" />
+</div>
+<div class="field col-12 md:col-3">
+ <label for="coffeePausePaidUnpaid3">CoffeePause 3 Paid</label><br>
+ <p-inputSwitch id="coffeePausePaidUnpaid3" formControlName="coffeePausePaidUnpaid3"></p-inputSwitch>
+  <span class="ml-2">{{ finmetalForm.get('coffeePausePaidUnpaid3')?.value ? 'Yes' : 'No' }}</span>
+</div>
+<div class="field col-12 md:col-8">
+  <label for="automaticAccountingSystem">automatic Accounting System</label><br>
+  <p-inputSwitch id="automaticAccountingSystem" formControlName="automaticAccountingSystem"></p-inputSwitch>
+   <span class="ml-2">{{ finmetalForm.get('automaticAccountingSystem')?.value ? 'Yes' : 'No' }}</span>
+ </div>
+  </div>
+</p-accordionTab>
+
+<!-- Night shift -->
+      <p-accordionTab header="Night shift">
+        <div class="formgrid grid">
+          <div class="field col-12">
+            <label for="nightShift">Night shift</label><br>
+            <p-inputSwitch id="nightShift" formControlName="nightShift"></p-inputSwitch>
+             <span class="ml-2">{{ finmetalForm.get('nightShift')?.value ? 'Yes' : 'No' }}</span>
+           </div>
+           <div class="field col-12">
+            <label for="nightShiftPaid">Paid</label><br>
+            <p-inputSwitch id="nightShiftPaid" formControlName="nightShiftPaid"></p-inputSwitch>
+             <span class="ml-2">{{ finmetalForm.get('nightShiftPaid')?.value ? 'Yes' : 'No' }}</span>
+           </div>
+           <div class="field col-12 md:col-2">
+            <label for="nightShiftStart">Night shift start</label>
+               <p-calendar id="nightShiftStart" 
+               dataType="string" 
+               dateFormat="dd.mm.yy"
+               [showTime]="true"
+               [timeOnly]="true"
+               [stepMinute]="5"
+               [iconDisplay]="'input'"
+               [showIcon]="true"
+               formControlName="nightShiftStart" />
+          </div>
+          <div class="field col-12 md:col-2">
+            <label for="nightShiftEnd">Night shift end</label>
+               <p-calendar id="nightShiftEnd" 
+               dataType="string" 
+               dateFormat="dd.mm.yy"
+               [showTime]="true"
+               [timeOnly]="true"
+               [stepMinute]="5"
+               [iconDisplay]="'input'"
+               [showIcon]="true"
+               formControlName="nightShiftEnd" />
+          </div>
+          <div class="field col-12 md:col-3">
+            <label for="nightShiftRate">Rate</label><br>
+            <p-inputNumber id="nightShiftRate"
+             inputId="integeronly" formControlName="nightShiftRate" />
+          </div>
+        </div>
+      
       </p-accordionTab>
 
       <p-accordionTab header="New question">
@@ -270,6 +926,9 @@
       <p-accordionTab header="Matched workers"></p-accordionTab>
       <p-accordionTab header="Projects"></p-accordionTab>
       </p-accordion>
+      <div class="card flex justify-content-center">
+      <p-button label="Submit"  icon="pi pi-check"></p-button></div>
+      
 </form>
 
 

@@ -60,10 +60,13 @@ export class NavigatorComponent implements OnInit {
         items: [
             {
                 label: 'Add new finmetal',
+                icon: 'pi pi-user-plus',
                 route: '/finmetal-forms'
+
             },
             {
                 label: 'Finmetal',
+                icon: 'pi pi-file',
                 route: '/finmetal-forms'
             }
           ]

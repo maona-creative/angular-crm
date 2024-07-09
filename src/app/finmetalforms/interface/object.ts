@@ -208,41 +208,140 @@ export interface ACT2 {
     name: string
 }
 
-//continue with dropdowns
+export const act2_options: ACT2[] = [
+    { name: 'Email'},
+    { name: 'Offer'},
+    { name: 'Contract'},
+
+]
 
 export interface CONTROLL {
     name: string
 }
 
+export const control_options: CONTROLL[] = [
+    { name: 'No info'},
+    { name: 'X-ray'},
+    { name: 'Ultrasound'},
+    { name: 'Penetrate'},
+    { name: 'Visual control'},
+
+]
+
 export interface WE {
     name: string
 }
+
+export const we_options: WE[] = [
+    { name: 'No info'},
+    { name: 'F_S_S'},
+    { name: 'S_S'},
+    { name: '...'},
+
+]
 
 export interface MP {
     name: string
 }
 
+export const mp_options: MP[] = [
+    { name: 'No info'},
+    { name: '20'},
+    { name: '20.5'},
+    { name: '21'},
+    { name: '21.5'},
+    { name: '22'},
+    { name: '22.5'},
+    { name: '23'},
+    { name: '23.5'},
+    { name: '24'},
+    { name: '24.5'},
+    { name: '25'},
+    { name: '25.5'},
+    { name: '26'},
+    { name: '26.5'},
+    { name: '27'},
+    { name: '27.5'},
+    { name: '28'},
+    { name: '28.5'},
+    { name: '29'},
+    { name: '29.5'},
+    { name: '30'},
+    { name: '...'},
+]
+
 export interface CARREQUIREMENT {
     name: string
 }
+
+export const carrequirement_options: CARREQUIREMENT[] = [
+    { name:'No info'},
+    { name:'Yes'},
+    { name:'No'},
+]
 
 export interface FROMWHICHCOMPANYSENT {
     name: string
 }
 
+export const fromcompanysent: FROMWHICHCOMPANYSENT[] = [
+    { name: 'No info'},
+    { name: 'Konstrument'},
+    { name: 'Lamarmora'},
+    { name: 'Metals'},
+    { name: 'Tianmga'},
+
+]
+
 export interface FROMWHICHSALESMANORDER {
     name: string
 }
+
+export const fromsalesman_options: FROMWHICHSALESMANORDER[] = [
+    { name: 'No info'},
+    { name: 'Andrei' },
+    { name: 'Badri'},
+    { name: 'Juri'},
+    { name: 'Lev Mark'},
+    { name: 'Merilin'},
+    { name: 'Piret'},
+    { name: 'Ray'},
+    { name: 'Taavi'},
+]
 
 export interface WORKPLACE {
     name: string
 }
 
+export const workplace_options: WORKPLACE[] = [
+    { name: 'No info'},
+    { name: 'At the factory'},
+    { name: 'At the clients site'},
+    { name: 'Factory / Clients site'},
+]
+
 export interface WORKEQUIPMENT {
     name: string
 }
 
+export const workequipment_options: WORKEQUIPMENT[] = [
+    { name: 'No info'},
+    { name: 'No need'},
+    { name: 'Customers welding machine'},
+    { name: 'Our welding machine'},
+    { name: 'Welding machine and tool'},
+
+]
+
 export interface TOTALUNREACHABLE {
     name: string
 }
+
+export const totalunreachable_options: TOTALUNREACHABLE[] = [
+    { name: 'No info'},
+    { name: 'Yes'},
+    { name: 'No'},
+    { name: 'Total lack of dialing'},
+
+]
 

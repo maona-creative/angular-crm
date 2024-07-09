@@ -11,7 +11,8 @@
 <div class="container">
 <form [formGroup]="welderForm" (ngSubmit)="onSubmit()">
     <p-accordion [activeIndex]="0">
-       <p-accordionTab header="Main">
+       <!-- Main  -->
+      <p-accordionTab header="Main">
          <div class="row">
            <div class="col">
               <label for="Super_First_name">First name</label>
@@ -83,8 +84,6 @@
 
 
     <div class="row">
-        
-         
         <div class="col-md-2">
           <label for="available">Available</label>
           <p-dropdown 
@@ -93,7 +92,6 @@
           formControlName="available"
           [options]="available"
           optionLabel="name"
-  
           placeholder="Select option" />
         </div>
     </div>
@@ -104,9 +102,9 @@
            formControlName="Comment_1"></textarea>
         </div>
     </div>
-        
         </p-accordionTab>
 
+<!-- Calendar reminders -->
         <p-accordionTab header="Calendar reminders">
            
           <div class="row">
@@ -143,16 +141,9 @@
                 displayFormat="HH:mm"
                 [placeholder]="'Choose time'"
                 dataType="string"
-                mode="dialog"
-                
-
-                
-                >
+                mode="dialog" >
                 </igx-time-picker>
-               
             </div>
-
-           
           </div>
 
           <div class="row">
@@ -174,9 +165,7 @@
               dataType="string" 
               dateFormat="dd.mm.yy"
               [showTime]="false"
-              formControlName="start_date_email"
-             
-              />
+              formControlName="start_date_email"/>
             </div>
 
             <div class="col-md-2">
@@ -185,22 +174,16 @@
                 id="start_time_email"
                 #timePicker
                 formControlName="start_time_email"
-               
+                [placeholder]="'Choose time'"
                 mode="dialog"
                 dataType="string"
-                [inputFormat]="format"
-
-               
-                >
-                
+                [inputFormat]="format">
                 </igx-time-picker>
             </div>
           </div>
-       
         </p-accordionTab>
 
         <p-accordionTab header="Call">
-
           <div class="row">
             <div class="col-md-2">
               <label for="calltype">CALL</label>
@@ -241,7 +224,6 @@
               optionLabel="name"
               placeholder="Select option" />
             </div>
-
           </div>
         </p-accordionTab>
 
@@ -268,7 +250,6 @@
             <textarea id="costPerHourComm" rows="5" cols="30" pInputTextarea  type="textarea" class="form-control"
             formControlName="costPerHourComm"></textarea>
           </div>
-
         </div>
 
         <div class="row">
@@ -351,9 +332,8 @@
       </p-accordionTab>
      
   </p-accordion>
-      <button type="submit" class="p-button font-bold">Submit</button>
+      <p-button label="Submit" icon="pi pi-check"  class="p-button font-bold"></p-button>
     </form>
-    
 </div>
 
 
