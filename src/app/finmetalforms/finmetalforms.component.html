@@ -9,7 +9,7 @@
 <h2>Change finmetal</h2>
 
   <form [formGroup]="finmetalForm" (ngSubmit)="onSubmit()">
-    <p-accordion [activeIndex]="9">
+    <p-accordion [activeIndex]="12">
       <p-accordionTab header="Company">
         <div class="formgrid grid">
         <div class="field col-12 md:col-2">
@@ -795,12 +795,12 @@
           </div>
           <div class="field col-12 md:col-2">
             <label for="billAndHoursReport">Bill and hours report</label><br>
-          <p-inputSwitch id="billAndHoursReport" formControlName="billAndHoursReport"></p-inputSwitch>
+          <p-inputSwitch id="billAndHoursReport" type="boolean" formControlName="billAndHoursReport"></p-inputSwitch>
           <span class="ml-2">{{ finmetalForm.get('billAndHoursReport')?.value ? 'Yes' : 'No' }}</span>
           </div>
          <div class="field col-12 md:col-2">
            <label for="eInvoiceEmailEnabled">eInvoice email enabled</label><br>
-            <p-inputSwitch id="eInvoiceEmailEnabled" formControlName="eInvoiceEmailEnabled"></p-inputSwitch>
+            <p-inputSwitch id="eInvoiceEmailEnabled" type="boolean" formControlName="eInvoiceEmailEnabled"></p-inputSwitch>
              <span class="ml-2">{{ finmetalForm.get('eInvoiceEmailEnabled')?.value ? 'Yes' : 'No' }}</span>
         </div>
          <div class="field col-12 md:col-2">
@@ -813,7 +813,7 @@
        </div>
        <div class="field col-12 md:col-1">
         <label for="eInvoiceEnabled">eInvoice enabled</label><br>
-        <p-inputSwitch id="eInvoiceEnabled" formControlName="eInvoiceEnabled"></p-inputSwitch>
+        <p-inputSwitch id="eInvoiceEnabled" type="boolean" formControlName="eInvoiceEnabled"></p-inputSwitch>
          <span class="ml-2">{{ finmetalForm.get('eInvoiceEnabled')?.value ? 'Yes' : 'No' }}</span>
       </div>
       <div class="field col-12 md:col-3">
@@ -823,7 +823,7 @@
       </div>
       <div class="field col-12 md:col-3">
        <label for="lunchPaidUnpaid">Lunch paid</label><br>
-       <p-inputSwitch id="lunchPaidUnpaid" formControlName="lunchPaidUnpaid"></p-inputSwitch>
+       <p-inputSwitch id="lunchPaidUnpaid" type="boolean" formControlName="lunchPaidUnpaid"></p-inputSwitch>
         <span class="ml-2">{{ finmetalForm.get('lunchPaidUnpaid')?.value ? 'Yes' : 'No' }}</span>
      </div>
      <div class="field col-12 md:col-6"></div>
@@ -834,7 +834,7 @@
     </div>
     <div class="field col-12 md:col-3">
      <label for="coffeePausePaidUnpaid">CoffeePause 1 Paid</label><br>
-     <p-inputSwitch id="coffeePausePaidUnpaid" formControlName="coffeePausePaidUnpaid"></p-inputSwitch>
+     <p-inputSwitch id="coffeePausePaidUnpaid" type="boolean" formControlName="coffeePausePaidUnpaid"></p-inputSwitch>
       <span class="ml-2">{{ finmetalForm.get('coffeePausePaidUnpaid')?.value ? 'Yes' : 'No' }}</span>
    </div>
    <div class="field col-12 md:col-6"></div>
@@ -845,7 +845,7 @@
   </div>
   <div class="field col-12 md:col-3">
    <label for="coffeePausePaidUnpaid2">CoffeePause 2 Paid</label><br>
-   <p-inputSwitch id="coffeePausePaidUnpaid2" formControlName="coffeePausePaidUnpaid2"></p-inputSwitch>
+   <p-inputSwitch id="coffeePausePaidUnpaid2" type="boolean" formControlName="coffeePausePaidUnpaid2"></p-inputSwitch>
     <span class="ml-2">{{ finmetalForm.get('coffeePausePaidUnpaid2')?.value ? 'Yes' : 'No' }}</span>
  </div>
  <div class="field col-12 md:col-6"></div>
@@ -856,12 +856,12 @@
 </div>
 <div class="field col-12 md:col-3">
  <label for="coffeePausePaidUnpaid3">CoffeePause 3 Paid</label><br>
- <p-inputSwitch id="coffeePausePaidUnpaid3" formControlName="coffeePausePaidUnpaid3"></p-inputSwitch>
+ <p-inputSwitch id="coffeePausePaidUnpaid3" type="boolean" formControlName="coffeePausePaidUnpaid3"></p-inputSwitch>
   <span class="ml-2">{{ finmetalForm.get('coffeePausePaidUnpaid3')?.value ? 'Yes' : 'No' }}</span>
 </div>
 <div class="field col-12 md:col-8">
   <label for="automaticAccountingSystem">automatic Accounting System</label><br>
-  <p-inputSwitch id="automaticAccountingSystem" formControlName="automaticAccountingSystem"></p-inputSwitch>
+  <p-inputSwitch id="automaticAccountingSystem" type="boolean" formControlName="automaticAccountingSystem"></p-inputSwitch>
    <span class="ml-2">{{ finmetalForm.get('automaticAccountingSystem')?.value ? 'Yes' : 'No' }}</span>
  </div>
   </div>
@@ -872,12 +872,12 @@
         <div class="formgrid grid">
           <div class="field col-12">
             <label for="nightShift">Night shift</label><br>
-            <p-inputSwitch id="nightShift" formControlName="nightShift"></p-inputSwitch>
+            <p-inputSwitch id="nightShift" type="boolean" formControlName="nightShift"></p-inputSwitch>
              <span class="ml-2">{{ finmetalForm.get('nightShift')?.value ? 'Yes' : 'No' }}</span>
            </div>
            <div class="field col-12">
             <label for="nightShiftPaid">Paid</label><br>
-            <p-inputSwitch id="nightShiftPaid" formControlName="nightShiftPaid"></p-inputSwitch>
+            <p-inputSwitch id="nightShiftPaid" type="boolean" formControlName="nightShiftPaid"></p-inputSwitch>
              <span class="ml-2">{{ finmetalForm.get('nightShiftPaid')?.value ? 'Yes' : 'No' }}</span>
            </div>
            <div class="field col-12 md:col-2">
@@ -910,13 +910,317 @@
              inputId="integeronly" formControlName="nightShiftRate" />
           </div>
         </div>
-      
       </p-accordionTab>
-
+      <!-- Profession -->
+      <p-accordionTab header="Profession">
+        <div class="formgrid grid">
+          <div class="field col-12 md:col-2">
+              <label for="leybl">Label</label><br>
+              <p-dropdown 
+              id="leybl"
+              formControlName="leybl"
+              [options]="label"
+              optionLabel="name"
+              placeholder="Select option"
+              >
+            </p-dropdown>
+          </div>
+          <div class="field col-12 md:col-3">
+            <label for="leybl_description">Label Com</label>
+             <textarea rows="2" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+             formControlName="leybl_description"></textarea>
+          </div>
+          <div class="field col-12 md:col-6"></div>
+          <div class="field col-12 md:col-2">
+            <label for="ction">Order</label><br>
+            <p-dropdown 
+            id="ction"
+            formControlName="ction"
+            [options]="order"
+            optionLabel="name"
+            placeholder="Select option"
+            >
+          </p-dropdown>
+        </div>
+        <div class="field col-12 md:col-2">
+          <label for="ction_start_time">Order date</label>
+             <p-calendar id="ction_start_time" 
+             dataType="string" 
+             dateFormat="dd.mm.yy"
+             [showTime]="true"
+             [iconDisplay]="'input'"
+             [showIcon]="true"
+             formControlName="ction_start_time" />
+        </div>
+        <div class="field col-12 md:col-3">
+          <label for="ction_description">Order Com</label>
+           <textarea rows="2" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+           formControlName="ction_description"></textarea>
+        </div>
+        <div class="field col-12 md:col-4"></div>
+        <div class="field col-12 md:col-2">
+          <label for="action">Call action</label><br>
+          <p-dropdown 
+          id="action"
+          formControlName="action"
+          [options]="action"
+          optionLabel="name"
+          placeholder="Select option"
+          >
+        </p-dropdown>
+      </div>
+      <div class="field col-12 md:col-2">
+        <label for="action_start_time">Call date</label><br>
+           <p-calendar id="action_start_time" 
+           dataType="string" 
+           dateFormat="dd.mm.yy"
+           [showTime]="false"
+           [iconDisplay]="'input'"
+           [showIcon]="true"
+           formControlName="action_start_time" />
+      </div>
+      <div class="field col-12 md:col-2">
+        <label for="action_start_time2">Call time</label><br>
+           <p-calendar id="action_start_time2" 
+           dataType="string" 
+           dateFormat="dd.mm.yy"
+           [showTime]="true"
+           [timeOnly]="true"
+           [stepMinute]="5"
+           [iconDisplay]="'input'"
+           [showIcon]="true"
+           formControlName="action_start_time2" />
+      </div>
+      <div class="field col-12 md:col-3">
+        <label for="action_description">Call Com</label>
+         <textarea rows="2" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+         formControlName="action_description"></textarea>
+      </div>
+      <div class="field col-12 md:col-2"></div>
+      <div class="field col-12 md:col-2">
+        <label for="action2">Email action</label><br>
+        <p-dropdown 
+        id="action2"
+        formControlName="action2"
+        [options]="action_email"
+        optionLabel="name"
+        placeholder="Select option"
+        >
+      </p-dropdown>
+    </div>
+    <div class="field col-12 md:col-2">
+      <label for="action2_start_time">Email date</label><br>
+         <p-calendar id="action2_start_time" 
+         dataType="string" 
+         dateFormat="dd.mm.yy"
+         [showTime]="false"
+         [iconDisplay]="'input'"
+         [showIcon]="true"
+         formControlName="action2_start_time" />
+    </div>
+    <div class="field col-12 md:col-2">
+      <label for="action2_start_time2">Email time</label><br>
+         <p-calendar id="action2_start_time2" 
+         dataType="string" 
+         dateFormat="dd.mm.yy"
+         [showTime]="true"
+         [timeOnly]="true"
+         [stepMinute]="5"
+         [iconDisplay]="'input'"
+         [showIcon]="true"
+         formControlName="action2_start_time2" />
+    </div>
+    <div class="field col-12 md:col-3">
+      <label for="action2_description">Email Com</label>
+       <textarea rows="2" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+       formControlName="action2_description"></textarea>
+    </div>
+    <div class="field col-12 md:col-2"></div>
+    <div class="field col-12 md:col-2">
+      <label for="date_pup">Auto date</label><br>
+         <p-calendar id="date_pup" 
+         dataType="string" 
+         dateFormat="dd.mm.yy"
+         [showTime]="true"
+         [iconDisplay]="'input'"
+         [showIcon]="true"
+         formControlName="date_pup"
+         
+         />
+       </div>
+      </div>
+      </p-accordionTab>
+<!-- New question -->
       <p-accordionTab header="New question">
+        <div class="formgrid grid">
+          <div class="field col-12 md:col-3">
+            <label for="controll">Control 1</label><br>
+            <p-dropdown 
+            id="controll"
+            formControlName="controll"
+            [options]="control"
+            optionLabel="name"
+            placeholder="Select option"
+            >
+          </p-dropdown>
+        </div>
+          <div class="field col-12 md:col-3">
+            <label for="control2">Control 2</label><br>
+            <p-dropdown 
+            id="control2"
+            formControlName="control2"
+            [options]="control"
+            optionLabel="name"
+            placeholder="Select option"
+            >
+          </p-dropdown>
+        </div>
+        <div class="field col-12 md:col-3">
+          <label for="control3">Control 3</label><br>
+          <p-dropdown 
+          id="control3"
+          formControlName="control3"
+          [options]="control"
+          optionLabel="name"
+          placeholder="Select option"
+          >
+        </p-dropdown>
+      </div>
+      <div class="field col-12">
+        <label for="orderLossReason">Order Loss Reason </label>
+        <textarea rows="2" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+      formControlName="orderLossReason"></textarea>
+     </div>
+     <div class="field col-2">
+      <label for="asapd">ASAP</label><br>
+      <p-inputSwitch id="asap" type="boolean" formControlName="asap"></p-inputSwitch>
+       <span class="ml-2">{{ finmetalForm.get('asap')?.value ? 'Yes' : 'No' }}</span>
+    </div>
+    <div class="field col-2">
+      <label for="de_trop">De trop</label><br>
+      <p-inputSwitch id="de_trop" type="boolean" formControlName="de_trop"></p-inputSwitch>
+      <span class="ml-2">{{ finmetalForm.get('de_trop')?.value ? 'Yes' : 'No' }}</span>
+   </div>
+   <div class="field col-2">
+     <label for="h8">H8</label><br>
+     <p-inputSwitch id="h8" type="boolean" formControlName="h8"></p-inputSwitch>
+       <span class="ml-2">{{ finmetalForm.get('h8')?.value ? 'Yes' : 'No' }}</span>
+   </div>
+   <div class="field col-2">
+    <label for="fin">Fin</label><br>
+    <p-inputSwitch id="fin" type="boolean" formControlName="fin"></p-inputSwitch>
+     <span class="ml-2">{{ finmetalForm.get('fin')?.value ? 'Yes' : 'No' }}</span>
+   </div>
+   <div class="field col-12">
+    <label for="we">Weekend</label><br>
+    <p-dropdown 
+    id="we"
+    formControlName="we"
+    [options]="weekend"
+    optionLabel="name"
+    placeholder="Select option"
+    >
+   </p-dropdown>
+   </div>
 
+   <div class="field col-12">
+    <label for="mp">MaxPrice €/h</label><br>
+    <p-dropdown 
+    id="mp"
+    formControlName="mp"
+    [options]="max_price"
+    optionLabel="name"
+    placeholder="Select option"
+    >
+   </p-dropdown>
+    </div>
+      </div>
       </p-accordionTab>
-      <p-accordionTab header="Order"></p-accordionTab>
+      <!-- Order -->
+      <p-accordionTab header="Order">
+        <div class="formgrid grid">
+        <div class="field col-12 md:col-12">
+          <label for="carRequirement">Car Requirement</label><br>
+          <p-dropdown 
+          id="carRequirement"
+          formControlName="carRequirement"
+          [options]="car_require"
+          optionLabel="name"
+          placeholder="Select option"
+          >
+        </p-dropdown>
+      </div>
+      <div class="field col-12 md:col-2">
+        <label for="workerQuanityRequirement">Qnt Reg</label>
+        <input id="workerQuanityRequirement" formControlName='workerQuanityRequirement' type="text"  class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+      </div>
+      <div class="field col-12 md:col-6">
+        <label for="workerQuanityRequirementComment">Comment</label>
+        <textarea rows="2" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+      formControlName="workerQuanityRequirementComment"></textarea>
+    </div>
+    <div class="field col-12">
+      <label for="order">Order</label><br>
+      <p-dropdown 
+      id="order"
+      formControlName="order"
+      [options]="order_1"
+      optionLabel="name"
+      placeholder="Select option"
+      >
+    </p-dropdown>
+  </div>
+  <div class="field col-12 md:col-2 ">
+    <label for="fromWhichCompanySent">From which company sent</label><br>
+    <p-dropdown 
+    id="fromWhichCompanySent"
+    formControlName="fromWhichCompanySent"
+    [options]="sent_company"
+    optionLabel="name"
+    placeholder="Select option"
+    >
+  </p-dropdown>
+</div>
+  <div class="field col-12 md:col-6">
+    <label for="fromWhichCompanySentComment">Comment</label>
+    <textarea rows="2" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+     formControlName="fromWhichCompanySentComment"></textarea>
+  </div>
+  <div class="field col-12 md:col-6"></div>
+  <div class="field col-12">
+    <label for="fromWhichSalesmanOrder">From which salesman order</label><br>
+    <p-dropdown 
+    id="fromWhichSalesmanOrder"
+    formControlName="fromWhichSalesmanOrder"
+    [options]="salesman"
+    optionLabel="name"
+    placeholder="Select option"
+    >
+  </p-dropdown>
+</div>
+<div class="field col-12">
+  <label for="workPlace">Work Place</label><br>
+  <p-dropdown 
+  id="workPlace"
+  formControlName="workPlace"
+  [options]="workplace"
+  optionLabel="name"
+  placeholder="Select option"
+  >
+</p-dropdown>
+</div>
+<div class="field col-12">
+  <label for="workStartDate">Work StartDate</label>
+  <textarea rows="2" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+   formControlName="workStartDate"></textarea>
+</div>
+<div class="field col-12">
+  <label for="workDuration">Work Duration</label>
+  <textarea rows="2" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+   formControlName="workDuration"></textarea>
+</div>
+    </div>
+      </p-accordionTab>
       <p-accordionTab header="Call"></p-accordionTab>
       <p-accordionTab header="4 year statistics"></p-accordionTab>
       <p-accordionTab header="Departures"></p-accordionTab>

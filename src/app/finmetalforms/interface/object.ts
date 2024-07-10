@@ -196,6 +196,7 @@ export interface ACT {
 }
 
 export const act_options: ACT[] = [
+    { name: 'No info'},
     { name: 'Call_Cold'},
     { name: 'Call_Email'},
     { name: 'Call_Work'},
@@ -209,6 +210,7 @@ export interface ACT2 {
 }
 
 export const act2_options: ACT2[] = [
+    { name: 'No info'},
     { name: 'Email'},
     { name: 'Offer'},
     { name: 'Contract'},
@@ -278,6 +280,17 @@ export const carrequirement_options: CARREQUIREMENT[] = [
     { name:'No info'},
     { name:'Yes'},
     { name:'No'},
+]
+
+export interface ORDER {
+    name: string;
+}
+
+export const order_options: ORDER[] = [
+    { name: 'No info'},
+    { name: 'New Order'},
+    { name: 'Old client in a new project'},
+    { name: 'People in addition to the existing order'},
 ]
 
 export interface FROMWHICHCOMPANYSENT {

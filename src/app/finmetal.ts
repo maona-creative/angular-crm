@@ -1,5 +1,6 @@
 import { PA_AVA, PROF, WEL, MET, WORK, POSITION, DAIL, Cl, LAN, HOS, DOC, LEB, CTA, ACT, ACT2, CONTROLL, WE, 
-    MP, CARREQUIREMENT, FROMWHICHCOMPANYSENT, FROMWHICHSALESMANORDER, WORKPLACE, WORKEQUIPMENT, TOTALUNREACHABLE
+    MP, CARREQUIREMENT, FROMWHICHCOMPANYSENT, FROMWHICHSALESMANORDER, WORKPLACE, WORKEQUIPMENT, TOTALUNREACHABLE,
+    ORDER
  } from "./finmetalforms/interface/object"
 
 export interface Finmetal {
@@ -181,11 +182,11 @@ export interface Finmetal {
     eInvoiceEnabled?: boolean //verbose_name='eInvoice enabled'
     lunch?: number // verbose_name='lunch', number
     lunchPaidUnpaid?: boolean //verbose_name='Lunch Paid'
-    coffeePause?: string // verbose_name='coffee pause 1'
+    coffeePause?: number // verbose_name='coffee pause 1'
     coffeePausePaidUnpaid?: string //verbose_name='CoffeePause 1 Paid'
-    coffeePause2?: string // verbose_name='coffee pause 2'
+    coffeePause2?: number // verbose_name='coffee pause 2'
     coffeePausePaidUnpaid2?: string //verbose_name='CoffeePause 2 Paid'
-    coffeePause3?: string // verbose_name='coffee pause 3'
+    coffeePause3?: number // verbose_name='coffee pause 3'
     coffeePausePaidUnpaid3?: string //verbose_name='CoffeePause 3 Paid'
     automaticAccountingSystem?: boolean // verbose_name='automatic Accounting System'
 
@@ -228,6 +229,7 @@ export interface Finmetal {
     carRequirement?: CARREQUIREMENT // choices=CARREQUIREMENT, verbose_name='Car Requirement', default='No info'
     workerQuanityRequirement?: string //verbose_name='Qnt Reg'
     workerQuanityRequirementComment?: string //verbose_name='Comment'
+    order?: ORDER
     fromWhichCompanySent?: FROMWHICHCOMPANYSENT //choices=FROMWHICHCOMPANYSENT, verbose_name='From which company sent', default='No info'
     fromWhichCompanySentComment?: string // verbose_name='comment'
     fromWhichSalesmanOrder?: FROMWHICHSALESMANORDER //choices=FROMWHICHSALESMANORDER, verbose_name='From which salesman order', default='No info

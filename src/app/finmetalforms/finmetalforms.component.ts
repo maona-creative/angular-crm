@@ -12,7 +12,7 @@ import { PA_AVA, pa_AVA_options, PROF, prof_options, WEL, wel_options,
 CTA, cta_options, ACT, act_options, ACT2, act2_options, CONTROLL, control_options,
 WE, we_options, MP, mp_options, CARREQUIREMENT, carrequirement_options, FROMWHICHCOMPANYSENT,
  fromcompanysent, FROMWHICHSALESMANORDER, fromsalesman_options, WORKEQUIPMENT, workplace_options,
-workequipment_options, WORKPLACE, TOTALUNREACHABLE, totalunreachable_options} from './interface/object';
+workequipment_options, WORKPLACE, TOTALUNREACHABLE, totalunreachable_options, ORDER, order_options } from './interface/object';
 
 //PrimeNg import
 import { ButtonModule } from 'primeng/button';
@@ -23,7 +23,6 @@ import { InputSwitchModule } from 'primeng/inputswitch';
 import { InputNumberModule } from 'primeng/inputnumber';
 
 
-import {MatDatepickerModule} from '@angular/material/datepicker';
 
 
 
@@ -43,11 +42,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     CalendarModule,
     InputSwitchModule,
     InputNumberModule,
-    MatDatepickerModule,
     
-    
-  
-
     
   
   ],
@@ -70,9 +65,24 @@ export class FinmetalformsComponent {
   language: LAN[] = lan_options;
   housing: HOS[] = hos_options;
   documents: DOC[] = doc_opinions;
-  
+  label: LEB[] = leb_options;
+  order: CTA[] = cta_options;
+  action: ACT[] = act_options;
+  action_email: ACT2[] = act2_options;
+  control: CONTROLL[] = control_options;
+  weekend: WE[] = we_options;
+  max_price: MP[] = mp_options;
+  car_require: CARREQUIREMENT[] = carrequirement_options;
+  sent_company: FROMWHICHCOMPANYSENT[] = fromcompanysent;
+  salesman: FROMWHICHSALESMANORDER[] = fromsalesman_options;
+  workplace: WORKPLACE[] = workplace_options;
+  work_equipment: WORKEQUIPMENT[] = workequipment_options;
+  total_unreachable: TOTALUNREACHABLE[] = totalunreachable_options;
+  order_1: ORDER[] = order_options;
 
-
+  getCurrentDate(): Date {
+    return new Date();
+  }
 
  
   
@@ -237,7 +247,7 @@ export class FinmetalformsComponent {
     hours_n: new FormControl('', Validators.maxLength(15)), //verbose_name='. HoursN .
     language: new FormControl(this.language[0]), //choices=LAN, verbose_name='Language', default='No info'
     housing: new FormControl(this.housing[0]), //choices=HOS, verbose_name='Apartment', default='No info'
-    documents: new FormControl('', Validators.maxLength(15)), //choices=DOC, verbose_name='. Docs .', default='No info'
+    documents: new FormControl(this.documents[0]), //choices=DOC, verbose_name='. Docs .', default='No info'
     clock_description: new FormControl('', Validators.maxLength(512)), // verbose_name='Hours Com'
     language_description: new FormControl('', Validators.maxLength(512)), //verbose_name='Lang Com'
     housing_description: new FormControl('', Validators.maxLength(512)), // verbose_name='Apa Com'
@@ -272,51 +282,52 @@ export class FinmetalformsComponent {
     nightShiftRate: new FormControl('', Validators.maxLength(16)), //verbose_name='Rate', number
 
     //profession
-    leybl: new FormControl(''), //choices=LEB, verbose_name='Label', default='--------'
+    leybl: new FormControl(this.label[0]), //choices=LEB, verbose_name='Label', default='--------'
     leybl_description: new FormControl('', Validators.maxLength(512)), //verbose_name='Labl Com'
-    ction: new FormControl(''), //choices=CTA, verbose_name='Order', default='No info'
+    ction: new FormControl(this.order[0]), //choices=CTA, verbose_name='Order', default='No info'
     ction_start_time: new FormControl(''), //datetime verbose_name='Ord date'
     ction_description: new FormControl('', Validators.maxLength(512)), //verbose_name='Ord comm'
-    action: new FormControl(''), // choices=ACT, verbose_name='Call action', default='No info'
+    action: new FormControl(this.action[0]), // choices=ACT, verbose_name='Call action', default='No info'
     action_start_time: new FormControl(''), //verbose_name='Call date'
     action_start_time2: new FormControl(''), //verbose_name='Call time'
     action_description: new FormControl('', Validators.maxLength(512)), //verbose_name='Call comm
-    action2: new FormControl(''), //choices=ACT2, verbose_name='Email action', default='No info
+    action2: new FormControl(this.action_email[0]), //choices=ACT2, verbose_name='Email action', default='No info
     action2_start_time: new FormControl(''), //verbose_name='Email date'
     action2_start_time2: new FormControl(''), //verbose_name='Email time'
     action2_description: new FormControl('', Validators.maxLength(512)), //verbose_name='Email comm'
-    date_pup: new FormControl(''), //verbose_name='Auto save'
+    date_pup: new FormControl<Date>(new Date()), //verbose_name='Auto save', date now
 
     //new question
-    controll: new FormControl(''), //choices=CONTROLL, verbose_name='Сontrol 1', default='No info'
-    control2: new FormControl(''), //choices=CONTROLL, verbose_name='Сontrol 2', default='No info'
-    control3: new FormControl(''), //choices=CONTROLL, verbose_name='Сontrol 3', default='No info'
+    controll: new FormControl(this.control[0]), //choices=CONTROLL, verbose_name='Сontrol 1', default='No info'
+    control2: new FormControl(this.control[0]), //choices=CONTROLL, verbose_name='Сontrol 2', default='No info'
+    control3: new FormControl(this.control[0]), //choices=CONTROLL, verbose_name='Сontrol 3', default='No info'
     orderLossReason: new FormControl(''),  // verbose_name='Order Loss Reason
     asap: new FormControl(false), 
     de_trop: new FormControl(false), //verbose_name='de trop
     h8: new FormControl(false), //H8
     fin: new FormControl(false), //fin
-    we: new FormControl('', Validators.maxLength(10)), //choices=WE, verbose_name='Weekend', default='...'
-    mp: new FormControl('', ), //choices=MP, verbose_name='MaxPrice €/h', default='...',
+    we: new FormControl(this.weekend[3]), //choices=WE, verbose_name='Weekend', default='...'
+    mp: new FormControl(this.max_price[22] ), //choices=MP, verbose_name='MaxPrice €/h', default='...',
 
     //order
-    carRequirement: new FormControl(''), // choices=CARREQUIREMENT, verbose_name='Car Requirement', default='No info'
+    carRequirement: new FormControl(this.car_require[0]), // choices=CARREQUIREMENT, verbose_name='Car Requirement', default='No info'
     workerQuanityRequirement: new FormControl(''), //verbose_name='Qnt Reg'
     workerQuanityRequirementComment: new FormControl(''), //verbose_name='Comment'
-    fromWhichCompanySent: new FormControl(''), //choices=FROMWHICHCOMPANYSENT, verbose_name='From which company sent', default='No info'
+    order: new FormControl(''), //choices=ORDER, verbose_name='Order', default='No info',
+    fromWhichCompanySent: new FormControl(this.sent_company[0]), //choices=FROMWHICHCOMPANYSENT, verbose_name='From which company sent', default='No info'
     fromWhichCompanySentComment: new FormControl(''), // verbose_name='comment'
-    fromWhichSalesmanOrder: new FormControl(''), //choices=FROMWHICHSALESMANORDER, verbose_name='From which salesman order', default='No info
-    workPlace: new FormControl(''), //choices=WORKPLACE, verbose_name='Work Place', default='No info'
+    fromWhichSalesmanOrder: new FormControl(this.salesman[0]), //choices=FROMWHICHSALESMANORDER, verbose_name='From which salesman order', default='No info
+    workPlace: new FormControl(this.workplace[0]), //choices=WORKPLACE, verbose_name='Work Place', default='No info'
     workStartDate: new FormControl(''), //verbose_name='Work StartDate'
     workDuration: new FormControl(''), //verbose_name='Work Duration'
     workDescription: new FormControl(''), //verbose_name='Work Description'
-    workEquipment: new FormControl(''), //choices=WORKEQUIPMENT, verbose_name='Work Equipment', default='No info'
+    workEquipment: new FormControl(this.work_equipment[0]), //choices=WORKEQUIPMENT, verbose_name='Work Equipment', default='No info'
     workEquipmentComment: new FormControl(''), //verbose_name='Comment'
     workCity: new FormControl(''), //verbose_name='Work City'
     workAddress: new FormControl(''), //verbose_name='Work Address'
 
     //call
-    totalUnreachable: new FormControl(''), // choices=TOTALUNREACHABLE, verbose_name='Total lack of dialing', default='No info'
+    totalUnreachable: new FormControl(this.total_unreachable[0]), // choices=TOTALUNREACHABLE, verbose_name='Total lack of dialing', default='No info'
 
    //4 years statistics
    isNew: new FormControl(false),
@@ -391,15 +402,6 @@ export class FinmetalformsComponent {
  comment_call: new FormControl(''),
  mode: new FormControl(''),//choices=CALLP, max_length=15, default='Call' */
   
-
-
-
-
-
-
-
-
-
 
 
   });

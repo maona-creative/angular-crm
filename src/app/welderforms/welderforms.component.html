@@ -141,7 +141,8 @@
                 displayFormat="HH:mm"
                 [placeholder]="'Choose time'"
                 dataType="string"
-                mode="dialog" >
+                mode="dialog">
+                <igx-hint>{{date.toLocaleString()}}</igx-hint>
                 </igx-time-picker>
             </div>
           </div>

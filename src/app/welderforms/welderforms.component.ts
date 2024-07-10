@@ -25,10 +25,14 @@ import { CalendarModule } from 'primeng/calendar';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { DropdownModule } from 'primeng/dropdown';
 import { WelderformsService } from './welderforms.service';
-import { IgxTimePickerComponent, IgxInputGroupModule,
-	IgxIconModule, IgxTimePickerModule, } from 'igniteui-angular';
-import { PickerInteractionMode } from 'igniteui-angular';
 
+
+
+//import { IgxInputGroupModule,
+	//IgxIconModule, IgxTimePickerModule, } from 'igniteui-angular';
+//import { PickerInteractionMode } from 'igniteui-angular';
+//import { HammerModule } from '@angular/platform-browser';
+import { IGX_TIME_PICKER_DIRECTIVES } from 'igniteui-angular';
 
 
 
@@ -51,11 +55,12 @@ import { PickerInteractionMode } from 'igniteui-angular';
     InputTextareaModule,
     DropdownModule,
     CommonModule,
-    IgxTimePickerComponent,
-    IgxInputGroupModule,
-    IgxIconModule,
-    IgxTimePickerModule,
-    DatePipe
+   // IgxInputGroupModule,
+    //IgxIconModule,
+    //IgxTimePickerModule,
+    DatePipe,
+    //HammerModule,
+    IGX_TIME_PICKER_DIRECTIVES,
     
   
   
@@ -71,9 +76,9 @@ import { PickerInteractionMode } from 'igniteui-angular';
 export class WelderformsComponent implements OnInit {
 
   
-  public mode: PickerInteractionMode = PickerInteractionMode.DropDown;
+ // public mode: PickerInteractionMode = PickerInteractionMode.DropDown;
   public format = 'HH:mm';
-  
+  public date: Date = new Date();
   
  
 
