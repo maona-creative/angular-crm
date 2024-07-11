@@ -30,7 +30,7 @@ import { WelderformsService } from './welderforms.service';
 
 //import { IgxInputGroupModule,
 	//IgxIconModule, IgxTimePickerModule, } from 'igniteui-angular';
-//import { PickerInteractionMode } from 'igniteui-angular';
+import { PickerInteractionMode } from 'igniteui-angular';
 //import { HammerModule } from '@angular/platform-browser';
 import { IGX_TIME_PICKER_DIRECTIVES } from 'igniteui-angular';
 
@@ -76,7 +76,7 @@ import { IGX_TIME_PICKER_DIRECTIVES } from 'igniteui-angular';
 export class WelderformsComponent implements OnInit {
 
   
- // public mode: PickerInteractionMode = PickerInteractionMode.DropDown;
+  public mode: PickerInteractionMode = PickerInteractionMode.DropDown;
   public format = 'HH:mm';
   public date: Date = new Date();
   

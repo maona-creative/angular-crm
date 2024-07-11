@@ -134,6 +134,7 @@
             <div class="col-md-2">
               <label for="start_time">Start time</label>
               <igx-time-picker
+                #timePicker
                 id="start_time"
                 formControlName="start_time"
                 [itemsDelta]="{hours:1, minutes:5}"
@@ -141,7 +142,7 @@
                 displayFormat="HH:mm"
                 [placeholder]="'Choose time'"
                 dataType="string"
-                mode="dialog">
+               >
                 <igx-hint>{{date.toLocaleString()}}</igx-hint>
                 </igx-time-picker>
             </div>
@@ -176,7 +177,7 @@
                 #timePicker
                 formControlName="start_time_email"
                 [placeholder]="'Choose time'"
-                mode="dialog"
+                
                 dataType="string"
                 [inputFormat]="format">
                 </igx-time-picker>
