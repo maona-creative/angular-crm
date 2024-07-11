@@ -9,7 +9,7 @@
 <h2>Change finmetal</h2>
 
   <form [formGroup]="finmetalForm" (ngSubmit)="onSubmit()">
-    <p-accordion [activeIndex]="12">
+    <p-accordion [activeIndex]="14">
       <p-accordionTab header="Company">
         <div class="formgrid grid">
         <div class="field col-12 md:col-2">
@@ -1219,10 +1219,210 @@
   <textarea rows="2" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
    formControlName="workDuration"></textarea>
 </div>
+<div class="field col-12">
+  <label for="workDescription">Work Description</label>
+  <textarea rows="2" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+   formControlName="workDescription"></textarea>
+</div>
+<div class="field col-12 md:col-2">
+  <label for="workEquipment">Work Equipment</label><br>
+  <p-dropdown 
+  id="workEquipment"
+  formControlName="workEquipment"
+  [options]="work_equipment"
+  optionLabel="name"
+  placeholder="Select option"
+  >
+</p-dropdown>
+</div>
+<div class="field col-12 md:col-6">
+  <label for="workEquipmentComment">Comment</label>
+  <textarea rows="2" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+   formControlName="workEquipmentComment"></textarea>
+</div>
+
+<div class="field col-12 md:col-12">
+  <label for="workCity">Work City</label>
+  <input id="workCity" formControlName='workCity' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+</div>
+<div class="field col-12 md:col-12">
+  <label for="workAddress">Work Address</label>
+  <input id="workAddress" formControlName='workAddress' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+</div>
     </div>
       </p-accordionTab>
-      <p-accordionTab header="Call"></p-accordionTab>
-      <p-accordionTab header="4 year statistics"></p-accordionTab>
+      <!-- Call -->
+      <p-accordionTab header="Call">
+        <div class="field col-12">
+          <label for="totalUnreachable">Work Place</label><br>
+          <p-dropdown 
+          id="totalUnreachable"
+          formControlName="totalUnreachable"
+          [options]="total_unreachable"
+          optionLabel="name"
+          placeholder="Select option"
+          >
+        </p-dropdown>
+        </div>
+      </p-accordionTab>
+      <!-- 4 year statistics -->
+      <p-accordionTab header="4 year statistics">
+        <div class="formgrid grid">
+        <div class="field col-12 md:col-2">
+          <label for="isNew">IsNew</label><br>
+          <p-inputSwitch id="isNew" type="boolean" formControlName="isNew"></p-inputSwitch>
+           <span class="ml-2">{{ finmetalForm.get('isNew')?.value ? 'Yes' : 'No' }}</span>
+         </div>
+         <div class="field col-12 md:col-2">
+          <label for="categories">Contractor categories</label>
+          <input id="categories" formControlName='categories' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-2">
+          <label for="url_finder">Web-finder</label>
+          <input id="url_finder" formControlName='url_finder' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-2">
+          <label for="turnoverCategory">Turnover Category</label>
+          <input id="turnoverCategory" formControlName='turnoverCategory' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-4">
+          <label for="industryClassification">Industry Classification</label>
+          <input id="industryClassification" formControlName='industryClassification' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <!-- S1 year -->
+        <div class="field col-12 md:col-2">
+          <label for="s1Year">S1Year</label>
+          <input id="s1Year" formControlName='s1Year' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-2">
+          <label for="s1Turnover">S1Turnover</label>
+          <input id="s1Turnover" formControlName='s1Turnover' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-1">
+          <label for="s1Change">S1Change</label>
+          <input id="s1Change" formControlName='s1Change' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-1">
+          <label for="s1Profit">S1Profit</label>
+          <input id="s1Profit" formControlName='s1Profit' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-1">
+          <label for="s1Tax">S1Tax</label>
+          <input id="s1Tax" formControlName='s1Tax' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-1">
+          <label for="s1ProfitProc">S1ProfitProc</label>
+          <input id="s1ProfitProc" formControlName='s1ProfitProc' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-2">
+          <label for="s1FinResult">S1FinResult</label>
+          <input id="s1FinResult" formControlName='s1FinResult' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-2">
+          <label for="s1COP">S1COP</label>
+          <input id="s1COP" formControlName='s1COP' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <!-- S 2 Year -->
+        <div class="field col-12 md:col-2">
+          <label for="s2Year">S2Year</label>
+          <input id="s2Year" formControlName='s2Year' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-2">
+          <label for="s2Turnover">S2Turnover</label>
+          <input id="s2Turnover" formControlName='s2Turnover' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-1">
+          <label for="s2Change">S2Change</label>
+          <input id="s2Change" formControlName='s2Change' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-1">
+          <label for="s2Profit">S2Profit</label>
+          <input id="s2Profit" formControlName='s2Profit' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-1">
+          <label for="s2Tax">S2Tax</label>
+          <input id="s2Tax" formControlName='s2Tax' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-1">
+          <label for="s2ProfitProc">S2ProfitProc</label>
+          <input id="s2ProfitProc" formControlName='s2ProfitProc' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-2">
+          <label for="s2FinResult">S2FinResult</label>
+          <input id="s2FinResult" formControlName='s2FinResult' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-2">
+          <label for="s2COP">S2COP</label>
+          <input id="s2COP" formControlName='s2COP' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <!-- S3Year -->
+        <div class="field col-12 md:col-2">
+          <label for="s3Year">S3Year</label>
+          <input id="s3Year" formControlName='s3Year' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-2">
+          <label for="s3Turnover">S3Turnover</label>
+          <input id="s3Turnover" formControlName='s3Turnover' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-1">
+          <label for="s3Change">S3Change</label>
+          <input id="s3Change" formControlName='s3Change' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-1">
+          <label for="s3Profit">S3Profit</label>
+          <input id="s3Profit" formControlName='s3Profit' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-1">
+          <label for="s3Tax">S3Tax</label>
+          <input id="s3Tax" formControlName='s3Tax' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-1">
+          <label for="s3ProfitProc">S3ProfitProc</label>
+          <input id="s3ProfitProc" formControlName='s3ProfitProc' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-2">
+          <label for="s3FinResult">S3FinResult</label>
+          <input id="s3FinResult" formControlName='s3FinResult' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-2">
+          <label for="s3COP">S3COP</label>
+          <input id="s3COP" formControlName='s3COP' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <!-- S4Year -->
+        <div class="field col-12 md:col-2">
+          <label for="s4Year">S4Year</label>
+          <input id="s4Year" formControlName='s4Year' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-2">
+          <label for="s4Turnover">S4Turnover</label>
+          <input id="s4Turnover" formControlName='s4Turnover' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-1">
+          <label for="s4Change">S4Change</label>
+          <input id="s4Change" formControlName='s4Change' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-1">
+          <label for="s4Profit">S4Profit</label>
+          <input id="s4Profit" formControlName='s4Profit' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-1">
+          <label for="s4Tax">S4Tax</label>
+          <input id="s4Tax" formControlName='s4Tax' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-1">
+          <label for="s4ProfitProc">S4ProfitProc</label>
+          <input id="s4ProfitProc" formControlName='s4ProfitProc' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-2">
+          <label for="s4FinResult">S4FinResult</label>
+          <input id="s4FinResult" formControlName='s4FinResult' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12 md:col-2">
+          <label for="s4COP">S4COP</label>
+          <input id="s4COP" formControlName='s4COP' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+      </div>
+      </p-accordionTab>
       <p-accordionTab header="Departures"></p-accordionTab>
       <p-accordionTab header="Calls"></p-accordionTab>
       <p-accordionTab header="Apartments"></p-accordionTab>

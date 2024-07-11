@@ -336,7 +336,7 @@ export class FinmetalformsComponent {
    turnoverCategory: new FormControl(''), //verbose_name='turnover Category'
    industryClassification: new FormControl(''), //verbose_name='Industry Classification
 
-   s1Year: new FormControl(''),
+   s1Year: new FormControl('', Validators.maxLength(50)),
    s1Turnover: new FormControl(''),
    s1Change: new FormControl(''),
    s1Profit: new FormControl(''),
