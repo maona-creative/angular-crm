@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavigatorComponent } from '../navigator/navigator.component';
 import { Router } from '@angular/router';
 import { RouterOutlet } from '@angular/router';
-import { MenuItem } from 'primeng/api';
+//import { MenuItem } from 'primeng/api';
 import { TabMenuModule } from 'primeng/tabmenu';
 import {  FormGroup, FormControl, FormBuilder } from '@angular/forms';
 import { ReactiveFormsModule, Validators} from '@angular/forms';
