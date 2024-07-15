@@ -17,7 +17,7 @@ export class FinmetalService {
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON. ify(formData)
+        body: JSON.stringify(formData)
       });
 
       console.log('Response status:', response.status);

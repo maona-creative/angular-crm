@@ -333,10 +333,9 @@
       "freeComment2": "Free comment2 is working"
     }
   ],
-
   "finmetals": [
     {
-      "id": ,
+      "id": null,
       "competitor": "",
       "phone": "",
       "partner_availability": {
@@ -347,7 +346,7 @@
       "partner_description_comm": "",
       "call_month": null,
       "order_month": null,
-      "profession":  {
+      "profession": {
         "name": "No info"
       },
       "welding": {
@@ -369,12 +368,12 @@
       },
       "welding2": {
         "name": "No info"
-      }, 
+      },
       "metal2": {
         "name": "No info"
-      }, 
+      },
       "type_work2": {
-         "name": ""
+        "name": ""
       },
       "profession_description2": null,
       "welding_description2": null,
@@ -397,27 +396,27 @@
       "name1": null,
       "profession1": {
         "name": "..."
-      }, 
+      },
       "mail1": null,
       "phone1": " ",
-      "status1": true, 
-      "name2": "",   
+      "status1": true,
+      "name2": "",
       "profession2": {
         "name": "..."
       },
-      "mail2": null, 
+      "mail2": null,
       "phone2": null,
-      "status2": false, 
+      "status2": false,
       "name3": null,
       "profession3": {
         "name": "..."
-      }, 
+      },
       "mail3": null,
-      "phone3":   null,
-      "status3": true, 
-      "title":   null,
-      "url_kompass":   null,
-      "mailCC":  null, 
+      "phone3": null,
+      "status3": true,
+      "title": null,
+      "url_kompass": null,
+      "mailCC": null,
       "dial1M": {
         "name": "---"
       },
@@ -453,166 +452,165 @@
       "phone3M": null,
       "phone4M": null,
       "phone5M": null,
-      "mail1M":  null,
-      "mail2M":  null,
+      "mail1M": null,
+      "mail2M": null,
       "mail3M": null,
       "mail4M": null,
       "mail5M": null,
-      "name4":  null,
+      "name4": null,
       "profession4": {
         "name": "..."
-      }, 
+      },
       "mail4": null,
       "phone4": null,
       "status4": false,
       "name5": null,
       "profession5": {
         "name": "..."
-      }, 
+      },
       "mail5": null,
       "phone5": null,
       "status5": false,
       "name6": null,
       "profession6": {
         "name": "..."
-      }, 
+      },
       "mail6": null,
       "phone6": null,
       "status6": false,
       "name7": null,
       "profession7": {
         "name": "..."
-      }, 
+      },
       "mail7": null,
       "phone7": null,
       "status7": false,
       "name8": null,
       "profession8": {
         "name": "..."
-      }, 
+      },
       "mail8": null,
       "phone8": null,
       "status8": false,
-      
       "name9": null,
       "profession9": {
         "name": "..."
-      }, 
+      },
       "mail9": null,
       "phone9": null,
-      "status9": false, 
+      "status9": false,
       "name10": null,
       "profession10": {
         "name": "..."
-      }, 
+      },
       "mail10": null,
       "phone10": null,
-      "status10": false, 
+      "status10": false,
       "name11": null,
       "profession11": {
         "name": "..."
-      }, 
+      },
       "mail11": null,
       "phone11": null,
-      "status11": false, 
+      "status11": false,
       "name12": null,
       "profession12": {
         "name": "..."
-      }, 
+      },
       "mail12": null,
       "phone12": null,
-      "status12": false, 
+      "status12": false,
       "name13": null,
       "profession13": {
         "name": "..."
-      }, 
+      },
       "mail13": null,
       "phone13": null,
-      "status13": false, 
+      "status13": false,
       "name14": null,
       "profession14": {
         "name": "..."
-      }, 
+      },
       "mail14": null,
       "phone14": null,
       "status14": false,
       "clock": {
-        "name":"No info"
+        "name": "No info"
       },
       "hours_s": null,
       "hours_n": null,
       "language": {
-        "name":"No info"
+        "name": "No info"
       },
       "housing": {
-        "name":"No info"
+        "name": "No info"
       },
       "documents": {
-        "name":"No info"
+        "name": "No info"
       },
       "clock_description": null,
-      "language_description":  null,
+      "language_description": null,
       "housing_description": null,
-      "documents_description":  null,
+      "documents_description": null,
       "kommenti": null,
       "payDay": null,
-      "payPeriod":  null,
+      "payPeriod": null,
       "eInvoiceEmail": null,
       "billAndHoursReport": false,
       "workingDays": null,
-      "eInvoiceEmailEnabled": false, 
-      "eInvoiceOperatorCode":  null,
-      "eInvoiceEnabled": false, 
+      "eInvoiceEmailEnabled": false,
+      "eInvoiceOperatorCode": null,
+      "eInvoiceEnabled": false,
       "lunch": null,
       "lunchPaidUnpaid": false,
-      "coffeePause":  null,
+      "coffeePause": null,
       "coffeePausePaidUnpaid": null,
-      "coffeePause2":  null,
-      "coffeePausePaidUnpaid2":  null,
-      "coffeePause3":  null,
+      "coffeePause2": null,
+      "coffeePausePaidUnpaid2": null,
+      "coffeePause3": null,
       "coffeePausePaidUnpaid3": null,
-      "automaticAccountingSystem": false,  
-      "nightShift": false, 
-      "nightShiftPaid": false, 
+      "automaticAccountingSystem": false,
+      "nightShift": false,
+      "nightShiftPaid": false,
       "nightShiftStart": null,
-      "nightShiftEnd":  null,
+      "nightShiftEnd": null,
       "nightShiftRate": null,
       "leybl": {
-         "name": "--------"
+        "name": "--------"
       },
-      "leybl_description":  null,
+      "leybl_description": null,
       "ction": {
-        "name":"No info"
+        "name": "No info"
       },
-      "ction_start_time":  null,
-      "ction_description":  null,
+      "ction_start_time": null,
+      "ction_description": null,
       "action": {
-        "name":"No info"
+        "name": "No info"
       },
-      "action_start_time":  null,
-      "action_start_time2":  null,
-      "action_description":  null,
+      "action_start_time": null,
+      "action_start_time2": null,
+      "action_description": null,
       "action2": {
-        "name":"No info"
+        "name": "No info"
       },
-      "action2_start_time":  null,
-      "action2_start_time2":   null,
-      "action2_description":  null,
+      "action2_start_time": null,
+      "action2_start_time2": null,
+      "action2_description": null,
       "date_pup": null,
       "controll": {
-        "name":"No info"
+        "name": "No info"
       },
       "control2": {
-        "name":"No info"
+        "name": "No info"
       },
       "control3": {
-        "name":"No info"
+        "name": "No info"
       },
-      "orderLossReason":  null,
-      "asap": false, 
-      "de_trop": false, 
-      "h8": false, 
-      "fin": false, 
+      "orderLossReason": null,
+      "asap": false,
+      "de_trop": false,
+      "h8": false,
+      "fin": false,
       "we": {
         "name": "..."
       },
@@ -620,70 +618,420 @@
         "name": "..."
       },
       "carRequirement": {
-        "name":"No info"
+        "name": "No info"
       },
       "workerQuanityRequirement": null,
       "workerQuanityRequirementComment": null,
       "order": null,
       "fromWhichCompanySent": {
-        "name":"No info"
+        "name": "No info"
       },
       "fromWhichCompanySentComment": null,
       "fromWhichSalesmanOrder": {
-        "name":"No info"
+        "name": "No info"
       },
       "workPlace": {
-        "name":"No info"
+        "name": "No info"
       },
       "workStartDate": null,
       "workDuration": null,
       "workDescription": null,
       "workEquipment": {
-        "name":"No info"
+        "name": "No info"
       },
       "workEquipmentComment": null,
       "workCity": null,
       "workAddress": null,
       "totalUnreachable": {
-        "name":"No info"
+        "name": "No info"
       },
-       "isNew": false,
-     "categories": null,
-     "url_finder": null,
-     "turnoverCategory": null,
-     "industryClassification": null,
-     "s1Year": null, 
-     "s1Turnover": null,  
-     "s1Change": null,  
-     "s1Profit": null,  
-     "s1Tax":  null, 
-     "s1ProfitProc": null,  
-     "s1FinResult": null,  
-     "s1COP":  null, 
-     "s2Year": null,  
-     "s2Turnover": null,  
-     "s2Change": null,  
-     "s2Profit":  null, 
-     "s2Tax": null,  
-     "s2ProfitProc":  null, 
-     "s2FinResult":  null, 
-     "s2COP":  null, 
-     "s3Year":  null, 
-     "s3Turnover":  null, 
-     "s3Change": null,  
-     "s3Profit":  null, 
-     "s3Tax":  null, 
-     "s3ProfitProc":  null, 
-     "s3FinResult":  null, 
-     "s3COP": null,  
-     "s4Year": null,  
-     "s4Turnover": null,  
-     "s4Change": null,  
-     "s4Profit": null,  
-     "s4Tax":  null, 
-     "s4ProfitProc":  null, 
-     "s4FinResult": null,  
-     "s4COP":  null 
+      "isNew": false,
+      "categories": null,
+      "url_finder": null,
+      "turnoverCategory": null,
+      "industryClassification": null,
+      "s1Year": null,
+      "s1Turnover": null,
+      "s1Change": null,
+      "s1Profit": null,
+      "s1Tax": null,
+      "s1ProfitProc": null,
+      "s1FinResult": null,
+      "s1COP": null,
+      "s2Year": null,
+      "s2Turnover": null,
+      "s2Change": null,
+      "s2Profit": null,
+      "s2Tax": null,
+      "s2ProfitProc": null,
+      "s2FinResult": null,
+      "s2COP": null,
+      "s3Year": null,
+      "s3Turnover": null,
+      "s3Change": null,
+      "s3Profit": null,
+      "s3Tax": null,
+      "s3ProfitProc": null,
+      "s3FinResult": null,
+      "s3COP": null,
+      "s4Year": null,
+      "s4Turnover": null,
+      "s4Change": null,
+      "s4Profit": null,
+      "s4Tax": null,
+      "s4ProfitProc": null,
+      "s4FinResult": null,
+      "s4COP": null
+    },
+    {
+      "id": "",
+      "competitor": "Unknown",
+      "phone": "+3729999999",
+      "partner_availability": {
+        "name": "No"
+      },
+      "bankrupt": false,
+      "partner_description": "Test",
+      "partner_description_comm": "Test",
+      "call_month": "19.07.2024",
+      "order_month": "30.07.2024",
+      "profession": {
+        "name": "Welder"
+      },
+      "welding": {
+        "name": "MIG-MAG"
+      },
+      "metal": {
+        "name": "Alumin"
+      },
+      "type_work": {
+        "name": "Pipes"
+      },
+      "profession_description": "Test prof comment",
+      "welding_description": "Test weld comment",
+      "metal_description": "Test metal comment",
+      "type_work_description": "Test work comment",
+      "workingMode": true,
+      "professionn2": {
+        "name": "Fitter"
+      },
+      "welding2": {
+        "name": "MIG-MAG"
+      },
+      "metal2": {
+        "name": "Duplex"
+      },
+      "type_work2": {
+        "name": "Pipes"
+      },
+      "profession_description2": "Test prof comment",
+      "welding_description2": "test weld comment 2",
+      "metal_description2": "Test metal comment 2",
+      "type_work_description2": "Test work comment 2",
+      "start_time": "test COMM",
+      "start_time2": "test COMM",
+      "representative": "unknown",
+      "price": 5,
+      "price_comment": "too small",
+      "price_a_plus": 5,
+      "price_a_minus": 10,
+      "location": "tallinn",
+      "locationApproved": true,
+      "locationCountry": "Estonia",
+      "locationCity": "Tartu",
+      "locationAddress": "Tartu mnt",
+      "locationPostalCode": "198432",
+      "locationGmap": "street",
+      "name1": "First",
+      "profession1": {
+        "name": "taskmaster2"
+      },
+      "mail1": "first@mail.ee",
+      "phone1": "+3729999999",
+      "status1": true,
+      "name2": "Second",
+      "profession2": {
+        "name": "ownerSeo"
+      },
+      "mail2": "second@mail.ee",
+      "phone2": "+3729999999",
+      "status2": true,
+      "name3": "Third",
+      "profession3": {
+        "name": "info"
+      },
+      "mail3": "third@mail.ee",
+      "phone3": "+3726668888",
+      "status3": true,
+      "title": "Some company",
+      "url_kompass": "",
+      "mailCC": "",
+      "dial1M": {
+        "name": "Yes"
+      },
+      "dial2M": {
+        "name": "No"
+      },
+      "dial3M": {
+        "name": "Yes"
+      },
+      "dial4M": {
+        "name": "No"
+      },
+      "dial5M": {
+        "name": "Yes"
+      },
+      "profession1M": {
+        "name": "taskmaster2"
+      },
+      "profession2M": {
+        "name": "owner"
+      },
+      "profession3M": {
+        "name": "taskmaster2"
+      },
+      "profession4M": {
+        "name": "taskmaster1"
+      },
+      "profession5M": {
+        "name": "info"
+      },
+      "phone1M": "",
+      "phone2M": "",
+      "phone3M": "",
+      "phone4M": "",
+      "phone5M": "",
+      "mail1M": "",
+      "mail2M": "",
+      "mail3M": "",
+      "mail4M": "",
+      "mail5M": "",
+      "name4": "",
+      "profession4": {
+        "name": "..."
+      },
+      "mail4": "",
+      "phone4": "",
+      "status4": true,
+      "name5": "",
+      "profession5": {
+        "name": "..."
+      },
+      "mail5": "",
+      "phone5": "",
+      "status5": true,
+      "name6": "",
+      "profession6": {
+        "name": "..."
+      },
+      "mail6": "",
+      "phone6": "",
+      "status6": true,
+      "name7": "",
+      "profession7": {
+        "name": "..."
+      },
+      "mail7": "",
+      "phone7": "",
+      "status7": true,
+      "name8": "",
+      "profession8": {
+        "name": "..."
+      },
+      "mail8": "",
+      "phone8": "",
+      "status8": true,
+      "name9": "",
+      "profession9": {
+        "name": "..."
+      },
+      "mail9": "",
+      "phone9": "",
+      "status9": true,
+      "name10": "",
+      "profession10": {
+        "name": "..."
+      },
+      "mail10": "",
+      "phone10": "",
+      "status10": true,
+      "name11": "",
+      "profession11": {
+        "name": "..."
+      },
+      "mail11": "",
+      "phone11": "",
+      "status11": true,
+      "name12": "",
+      "profession12": {
+        "name": "..."
+      },
+      "mail12": "",
+      "phone12": "",
+      "status12": true,
+      "name13": "",
+      "profession13": {
+        "name": "..."
+      },
+      "mail13": "",
+      "phone13": "",
+      "status13": true,
+      "name14": "",
+      "profession14": {
+        "name": "..."
+      },
+      "mail14": "",
+      "phone14": "",
+      "status14": true,
+      "clock": {
+        "name": "60"
+      },
+      "hours_s": "",
+      "hours_n": "",
+      "language": {
+        "name": "ENG"
+      },
+      "housing": {
+        "name": "No"
+      },
+      "documents": {
+        "name": "Fire"
+      },
+      "clock_description": "",
+      "language_description": "",
+      "housing_description": "",
+      "documents_description": "",
+      "kommenti": "",
+      "payDay": "",
+      "payPeriod": "",
+      "eInvoiceEmail": "",
+      "billAndHoursReport": true,
+      "workingDays": "",
+      "eInvoiceEmailEnabled": true,
+      "eInvoiceAddress": "",
+      "eInvoiceOperatorCode": "",
+      "eInvoiceEnabled": false,
+      "lunch": "",
+      "lunchPaidUnpaid": false,
+      "coffeePause": 1,
+      "coffeePausePaidUnpaid": true,
+      "coffeePause2": "",
+      "coffeePausePaidUnpaid2": false,
+      "coffeePause3": 3,
+      "coffeePausePaidUnpaid3": true,
+      "automaticAccountingSystem": true,
+      "nightShift": true,
+      "nightShiftPaid": true,
+      "nightShiftStart": "23:27",
+      "nightShiftEnd": "08:00",
+      "nightShiftRate": 0,
+      "leybl": {
+        "name": "Fix Part"
+      },
+      "leybl_description": "",
+      "ction": {
+        "name": "Tender"
+      },
+      "ction_start_time": "26.07.2024 14:43",
+      "ction_description": "",
+      "action": {
+        "name": "Call_Email"
+      },
+      "action_start_time": "24.07.2024",
+      "action_start_time2": "13:43",
+      "action_description": "test",
+      "action2": {
+        "name": "Offer"
+      },
+      "action2_start_time": "10.07.2024",
+      "action2_start_time2": "18:43",
+      "action2_description": "test",
+      "date_pup": "2024-07-15T11:36:24.312Z",
+      "controll": {
+        "name": "No info"
+      },
+      "control2": {
+        "name": "No info"
+      },
+      "control3": {
+        "name": "No info"
+      },
+      "orderLossReason": "",
+      "asap": false,
+      "de_trop": false,
+      "h8": false,
+      "fin": false,
+      "we": {
+        "name": "..."
+      },
+      "mp": {
+        "name": "..."
+      },
+      "carRequirement": {
+        "name": "No info"
+      },
+      "workerQuanityRequirement": "",
+      "workerQuanityRequirementComment": "",
+      "order": "",
+      "fromWhichCompanySent": {
+        "name": "No info"
+      },
+      "fromWhichCompanySentComment": "",
+      "fromWhichSalesmanOrder": {
+        "name": "No info"
+      },
+      "workPlace": {
+        "name": "No info"
+      },
+      "workStartDate": "",
+      "workDuration": "",
+      "workDescription": "",
+      "workEquipment": {
+        "name": "No info"
+      },
+      "workEquipmentComment": "",
+      "workCity": "",
+      "workAddress": "",
+      "totalUnreachable": {
+        "name": "No info"
+      },
+      "isNew": true,
+      "categories": "",
+      "url_finder": "",
+      "turnoverCategory": "",
+      "industryClassification": "",
+      "s1Year": "",
+      "s1Turnover": "",
+      "s1Change": "",
+      "s1Profit": "",
+      "s1Tax": "",
+      "s1ProfitProc": "",
+      "s1FinResult": "",
+      "s1COP": "",
+      "s2Year": "",
+      "s2Turnover": "",
+      "s2Change": "",
+      "s2Profit": "",
+      "s2Tax": "",
+      "s2ProfitProc": "",
+      "s2FinResult": "",
+      "s2COP": "",
+      "s3Year": "",
+      "s3Turnover": "",
+      "s3Change": "",
+      "s3Profit": "",
+      "s3Tax": "",
+      "s3ProfitProc": "",
+      "s3FinResult": "",
+      "s3COP": "",
+      "s4Year": "",
+      "s4Turnover": "",
+      "s4Change": "",
+      "s4Profit": "",
+      "s4Tax": "",
+      "s4ProfitProc": "",
+      "s4FinResult": "",
+      "s4COP": ""
     }
   ]
 }

@@ -1,13 +1,14 @@
+<p>finmetaltable works!</p>
 
-<div class="card">
-    <form (ngSubmit)="onSubmit()">
-        <button pButton 
-        pRipple  
-        class="p-button-success">Add new welder</button>
-      </form>
-  <p-table 
+
+    <nav>
+      <a href="/" class="p-button font-bold">Home</a>
+      <a href="/finmetal-forms" class="p-button font-bold">Add new finmetal</a>
+ </nav>
+ <div class="card">
+ <p-table 
   [columns]="cols" 
-  [value]="welders" 
+  [value]="finmetals" 
   styleClass="p-datatable-gridlines"  
   [tableStyle]="{ 'min-width': '150rem' }" 
   [resizableColumns]="true"
@@ -17,26 +18,27 @@
   [paginator]="true"
   [rowsPerPageOptions]="[5, 10, 20]"
   selectionMode="single" 
-  [(selection)]="selectedWelders"
+  [(selection)]="selectedFinmetal"
   
   >
-      <ng-template pTemplate="header" let-columns>
-          <tr>
-              <th *ngFor="let col of columns">
-               
-                  {{ col.header }}
-              </th>
-          </tr>
-      </ng-template>
-      <ng-template pTemplate="body" let-rowData let-columns="columns">
-          <tr>
-              <td *ngFor="let col of columns">
-             <!--     {{ rowData[col.field] }} -->
-             <div [ngSwitch]="col.type">
+
+  <ng-template pTemplate="header" let-columns>
+    <tr>
+        <th *ngFor="let col of columns">
+         
+            {{ col.header }}
+        </th>
+    </tr>
+</ng-template>
+<ng-template pTemplate="body" let-rowData let-columns="columns">
+    <tr>
+        <td *ngFor="let col of columns">
+
+            <div [ngSwitch]="col.type">
                 <span *ngSwitchCase="'number'">{{ rowData[col.field] }}</span>
                 <span *ngSwitchCase="'text'">{{ rowData[col.field] }}</span>
                 <input *ngSwitchCase="'checkbox'" type="checkbox" [checked]="rowData[col.field]" class="custom-checkbox" />
-                <p-inputMask *ngSwitchCase="'phone'" placeholder="(999)-999-9999" mask="(999)-999-9999" >{{ (rowData[col.field]) }}</p-inputMask>
+                 <span *ngSwitchCase="'boolean'"  [ngClass]="{'text-success': rowData[col.field], 'text-danger': !rowData[col.field]}">{{ rowData[col.field] ? 'Yes' : 'No' }}</span>
                 <textarea rows="3" cols="30" *ngSwitchCase="'textarea'">{{ rowData[col.field] }}</textarea>
                 <span *ngSwitchCase="'date'" dateFormat="dd.mm.yy">{{ rowData[col.field] }}</span>
                 <span *ngSwitchCase="'time'" dateFormat="HH:mm">{{ rowData[col.field] }}</span>
@@ -48,7 +50,7 @@
       </ng-template>
       <ng-template pTemplate="summary">
         <div class="p-d-flex p-ai-center p-jc-between">
-            In total there are {{welders ? welders.length : 0 }} welders.
+            In total there are {{finmetals ? finmetals.length : 0 }} finmetal.
         </div>
     </ng-template>
   </p-table>

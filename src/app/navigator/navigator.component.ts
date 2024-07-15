@@ -67,7 +67,7 @@ export class NavigatorComponent implements OnInit {
             {
                 label: 'Finmetal',
                 icon: 'pi pi-file',
-                route: '/finmetal-forms'
+                route: '/finmetal-table'
             }
           ]
         }

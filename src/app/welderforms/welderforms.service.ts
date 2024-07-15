@@ -11,17 +11,15 @@ export class WelderformsService {
   constructor(private http: HttpClient) { }
 
   async submitWelderForms(formData: any): Promise<any> {
-    console.log('Submitting form data:', formData);
+    
     try {
       const response = await fetch('http://localhost:3000/welders', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON. ify(formData)
+        body: JSON.stringify(formData)
       });
-
-      console.log('Response status:', response.status);
 
       if (!response.ok) {
         throw new Error('Network response was not ok');

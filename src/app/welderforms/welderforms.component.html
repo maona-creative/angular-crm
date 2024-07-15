@@ -42,7 +42,7 @@
             <div class="col-md-2">
              <label for="Super_Age">Date of birth</label>
              <p-calendar id="Super_Age" 
-             dataType=" " 
+             dataType="string" 
              dateFormat="dd.mm.yy"
              [showTime]="false"
              formControlName="Super_Age" />
@@ -124,7 +124,7 @@
               <p-calendar
                 id="start_date"
                 class="form-control"
-                dataType=" " 
+                dataType="string" 
                 dateFormat="dd.mm.yys"
                 [showTime]="false"
                 formControlName="start_date" 
@@ -135,7 +135,7 @@
 
               <label for="start_time">Start time email</label>
               <p-calendar  id="start_time" 
-              dataType=" " 
+              dataType="string" 
               dateFormat="format"
               [showTime]="true"
               [timeOnly]="true"
@@ -143,7 +143,7 @@
               [iconDisplay]="'input'"
               [showIcon]="true"
               formControlName="start_time" />
-              <span>{{date.toLocale ()}}</span> 
+              <span>{{date.toLocaleString()}}</span> 
 
               <!-- IGX time picker not working correctly
               <label for="start_time">Start time</label>
@@ -155,9 +155,9 @@
                 [inputFormat]="format"
                 displayFormat="HH:mm"
                 [placeholder]="'Choose time'"
-                dataType=" "
+                dataType="string"
                >
-                <igx-hint>{{date.toLocale ()}}</igx-hint>
+                <igx-hint>{{date.toLocaleString()}}</igx-hint>
                 </igx-time-picker> -->
 
             </div> 
@@ -179,7 +179,7 @@
               <p-calendar
               id="start_date_email"
               class="form-control"
-              dataType=" " 
+              dataType="string" 
               dateFormat="dd.mm.yy"
               [showTime]="false"
               formControlName="start_date_email"/>
@@ -188,7 +188,7 @@
             <div class="field col-12 md:col-2">
               <label for="start_time_email">Start time email</label>
                  <p-calendar  id="start_time_email" 
-                 dataType=" " 
+                 dataType="string" 
                  dateFormat="format"
                  [showTime]="true"
                  [timeOnly]="true"
@@ -196,7 +196,7 @@
                  [iconDisplay]="'input'"
                  [showIcon]="true"
                  formControlName="start_time_email" />
-                 <span>{{date.toLocale ()}}</span>
+                 <span>{{date.toLocaleString()}}</span>
             </div>
 
             <!-- IGX not working correctly
@@ -209,9 +209,9 @@
                 formControlName="start_time_email"
                 [placeholder]="'Choose time'"
                 [mode]="mode"
-                dataType=" "
+                dataType="string"
                 [inputFormat]="format">
-                <igx-hint>{{date.toLocale ()}}</igx-hint>
+                <igx-hint>{{date.toLocaleString()}}</igx-hint>
                 </igx-time-picker>
             </div> -->
           </div>
@@ -305,7 +305,7 @@
             <p-calendar id="filedFormDate" 
             type="text" 
             class="form-control" 
-            dataType=" " 
+            dataType="string" 
             dateFormat="dd.mm.yy"
             [showTime]="false"
             formControlName="filedFormDate" />
@@ -318,7 +318,7 @@
             <p-calendar id="idPassportDate" 
             type="text" 
             class="form-control" 
-            dataType=" " 
+            dataType="string" 
             dateFormat="dd.mm.yy"
             [showTime]="false"
             formControlName="idPassportDate" />
@@ -331,7 +331,7 @@
             <p-calendar id="assignedDate"
              type="text" 
              class="form-control" 
-             dataType=" " 
+             dataType="string" 
              dateFormat="dd.mm.yy"
              [showTime]="false"
              formControlName="assignedDate" />
@@ -342,7 +342,7 @@
             <label for="workSiteDate">Worksite Date</label>
             <p-calendar id="workSiteDate"
              type="text" class="form-control"
-             dataType=" " 
+             dataType="string" 
              dateFormat="dd.mm.yy"
              [showTime]="false"
               formControlName="workSiteDate" />

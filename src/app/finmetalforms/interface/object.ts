@@ -1,5 +1,5 @@
 export interface PA_AVA {
- name:  
+ name:  string
 }
 
 export const pa_AVA_options: PA_AVA[] = [
@@ -14,7 +14,7 @@ export const pa_AVA_options: PA_AVA[] = [
 ]
 
 export interface PROF {
-    name:  
+    name:  string
    }
 
 export const prof_options: PROF[] = [
@@ -29,7 +29,7 @@ export const prof_options: PROF[] = [
 
 
 export interface WEL {
-    name:  
+    name:  string
    }
 
 export const wel_options: WEL[] = [
@@ -43,7 +43,7 @@ export const wel_options: WEL[] = [
 ]
 
 export interface MET {
-    name:  
+    name:  string
    }
 
 export const met_options: MET[] = [
@@ -58,7 +58,7 @@ export const met_options: MET[] = [
 ]
 
 export interface WORK {
-    name:  
+    name:  string
 }
 
 export const work_options: WORK[] = [
@@ -74,7 +74,7 @@ export const work_options: WORK[] = [
 ]
 
 export interface POSITION {
-    name:  
+    name:  string
 }
 
 export const position_options: POSITION[] = [
@@ -97,7 +97,7 @@ export const position_options: POSITION[] = [
 ]
 
 export interface DAIL {
-    name:  
+    name:  string
 }
 
 export const dail_options: DAIL[] = [
@@ -107,7 +107,7 @@ export const dail_options: DAIL[] = [
 ]
 
 export interface Cl {
-    name:  
+    name:  string
 }
 
 export const cl_options: Cl[] = [
@@ -120,7 +120,7 @@ export const cl_options: Cl[] = [
 ]
 
 export interface LAN {
-    name:  
+    name:  string
 }
 
 export const lan_options: LAN[] = [
@@ -133,7 +133,7 @@ export const lan_options: LAN[] = [
     
 ]
 export interface HOS {
-    name:  
+    name:  string
 }
 
 export const hos_options: HOS[] = [
@@ -145,7 +145,7 @@ export const hos_options: HOS[] = [
 ]
 
 export interface DOC {
-    name:  
+    name:  string
 }
 
 export const doc_opinions: DOC[] = [
@@ -162,7 +162,7 @@ export const doc_opinions: DOC[] = [
 
 
 export interface LEB {
-    name:  
+    name:  string
 }
 
 export const leb_options: LEB[] = [
@@ -181,7 +181,7 @@ export const leb_options: LEB[] = [
 ]
 
 export interface CTA {
-    name:  
+    name:  string
 }
 
 export const cta_options: CTA[] = [
@@ -192,7 +192,7 @@ export const cta_options: CTA[] = [
 ]
 
 export interface ACT {
-    name:  
+    name:  string
 }
 
 export const act_options: ACT[] = [
@@ -206,7 +206,7 @@ export const act_options: ACT[] = [
 
 
 export interface ACT2 {
-    name:  
+    name:  string
 }
 
 export const act2_options: ACT2[] = [
@@ -218,7 +218,7 @@ export const act2_options: ACT2[] = [
 ]
 
 export interface CONTROLL {
-    name:  
+    name:  string
 }
 
 export const control_options: CONTROLL[] = [
@@ -231,7 +231,7 @@ export const control_options: CONTROLL[] = [
 ]
 
 export interface WE {
-    name:  
+    name:  string
 }
 
 export const we_options: WE[] = [
@@ -243,7 +243,7 @@ export const we_options: WE[] = [
 ]
 
 export interface MP {
-    name:  
+    name:  string
 }
 
 export const mp_options: MP[] = [
@@ -273,7 +273,7 @@ export const mp_options: MP[] = [
 ]
 
 export interface CARREQUIREMENT {
-    name:  
+    name:  string
 }
 
 export const carrequirement_options: CARREQUIREMENT[] = [
@@ -283,7 +283,7 @@ export const carrequirement_options: CARREQUIREMENT[] = [
 ]
 
 export interface ORDER {
-    name:  ;
+    name:  string
 }
 
 export const order_options: ORDER[] = [
@@ -294,7 +294,7 @@ export const order_options: ORDER[] = [
 ]
 
 export interface FROMWHICHCOMPANYSENT {
-    name:  
+    name:  string
 }
 
 export const fromcompanysent: FROMWHICHCOMPANYSENT[] = [
@@ -307,7 +307,7 @@ export const fromcompanysent: FROMWHICHCOMPANYSENT[] = [
 ]
 
 export interface FROMWHICHSALESMANORDER {
-    name:  
+    name:  string
 }
 
 export const fromsalesman_options: FROMWHICHSALESMANORDER[] = [
@@ -323,7 +323,7 @@ export const fromsalesman_options: FROMWHICHSALESMANORDER[] = [
 ]
 
 export interface WORKPLACE {
-    name:  
+    name:  string
 }
 
 export const workplace_options: WORKPLACE[] = [
@@ -334,7 +334,7 @@ export const workplace_options: WORKPLACE[] = [
 ]
 
 export interface WORKEQUIPMENT {
-    name:  
+    name:  string
 }
 
 export const workequipment_options: WORKEQUIPMENT[] = [
@@ -347,7 +347,7 @@ export const workequipment_options: WORKEQUIPMENT[] = [
 ]
 
 export interface TOTALUNREACHABLE {
-    name:  
+    name:  string
 }
 
 export const totalunreachable_options: TOTALUNREACHABLE[] = [

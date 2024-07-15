@@ -1,28 +1,28 @@
 export interface Available {
-   name:  ;
+   name: string;
    
 }
 
 export interface CallAction {
-    name:  ;
+    name: string;
 }
 
 export interface CallType {
-    name:  ;
+    name: string;
 }
 
 export interface TotalUnreachable {
-    name:  ;
+    name: string;
 }
 
 export interface WrongTel {
-    name:  ;
+    name: string;
 }
 
 export interface Expensivness {
-    name:  ;
+    name: string;
 }
 
 export interface Car {
-    name:  ;
+    name: string;
 }
