@@ -8,8 +8,7 @@ import { Available, TotalUnreachable, WrongTel } from './interface/dropdown';
 import { CallAction, Expensivness, Car } from './interface/dropdown';
 import { CallType } from './interface/dropdown';
 import { CommonModule } from '@angular/common';
-import { DatePipe } from '@angular/common';
-
+import { WelderformsService } from './welderforms.service';
 
 
 // PrimeNg import
@@ -24,15 +23,15 @@ import { InputSwitchModule } from 'primeng/inputswitch';
 import { CalendarModule } from 'primeng/calendar';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { DropdownModule } from 'primeng/dropdown';
-import { WelderformsService } from './welderforms.service';
 
 
 
-//import { IgxInputGroupModule,
-	//IgxIconModule, IgxTimePickerModule, } from 'igniteui-angular';
-import { PickerInteractionMode } from 'igniteui-angular';
+
+//import { IgxIconModule } from 'igniteui-angular';
+//import { PickerInteractionMode } from 'igniteui-angular';
 //import { HammerModule } from '@angular/platform-browser';
-import { IGX_TIME_PICKER_DIRECTIVES } from 'igniteui-angular';
+//import { IGX_TIME_PICKER_DIRECTIVES } from 'igniteui-angular';
+//import { IgxTimePickerComponent } from "igniteui-angular";
 
 
 
@@ -55,13 +54,10 @@ import { IGX_TIME_PICKER_DIRECTIVES } from 'igniteui-angular';
     InputTextareaModule,
     DropdownModule,
     CommonModule,
-   // IgxInputGroupModule,
-    //IgxIconModule,
-    //IgxTimePickerModule,
-    DatePipe,
-    //HammerModule,
-    IGX_TIME_PICKER_DIRECTIVES,
-    
+    // IgxIconModule,
+    // HammerModule,
+    // IGX_TIME_PICKER_DIRECTIVES,
+    // IgxTimePickerComponent
   
   
 
@@ -76,7 +72,7 @@ import { IGX_TIME_PICKER_DIRECTIVES } from 'igniteui-angular';
 export class WelderformsComponent implements OnInit {
 
   
-  public mode: PickerInteractionMode = PickerInteractionMode.DropDown;
+ 
   public format = 'HH:mm';
   public date: Date = new Date();
   
@@ -158,7 +154,7 @@ export class WelderformsComponent implements OnInit {
     tatle: new FormControl(''),
     tatle_email: new FormControl(''),
     start_date: new FormControl<Date | null>(null),
-    start_time: new FormControl<string | null>(null),
+    start_time: new FormControl<  | null>(null),
     start_date_email: new FormControl<Date | null>(null),
     start_time_email: new FormControl(''),
     totalUnreachable2: new FormControl(this.totalunreachable[1]), // verbose_name='Not answered'
@@ -222,10 +218,13 @@ export class WelderformsComponent implements OnInit {
 
  async onSubmit(): Promise<void> {
     const formData = this.welderForm.value;
+    console.log('Form data in component:', formData);
 
     try {
       const responseData = await this.welderformsService.submitWelderForms(formData);
       console.log('Form submitted successfully', responseData);
+      // Optionally reset the form
+    this.welderForm.reset();
     } catch (error) {
       console.error('Error submitting form', error);
     }

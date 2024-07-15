@@ -5,15 +5,14 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class WelderformsService {
-
+export class FinmetalService {
 
   constructor(private http: HttpClient) { }
 
-  async submitWelderForms(formData: any): Promise<any> {
-    console.log('Submitting form data:', formData);
+  async submitFinmetalForms(formData: any): Promise<any> {
+    console.log('Submitting finmetal form data:', formData);
     try {
-      const response = await fetch('http://localhost:3000/welders', {
+      const response = await fetch('http://localhost:3000/finmetals', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -33,6 +32,7 @@ export class WelderformsService {
       throw error;
     }
   }
+
 
 
 

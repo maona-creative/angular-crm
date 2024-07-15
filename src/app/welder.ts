@@ -6,36 +6,36 @@ import { CallAction } from "./welderforms/interface/dropdown"
 
 export interface Welder {
     id?: number
-    Super_First_name?: string
-    Super_Surname?: string
-    Super_mail?: string
-    Desired_Job_Category?: string
-    Desired_position?: string
-    Super_Telephone?: string
+    Super_First_name?:  
+    Super_Surname?:  
+    Super_mail?:  
+    Desired_Job_Category?:  
+    Desired_position?:  
+    Super_Telephone?:  
     asap?: boolean
-    Comment_1?: string
-    Super_Age: string
+    Comment_1?:  
+    Super_Age:  
     NonGastarbeiter: boolean
     available: Available
-    tatle: string
+    tatle:  
     tatle_email: CallAction
-    start_date: string
-    start_time: string
-    start_date_email: string
-    start_time_email: string
+    start_date:  
+    start_time:  
+    start_date_email:  
+    start_time_email:  
     totalUnreachable2: TotalUnreachable
-    totalUnreachable: string
-    calltype: string
+    totalUnreachable:  
+    calltype:  
     wrongtel: WrongTel
     expensivness: Expensivness
     costPerHour: number
-    costPerHourComm: string
+    costPerHourComm:  
     car: Car
     filedFormDate: number
     idPassportDate: number
     assignedDate: number
     workSiteDate: number
-    freeComment1: string
-    freeComment2: string
+    freeComment1:  
+    freeComment2:  
 
 }

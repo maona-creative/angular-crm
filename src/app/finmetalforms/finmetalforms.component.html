@@ -9,7 +9,7 @@
 <h2>Change finmetal</h2>
 
   <form [formGroup]="finmetalForm" (ngSubmit)="onSubmit()">
-    <p-accordion [activeIndex]="14">
+    <p-accordion [activeIndex]="0">
       <p-accordionTab header="Company">
         <div class="formgrid grid">
         <div class="field col-12 md:col-2">
@@ -43,7 +43,7 @@
         <div class="field col-12 md:col-2">
           <label for="call_month">Call month</label>
              <p-calendar id="call_month" 
-             dataType="string" 
+             dataType=" " 
              dateFormat="dd.mm.yy"
              [showTime]="false"
              [iconDisplay]="'input'"
@@ -53,7 +53,7 @@
         <div class="field col-12 md:col-2">
           <label for="order_month">Order month</label>
              <p-calendar id="order_month" 
-             dataType="string" 
+             dataType=" " 
              dateFormat="dd.mm.yy"
              [showTime]="false"
              [iconDisplay]="'input'"
@@ -883,7 +883,7 @@
            <div class="field col-12 md:col-2">
             <label for="nightShiftStart">Night shift start</label>
                <p-calendar id="nightShiftStart" 
-               dataType="string" 
+               dataType=" " 
                dateFormat="dd.mm.yy"
                [showTime]="true"
                [timeOnly]="true"
@@ -895,7 +895,7 @@
           <div class="field col-12 md:col-2">
             <label for="nightShiftEnd">Night shift end</label>
                <p-calendar id="nightShiftEnd" 
-               dataType="string" 
+               dataType=" " 
                dateFormat="dd.mm.yy"
                [showTime]="true"
                [timeOnly]="true"
@@ -945,7 +945,7 @@
         <div class="field col-12 md:col-2">
           <label for="ction_start_time">Order date</label>
              <p-calendar id="ction_start_time" 
-             dataType="string" 
+             dataType=" " 
              dateFormat="dd.mm.yy"
              [showTime]="true"
              [iconDisplay]="'input'"
@@ -972,7 +972,7 @@
       <div class="field col-12 md:col-2">
         <label for="action_start_time">Call date</label><br>
            <p-calendar id="action_start_time" 
-           dataType="string" 
+           dataType=" " 
            dateFormat="dd.mm.yy"
            [showTime]="false"
            [iconDisplay]="'input'"
@@ -982,7 +982,7 @@
       <div class="field col-12 md:col-2">
         <label for="action_start_time2">Call time</label><br>
            <p-calendar id="action_start_time2" 
-           dataType="string" 
+           dataType=" " 
            dateFormat="dd.mm.yy"
            [showTime]="true"
            [timeOnly]="true"
@@ -1011,7 +1011,7 @@
     <div class="field col-12 md:col-2">
       <label for="action2_start_time">Email date</label><br>
          <p-calendar id="action2_start_time" 
-         dataType="string" 
+         dataType=" " 
          dateFormat="dd.mm.yy"
          [showTime]="false"
          [iconDisplay]="'input'"
@@ -1021,7 +1021,7 @@
     <div class="field col-12 md:col-2">
       <label for="action2_start_time2">Email time</label><br>
          <p-calendar id="action2_start_time2" 
-         dataType="string" 
+         dataType=" " 
          dateFormat="dd.mm.yy"
          [showTime]="true"
          [timeOnly]="true"
@@ -1039,7 +1039,7 @@
     <div class="field col-12 md:col-2">
       <label for="date_pup">Auto date</label><br>
          <p-calendar id="date_pup" 
-         dataType="string" 
+         dataType=" " 
          dateFormat="dd.mm.yy"
          [showTime]="true"
          [iconDisplay]="'input'"
@@ -1431,7 +1431,7 @@
       <p-accordionTab header="Projects"></p-accordionTab>
       </p-accordion>
       <div class="card flex justify-content-center">
-      <p-button label="Submit"  icon="pi pi-check"></p-button></div>
+      <p-button type="submit" label="Submit"  icon="pi pi-check"></p-button></div>
       
 </form>
 

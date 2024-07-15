@@ -13,6 +13,7 @@ CTA, cta_options, ACT, act_options, ACT2, act2_options, CONTROLL, control_option
 WE, we_options, MP, mp_options, CARREQUIREMENT, carrequirement_options, FROMWHICHCOMPANYSENT,
  fromcompanysent, FROMWHICHSALESMANORDER, fromsalesman_options, WORKEQUIPMENT, workplace_options,
 workequipment_options, WORKPLACE, TOTALUNREACHABLE, totalunreachable_options, ORDER, order_options } from './interface/object';
+import { FinmetalService } from './finmetal.service';
 
 //PrimeNg import
 import { ButtonModule } from 'primeng/button';
@@ -42,6 +43,7 @@ import { InputNumberModule } from 'primeng/inputnumber';
     CalendarModule,
     InputSwitchModule,
     InputNumberModule,
+    
     
     
   
@@ -337,71 +339,42 @@ export class FinmetalformsComponent {
    industryClassification: new FormControl(''), //verbose_name='Industry Classification
 
    s1Year: new FormControl('', Validators.maxLength(50)),
-   s1Turnover: new FormControl(''),
-   s1Change: new FormControl(''),
-   s1Profit: new FormControl(''),
-   s1Tax: new FormControl(''),
-   s1ProfitProc: new FormControl(''),
-   s1FinResult: new FormControl(''),
-   s1COP: new FormControl(''),
+   s1Turnover: new FormControl('', Validators.maxLength(50)),
+   s1Change: new FormControl('', Validators.maxLength(50)),
+   s1Profit: new FormControl('', Validators.maxLength(50)),
+   s1Tax: new FormControl('', Validators.maxLength(50)),
+   s1ProfitProc: new FormControl('', Validators.maxLength(50)),
+   s1FinResult: new FormControl('', Validators.maxLength(50)),
+   s1COP: new FormControl('', Validators.maxLength(50)),
 
-   s2Year: new FormControl(''),
-   s2Turnover: new FormControl(''),
-   s2Change: new FormControl(''),
-   s2Profit: new FormControl(''),
-   s2Tax: new FormControl(''),
-   s2ProfitProc: new FormControl(''),
-   s2FinResult: new FormControl(''),
-   s2COP: new FormControl(''),
-
-
-   s3Year: new FormControl(''),
-   s3Turnover: new FormControl(''),
-   s3Change: new FormControl(''),
-   s3Profit: new FormControl(''),
-   s3Tax: new FormControl(''),
-   s3ProfitProc: new FormControl(''),
-   s3FinResult: new FormControl(''),
-   s3COP: new FormControl(''),
+   s2Year: new FormControl('', Validators.maxLength(50)),
+   s2Turnover: new FormControl('', Validators.maxLength(50)),
+   s2Change: new FormControl('', Validators.maxLength(50)),
+   s2Profit: new FormControl('', Validators.maxLength(50)),
+   s2Tax: new FormControl('', Validators.maxLength(50)),
+   s2ProfitProc: new FormControl('', Validators.maxLength(50)),
+   s2FinResult: new FormControl('', Validators.maxLength(50)),
+   s2COP: new FormControl('', Validators.maxLength(50)),
 
 
-   s4Year: new FormControl(''),
-   s4Turnover: new FormControl(''),
-   s4Change: new FormControl(''),
-   s4Profit: new FormControl(''),
-   s4Tax: new FormControl(''),
-   s4ProfitProc: new FormControl(''),
-   s4FinResult: new FormControl(''),
-   s4COP: new FormControl(''),
+   s3Year: new FormControl('', Validators.maxLength(50)),
+   s3Turnover: new FormControl('', Validators.maxLength(50)),
+   s3Change: new FormControl('', Validators.maxLength(50)),
+   s3Profit: new FormControl('', Validators.maxLength(50)),
+   s3Tax: new FormControl('', Validators.maxLength(50)),
+   s3ProfitProc: new FormControl('', Validators.maxLength(50)),
+   s3FinResult: new FormControl('', Validators.maxLength(50)),
+   s3COP: new FormControl('', Validators.maxLength(50)),
 
-  
 
-  /*
-  
-  //Departures. Class Departues
-  whichWorkerSent: new FormControl(''), //verbose_name='Which Worker Sent' ,models.ForeignKey
-  departure: new FormControl(false),
-  departureDate: new FormControl(''), //verbose_name='Departure Date'
-  departureDateComm1: new FormControl(''), //'comment1'
-  departureDateComm2: new FormControl(''), //verbose_name='comment2
-  
-  
-  Calls. Class Callfm
-  user: new FormControl(''), 
-  date: new FormControl(''), 
-  tmie: new FormControl(''),
-  comment: new FormControl(''),
-  calltype: new FormControl(''), //choices=CALL, default='No info'
-  direction: new FormControl(''), 
-  duration: new FormControl(''), //number
-
- //Call periods. Class Call period
- is_active: new FormControl(false),
- dateFrom: new FormControl(''),
- dateTo: new FormControl(''),
- comment_call: new FormControl(''),
- mode: new FormControl(''),//choices=CALLP, max_length=15, default='Call' */
-  
+   s4Year: new FormControl('', Validators.maxLength(50)),
+   s4Turnover: new FormControl('', Validators.maxLength(50)),
+   s4Change: new FormControl('', Validators.maxLength(50)),
+   s4Profit: new FormControl('', Validators.maxLength(50)),
+   s4Tax: new FormControl('', Validators.maxLength(50)),
+   s4ProfitProc: new FormControl('', Validators.maxLength(50)),
+   s4FinResult: new FormControl('', Validators.maxLength(50)),
+   s4COP: new FormControl('', Validators.maxLength(50)),
 
 
   });
@@ -409,12 +382,23 @@ export class FinmetalformsComponent {
   constructor(
     private router: Router,
     private fb: FormBuilder,
+    private finmetalService: FinmetalService
     
    ) {}
 
 
    async onSubmit(): Promise<void> {
     const formData = this.finmetalForm.value;
+    console.log('Form data in finmetal.component:', formData);
+
+    try {
+      const responseData = await this.finmetalService.submitFinmetalForms(formData);
+      console.log('Fin metal form submitted successfully', responseData);
+      // Optionally reset the form
+    this.finmetalForm.reset();
+    } catch (error) {
+      console.error('Error submitting form', error);
+    }
 
    /*
 try {

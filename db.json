@@ -232,1484 +232,458 @@
     },
     {
       "id": "",
-      "Super_First_name": "Man",
-      "Super_Surname": "Manny",
-      "Super_mail": "man@mail.ee",
-      "Desired_Job_Category": "test",
-      "Desired_position": "test",
+      "Super_First_name": "Time",
+      "Super_Surname": "Picker",
+      "Super_mail": "",
+      "Desired_Job_Category": "",
+      "Desired_position": "",
+      "Super_Telephone": "",
+      "asap": false,
+      "Comment_1": "",
+      "Super_Age": "23.07.2024",
+      "NonGastarbeiter": false,
+      "available": {
+        "name": "No info"
+      },
+      "tatle": {
+        "name": "cb(not)"
+      },
+      "tatle_email": {
+        "name": "cb(not)"
+      },
+      "start_date": "23.07.2024s",
+      "start_time": "09:55",
+      "start_date_email": "24.07.2024",
+      "start_time_email": "11:50",
+      "totalUnreachable2": {
+        "name": "No info"
+      },
+      "totalUnreachable": {
+        "name": "--------"
+      },
+      "calltype": {
+        "name": "No info"
+      },
+      "wrongtel": {
+        "name": "--------"
+      },
+      "expensivness": "",
+      "costPerHour": "",
+      "costPerHourComm": "",
+      "car": {
+        "name": "No info"
+      },
+      "filedFormDate": null,
+      "idPassportDate": null,
+      "assignedDate": null,
+      "workSiteDate": null,
+      "freeComment1": "",
+      "freeComment2": ""
+    },
+    {
+      "id": null,
+      "Super_First_name": "Try",
+      "Super_Surname": "Again",
+      "Super_mail": null,
+      "Desired_Job_Category": "welder",
+      "Desired_position": "welder",
       "Super_Telephone": "(372)-999-9999",
       "asap": true,
-      "Comment_1": "test",
-      "Super_Age": "2000-01-13T22:00:00.000Z",
+      "Comment_1": "Free",
+      "Super_Age": "19.07.2024",
       "NonGastarbeiter": true,
       "available": {
         "name": "Free"
       },
       "tatle": {
-        "name": "email"
+        "name": "cb(int)"
       },
       "tatle_email": {
-        "name": "our"
+        "name": "cb(free)"
       },
-      "start_date": "22.05.2023",
-      "start_time": "15:40",
-      "start_date_email": "22.05.2023",
-      "start_time_email": "15:40",
+      "start_date": "24.07.2024s",
+      "start_time": "13:54",
+      "start_date_email": "25.07.2024",
+      "start_time_email": "12:00",
       "totalUnreachable2": {
         "name": "Yes"
       },
-      "totalUnreachable": "",
+      "totalUnreachable": {
+        "name": "Total_lack_of_dialing"
+      },
       "calltype": {
-        "name": "Talk"
+        "name": "Switched off"
       },
       "wrongtel": {
-        "name": "No info"
+        "name": "No"
       },
       "expensivness": {
-        "name": "No info"
+        "name": "Excellent specialist (verified)"
       },
-      "costPerHour": 50,
-      "costPerHourComm": "test",
+      "costPerHour": 5,
+      "costPerHourComm": "Test comment",
       "car": {
-        "name": "Yes"
-      },
-      "filedFormDate": "2024-06-18T21:00:00.000Z",
-      "idPassportDate": "2024-06-03T21:00:00.000Z",
-      "assignedDate": "2024-06-07T21:00:00.000Z",
-      "workSiteDate": "2024-06-02T21:00:00.000Z",
-      "freeComment1": "test",
-      "freeComment2": "test"
-    },
-    {
-      "id": "",
-      "Super_First_name": "Man",
-      "Super_Surname": "Ivanov",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": null,
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": "",
-      "start_time": "",
-      "start_date_email": "",
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": "",
-      "idPassportDate": "",
-      "assignedDate": "",
-      "workSiteDate": "",
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "Mark",
-      "Super_Surname": "Surname",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": "2024-07-22T21:00:00.000Z",
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": "",
-      "start_time": "",
-      "start_date_email": "",
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": "",
-      "idPassportDate": "",
-      "assignedDate": "",
-      "workSiteDate": "",
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "Mark",
-      "Super_Surname": "Tamm",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": "2024-07-15T21:00:00.000Z",
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": "",
-      "start_time": "",
-      "start_date_email": "",
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": "",
-      "idPassportDate": "",
-      "assignedDate": "",
-      "workSiteDate": "",
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "Ivan",
-      "Super_Surname": "Ivanov",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": "2024-07-17T21:00:00.000Z",
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": "",
-      "start_time": "",
-      "start_date_email": "",
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": "",
-      "idPassportDate": "",
-      "assignedDate": "",
-      "workSiteDate": "",
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "Igor",
-      "Super_Surname": "Petrov",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": "2024-04-15T21:00:00.000Z",
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": "",
-      "start_time": "",
-      "start_date_email": "",
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": "",
-      "idPassportDate": "",
-      "assignedDate": "",
-      "workSiteDate": "",
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "",
-      "Super_Surname": "",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": "25.07.2024",
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": "",
-      "start_time": "",
-      "start_date_email": "",
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": "",
-      "idPassportDate": "",
-      "assignedDate": "",
-      "workSiteDate": "",
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "Mark",
-      "Super_Surname": "Tamm",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": "24.07.2024",
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": "16.07.2024",
-      "start_time": "",
-      "start_date_email": "28.07.2024",
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": "22.07.2024",
-      "idPassportDate": "25.07.2024",
-      "assignedDate": "14.07.2024",
-      "workSiteDate": "20.07.2024",
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "Clock",
-      "Super_Surname": "Time",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "(372)-555-5555",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": "12.01.2010",
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": {
-        "name": "email"
-      },
-      "tatle_email": "",
-      "start_date": "03.07.2024",
-      "start_time": "2024-07-02T07:00:00.000Z",
-      "start_date_email": null,
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": null,
-      "idPassportDate": null,
-      "assignedDate": null,
-      "workSiteDate": null,
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "",
-      "Super_Surname": "",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": null,
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": null,
-      "start_time": "2024-07-02T07:31:00.000Z",
-      "start_date_email": null,
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": null,
-      "idPassportDate": null,
-      "assignedDate": null,
-      "workSiteDate": null,
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "",
-      "Super_Surname": "",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": null,
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": null,
-      "start_time": "2024-07-02T07:12:00.000Z",
-      "start_date_email": null,
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": null,
-      "idPassportDate": null,
-      "assignedDate": null,
-      "workSiteDate": null,
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "",
-      "Super_Surname": "",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": null,
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": null,
-      "start_time": "2024-07-02T07:02:00.000Z",
-      "start_date_email": null,
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": null,
-      "idPassportDate": null,
-      "assignedDate": null,
-      "workSiteDate": null,
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "",
-      "Super_Surname": "",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": null,
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": null,
-      "start_time": "2024-07-02T08:07:00.000Z",
-      "start_date_email": null,
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": null,
-      "idPassportDate": null,
-      "assignedDate": null,
-      "workSiteDate": null,
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "",
-      "Super_Surname": "",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": null,
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": null,
-      "start_time": "2024-07-02T05:02:00.000Z",
-      "start_date_email": null,
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": null,
-      "idPassportDate": null,
-      "assignedDate": null,
-      "workSiteDate": null,
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "",
-      "Super_Surname": "",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": null,
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": null,
-      "start_time": "2024-07-02T07:06:00.000Z",
-      "start_date_email": null,
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": null,
-      "idPassportDate": null,
-      "assignedDate": null,
-      "workSiteDate": null,
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "",
-      "Super_Surname": "",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": null,
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": null,
-      "start_time": "2024-07-02T08:00:00.000Z",
-      "start_date_email": null,
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": null,
-      "idPassportDate": null,
-      "assignedDate": null,
-      "workSiteDate": null,
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "",
-      "Super_Surname": "",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": null,
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": null,
-      "start_time": "2024-07-02T07:00:00.000Z",
-      "start_date_email": null,
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": null,
-      "idPassportDate": null,
-      "assignedDate": null,
-      "workSiteDate": null,
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "",
-      "Super_Surname": "",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": null,
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": null,
-      "start_time": "2024-07-02T08:04:00.000Z",
-      "start_date_email": null,
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": null,
-      "idPassportDate": null,
-      "assignedDate": null,
-      "workSiteDate": null,
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "",
-      "Super_Surname": "",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": null,
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": null,
-      "start_time": "2024-07-01T21:00:00.000Z",
-      "start_date_email": null,
-      "start_time_email": "2024-07-02T07:02:00.000Z",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": null,
-      "idPassportDate": null,
-      "assignedDate": null,
-      "workSiteDate": null,
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "",
-      "Super_Surname": "",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": null,
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": null,
-      "start_time": "2024-07-01T21:00:00.000Z",
-      "start_date_email": null,
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": null,
-      "idPassportDate": null,
-      "assignedDate": null,
-      "workSiteDate": null,
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "",
-      "Super_Surname": "",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": null,
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": null,
-      "start_time": "2024-07-02T07:00:00.000Z",
-      "start_date_email": null,
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": null,
-      "idPassportDate": null,
-      "assignedDate": null,
-      "workSiteDate": null,
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "",
-      "Super_Surname": "",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": null,
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": null,
-      "start_time": "2024-07-02T10:10:00.000Z",
-      "start_date_email": null,
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": null,
-      "idPassportDate": null,
-      "assignedDate": null,
-      "workSiteDate": null,
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "Men",
-      "Super_Surname": "Surname",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": "04.05.2010",
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": {
-        "name": "email"
-      },
-      "tatle_email": "",
-      "start_date": "22.07.2024",
-      "start_time": "2024-07-02T11:00:00.000Z",
-      "start_date_email": null,
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": null,
-      "idPassportDate": null,
-      "assignedDate": null,
-      "workSiteDate": null,
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "",
-      "Super_Surname": "",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": null,
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": null,
-      "start_time": "2024-07-01T23:00:00.000Z",
-      "start_date_email": null,
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": null,
-      "idPassportDate": null,
-      "assignedDate": null,
-      "workSiteDate": null,
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "",
-      "Super_Surname": "",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": null,
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": null,
-      "start_time": "2024-07-02T07:00:00.000Z",
-      "start_date_email": null,
-      "start_time_email": "2024-07-02T09:00:00.000Z",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": null,
-      "idPassportDate": null,
-      "assignedDate": null,
-      "workSiteDate": null,
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "",
-      "Super_Surname": "",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": null,
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": null,
-      "start_time": "2024-07-03T08:00:00.000Z",
-      "start_date_email": null,
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": null,
-      "idPassportDate": null,
-      "assignedDate": null,
-      "workSiteDate": null,
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "",
-      "Super_Surname": "",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": null,
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": null,
-      "start_time": "2024-07-03T09:10:00.000Z",
-      "start_date_email": null,
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": null,
-      "idPassportDate": null,
-      "assignedDate": null,
-      "workSiteDate": null,
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "",
-      "Super_Surname": "",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": null,
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": null,
-      "start_time": "2024-07-03T05:10:00.000Z",
-      "start_date_email": null,
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": null,
-      "idPassportDate": null,
-      "assignedDate": null,
-      "workSiteDate": null,
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "",
-      "Super_Surname": "",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": null,
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": null,
-      "start_time": "2024-07-03T05:15:00.000Z",
-      "start_date_email": null,
-      "start_time_email": "2024-07-03T05:15:00.000Z",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": null,
-      "idPassportDate": null,
-      "assignedDate": null,
-      "workSiteDate": null,
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "",
-      "Super_Surname": "",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": null,
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": null,
-      "start_time": "2024-07-03T05:00:00.000Z",
-      "start_date_email": null,
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": null,
-      "idPassportDate": null,
-      "assignedDate": null,
-      "workSiteDate": null,
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "",
-      "Super_Surname": "",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": null,
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": null,
-      "start_time": "2024-07-02T23:10:00.000Z",
-      "start_date_email": null,
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": null,
-      "idPassportDate": null,
-      "assignedDate": null,
-      "workSiteDate": null,
-      "freeComment1": "",
-      "freeComment2": ""
-    },
-    {
-      "id": "",
-      "Super_First_name": "",
-      "Super_Surname": "",
-      "Super_mail": "",
-      "Desired_Job_Category": "",
-      "Desired_position": "",
-      "Super_Telephone": "",
-      "asap": false,
-      "Comment_1": "",
-      "Super_Age": null,
-      "NonGastarbeiter": false,
-      "available": {
-        "name": "No info"
-      },
-      "tatle": "",
-      "tatle_email": "",
-      "start_date": null,
-      "start_time": "2024-07-03T02:00:00.000Z",
-      "start_date_email": null,
-      "start_time_email": "",
-      "totalUnreachable2": {
-        "name": "No info"
-      },
-      "totalUnreachable": {
-        "name": "--------"
-      },
-      "calltype": {
-        "name": "No info"
-      },
-      "wrongtel": {
-        "name": "--------"
-      },
-      "expensivness": "",
-      "costPerHour": "",
-      "costPerHourComm": "",
-      "car": {
-        "name": "No info"
-      },
-      "filedFormDate": null,
-      "idPassportDate": null,
-      "assignedDate": null,
-      "workSiteDate": null,
-      "freeComment1": "",
-      "freeComment2": ""
+        "name": "No"
+      },
+      "filedFormDate": "17.07.2024",
+      "idPassportDate": "19.03.2020",
+      "assignedDate": "10.07.2024",
+      "workSiteDate": "23.07.2024",
+      "freeComment1": "Free comment 1 is working",
+      "freeComment2": "Free comment2 is working"
     }
-    
+  ],
+
+  "finmetals": [
+    {
+      "id": ,
+      "competitor": "",
+      "phone": "",
+      "partner_availability": {
+        "name": ""
+      },
+      "bankrupt": true,
+      "partner_description": "",
+      "partner_description_comm": "",
+      "call_month": null,
+      "order_month": null,
+      "profession":  {
+        "name": "No info"
+      },
+      "welding": {
+        "name": "--------"
+      },
+      "metal": {
+        "name": "No info"
+      },
+      "type_work": {
+        "name": "--------"
+      },
+      "profession_description": null,
+      "welding_description": null,
+      "metal_description": null,
+      "type_work_description": null,
+      "workingMode": false,
+      "professionn2": {
+        "name": ""
+      },
+      "welding2": {
+        "name": "No info"
+      }, 
+      "metal2": {
+        "name": "No info"
+      }, 
+      "type_work2": {
+         "name": ""
+      },
+      "profession_description2": null,
+      "welding_description2": null,
+      "metal_description2": null,
+      "type_work_description2": null,
+      "start_time": null,
+      "start_time2": null,
+      "representative": null,
+      "price": null,
+      "price_comment": null,
+      "price_a_plus": null,
+      "price_a_minus": null,
+      "location": null,
+      "locationApproved": true,
+      "locationCountry": null,
+      "locationCity": null,
+      "locationAddress": null,
+      "locationPostalCode": null,
+      "locationGmap": null,
+      "name1": null,
+      "profession1": {
+        "name": "..."
+      }, 
+      "mail1": null,
+      "phone1": " ",
+      "status1": true, 
+      "name2": "",   
+      "profession2": {
+        "name": "..."
+      },
+      "mail2": null, 
+      "phone2": null,
+      "status2": false, 
+      "name3": null,
+      "profession3": {
+        "name": "..."
+      }, 
+      "mail3": null,
+      "phone3":   null,
+      "status3": true, 
+      "title":   null,
+      "url_kompass":   null,
+      "mailCC":  null, 
+      "dial1M": {
+        "name": "---"
+      },
+      "dial2M": {
+        "name": "---"
+      },
+      "dial3M": {
+        "name": "---"
+      },
+      "dial4M": {
+        "name": "---"
+      },
+      "dial5M": {
+        "name": "---"
+      },
+      "profession1M": {
+        "name": "..."
+      },
+      "profession2M": {
+        "name": "..."
+      },
+      "profession3M": {
+        "name": "..."
+      },
+      "profession4M": {
+        "name": "..."
+      },
+      "profession5M": {
+        "name": "..."
+      },
+      "phone1M": null,
+      "phone2M": null,
+      "phone3M": null,
+      "phone4M": null,
+      "phone5M": null,
+      "mail1M":  null,
+      "mail2M":  null,
+      "mail3M": null,
+      "mail4M": null,
+      "mail5M": null,
+      "name4":  null,
+      "profession4": {
+        "name": "..."
+      }, 
+      "mail4": null,
+      "phone4": null,
+      "status4": false,
+      "name5": null,
+      "profession5": {
+        "name": "..."
+      }, 
+      "mail5": null,
+      "phone5": null,
+      "status5": false,
+      "name6": null,
+      "profession6": {
+        "name": "..."
+      }, 
+      "mail6": null,
+      "phone6": null,
+      "status6": false,
+      "name7": null,
+      "profession7": {
+        "name": "..."
+      }, 
+      "mail7": null,
+      "phone7": null,
+      "status7": false,
+      "name8": null,
+      "profession8": {
+        "name": "..."
+      }, 
+      "mail8": null,
+      "phone8": null,
+      "status8": false,
+      
+      "name9": null,
+      "profession9": {
+        "name": "..."
+      }, 
+      "mail9": null,
+      "phone9": null,
+      "status9": false, 
+      "name10": null,
+      "profession10": {
+        "name": "..."
+      }, 
+      "mail10": null,
+      "phone10": null,
+      "status10": false, 
+      "name11": null,
+      "profession11": {
+        "name": "..."
+      }, 
+      "mail11": null,
+      "phone11": null,
+      "status11": false, 
+      "name12": null,
+      "profession12": {
+        "name": "..."
+      }, 
+      "mail12": null,
+      "phone12": null,
+      "status12": false, 
+      "name13": null,
+      "profession13": {
+        "name": "..."
+      }, 
+      "mail13": null,
+      "phone13": null,
+      "status13": false, 
+      "name14": null,
+      "profession14": {
+        "name": "..."
+      }, 
+      "mail14": null,
+      "phone14": null,
+      "status14": false,
+      "clock": {
+        "name":"No info"
+      },
+      "hours_s": null,
+      "hours_n": null,
+      "language": {
+        "name":"No info"
+      },
+      "housing": {
+        "name":"No info"
+      },
+      "documents": {
+        "name":"No info"
+      },
+      "clock_description": null,
+      "language_description":  null,
+      "housing_description": null,
+      "documents_description":  null,
+      "kommenti": null,
+      "payDay": null,
+      "payPeriod":  null,
+      "eInvoiceEmail": null,
+      "billAndHoursReport": false,
+      "workingDays": null,
+      "eInvoiceEmailEnabled": false, 
+      "eInvoiceOperatorCode":  null,
+      "eInvoiceEnabled": false, 
+      "lunch": null,
+      "lunchPaidUnpaid": false,
+      "coffeePause":  null,
+      "coffeePausePaidUnpaid": null,
+      "coffeePause2":  null,
+      "coffeePausePaidUnpaid2":  null,
+      "coffeePause3":  null,
+      "coffeePausePaidUnpaid3": null,
+      "automaticAccountingSystem": false,  
+      "nightShift": false, 
+      "nightShiftPaid": false, 
+      "nightShiftStart": null,
+      "nightShiftEnd":  null,
+      "nightShiftRate": null,
+      "leybl": {
+         "name": "--------"
+      },
+      "leybl_description":  null,
+      "ction": {
+        "name":"No info"
+      },
+      "ction_start_time":  null,
+      "ction_description":  null,
+      "action": {
+        "name":"No info"
+      },
+      "action_start_time":  null,
+      "action_start_time2":  null,
+      "action_description":  null,
+      "action2": {
+        "name":"No info"
+      },
+      "action2_start_time":  null,
+      "action2_start_time2":   null,
+      "action2_description":  null,
+      "date_pup": null,
+      "controll": {
+        "name":"No info"
+      },
+      "control2": {
+        "name":"No info"
+      },
+      "control3": {
+        "name":"No info"
+      },
+      "orderLossReason":  null,
+      "asap": false, 
+      "de_trop": false, 
+      "h8": false, 
+      "fin": false, 
+      "we": {
+        "name": "..."
+      },
+      "mp": {
+        "name": "..."
+      },
+      "carRequirement": {
+        "name":"No info"
+      },
+      "workerQuanityRequirement": null,
+      "workerQuanityRequirementComment": null,
+      "order": null,
+      "fromWhichCompanySent": {
+        "name":"No info"
+      },
+      "fromWhichCompanySentComment": null,
+      "fromWhichSalesmanOrder": {
+        "name":"No info"
+      },
+      "workPlace": {
+        "name":"No info"
+      },
+      "workStartDate": null,
+      "workDuration": null,
+      "workDescription": null,
+      "workEquipment": {
+        "name":"No info"
+      },
+      "workEquipmentComment": null,
+      "workCity": null,
+      "workAddress": null,
+      "totalUnreachable": {
+        "name":"No info"
+      },
+       "isNew": false,
+     "categories": null,
+     "url_finder": null,
+     "turnoverCategory": null,
+     "industryClassification": null,
+     "s1Year": null, 
+     "s1Turnover": null,  
+     "s1Change": null,  
+     "s1Profit": null,  
+     "s1Tax":  null, 
+     "s1ProfitProc": null,  
+     "s1FinResult": null,  
+     "s1COP":  null, 
+     "s2Year": null,  
+     "s2Turnover": null,  
+     "s2Change": null,  
+     "s2Profit":  null, 
+     "s2Tax": null,  
+     "s2ProfitProc":  null, 
+     "s2FinResult":  null, 
+     "s2COP":  null, 
+     "s3Year":  null, 
+     "s3Turnover":  null, 
+     "s3Change": null,  
+     "s3Profit":  null, 
+     "s3Tax":  null, 
+     "s3ProfitProc":  null, 
+     "s3FinResult":  null, 
+     "s3COP": null,  
+     "s4Year": null,  
+     "s4Turnover": null,  
+     "s4Change": null,  
+     "s4Profit": null,  
+     "s4Tax":  null, 
+     "s4ProfitProc":  null, 
+     "s4FinResult": null,  
+     "s4COP":  null 
+    }
   ]
 }
