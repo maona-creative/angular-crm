@@ -10,3 +10,11 @@ td, th {
     text-align: center;
     padding: 10px
   }
+
+  a {
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-decoration: none; 
+}

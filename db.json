@@ -1032,6 +1032,1052 @@
       "s4ProfitProc": "",
       "s4FinResult": "",
       "s4COP": ""
+    },
+    {
+      "id": "",
+      "competitor": "CheckTime",
+      "phone": "(372)-555-5555",
+      "partner_availability": {
+        "name": "No"
+      },
+      "bankrupt": true,
+      "partner_description": "",
+      "partner_description_comm": "",
+      "call_month": null,
+      "order_month": null,
+      "profession": {
+        "name": "Fitter"
+      },
+      "welding": {
+        "name": "MMA"
+      },
+      "metal": {
+        "name": "Stain S"
+      },
+      "type_work": {
+        "name": "Mec Eng"
+      },
+      "profession_description": "",
+      "welding_description": "",
+      "metal_description": "",
+      "type_work_description": "",
+      "workingMode": false,
+      "professionn2": {
+        "name": "Fitter"
+      },
+      "welding2": {
+        "name": "MIG-MAG"
+      },
+      "metal2": {
+        "name": "Alumin"
+      },
+      "type_work2": {
+        "name": "Mec Eng"
+      },
+      "profession_description2": "",
+      "welding_description2": "",
+      "metal_description2": "",
+      "type_work_description2": "",
+      "start_time": "Test",
+      "start_time2": "test",
+      "representative": "",
+      "price": 5,
+      "price_comment": "bla-bla",
+      "price_a_plus": 5,
+      "price_a_minus": 10,
+      "location": "",
+      "locationApproved": true,
+      "locationCountry": "",
+      "locationCity": "",
+      "locationAddress": "",
+      "locationPostalCode": "",
+      "locationGmap": "",
+      "name1": "",
+      "profession1": {
+        "name": "..."
+      },
+      "mail1": "",
+      "phone1": "",
+      "status1": true,
+      "name2": "",
+      "profession2": {
+        "name": "..."
+      },
+      "mail2": "",
+      "phone2": "",
+      "status2": true,
+      "name3": "",
+      "profession3": {
+        "name": "..."
+      },
+      "mail3": "",
+      "phone3": "",
+      "status3": true,
+      "title": "",
+      "url_kompass": "",
+      "mailCC": "",
+      "dial1M": {
+        "name": "..."
+      },
+      "dial2M": {
+        "name": "..."
+      },
+      "dial3M": {
+        "name": "..."
+      },
+      "dial4M": {
+        "name": "..."
+      },
+      "dial5M": {
+        "name": "..."
+      },
+      "profession1M": {
+        "name": "..."
+      },
+      "profession2M": {
+        "name": "..."
+      },
+      "profession3M": {
+        "name": "..."
+      },
+      "profession4M": {
+        "name": "..."
+      },
+      "profession5M": {
+        "name": "..."
+      },
+      "phone1M": "",
+      "phone2M": "",
+      "phone3M": "",
+      "phone4M": "",
+      "phone5M": "",
+      "mail1M": "",
+      "mail2M": "",
+      "mail3M": "",
+      "mail4M": "",
+      "mail5M": "",
+      "name4": "",
+      "profession4": {
+        "name": "..."
+      },
+      "mail4": "",
+      "phone4": "",
+      "status4": true,
+      "name5": "",
+      "profession5": {
+        "name": "..."
+      },
+      "mail5": "",
+      "phone5": "",
+      "status5": true,
+      "name6": "",
+      "profession6": {
+        "name": "..."
+      },
+      "mail6": "",
+      "phone6": "",
+      "status6": true,
+      "name7": "",
+      "profession7": {
+        "name": "..."
+      },
+      "mail7": "",
+      "phone7": "",
+      "status7": true,
+      "name8": "",
+      "profession8": {
+        "name": "..."
+      },
+      "mail8": "",
+      "phone8": "",
+      "status8": true,
+      "name9": "",
+      "profession9": {
+        "name": "..."
+      },
+      "mail9": "",
+      "phone9": "",
+      "status9": true,
+      "name10": "",
+      "profession10": {
+        "name": "..."
+      },
+      "mail10": "",
+      "phone10": "",
+      "status10": true,
+      "name11": "",
+      "profession11": {
+        "name": "..."
+      },
+      "mail11": "",
+      "phone11": "",
+      "status11": true,
+      "name12": "",
+      "profession12": {
+        "name": "..."
+      },
+      "mail12": "",
+      "phone12": "",
+      "status12": true,
+      "name13": "",
+      "profession13": {
+        "name": "..."
+      },
+      "mail13": "",
+      "phone13": "",
+      "status13": true,
+      "name14": "",
+      "profession14": {
+        "name": "..."
+      },
+      "mail14": "",
+      "phone14": "",
+      "status14": true,
+      "clock": {
+        "name": "No info"
+      },
+      "hours_s": "",
+      "hours_n": "",
+      "language": {
+        "name": "No info"
+      },
+      "housing": {
+        "name": "No info"
+      },
+      "documents": {
+        "name": "No info"
+      },
+      "clock_description": "",
+      "language_description": "",
+      "housing_description": "",
+      "documents_description": "",
+      "kommenti": "",
+      "payDay": "",
+      "payPeriod": "",
+      "eInvoiceEmail": "",
+      "billAndHoursReport": false,
+      "workingDays": "",
+      "eInvoiceEmailEnabled": false,
+      "eInvoiceAddress": "",
+      "eInvoiceOperatorCode": "",
+      "eInvoiceEnabled": false,
+      "lunch": "",
+      "lunchPaidUnpaid": false,
+      "coffeePause": "",
+      "coffeePausePaidUnpaid": false,
+      "coffeePause2": "",
+      "coffeePausePaidUnpaid2": false,
+      "coffeePause3": "",
+      "coffeePausePaidUnpaid3": false,
+      "automaticAccountingSystem": false,
+      "nightShift": false,
+      "nightShiftPaid": false,
+      "nightShiftStart": null,
+      "nightShiftEnd": null,
+      "nightShiftRate": "",
+      "leybl": {
+        "name": "Fix Part"
+      },
+      "leybl_description": "",
+      "ction": {
+        "name": "Tender"
+      },
+      "ction_start_time": "",
+      "ction_description": "",
+      "action": {
+        "name": "Call_Cold"
+      },
+      "action_start_time": "",
+      "action_start_time2": "",
+      "action_description": "",
+      "action2": {
+        "name": "Email"
+      },
+      "action2_start_time": "",
+      "action2_start_time2": "",
+      "action2_description": "",
+      "date_pup": "2024-07-17T11:25:05.731Z",
+      "controll": {
+        "name": "No info"
+      },
+      "control2": {
+        "name": "No info"
+      },
+      "control3": {
+        "name": "No info"
+      },
+      "orderLossReason": "",
+      "asap": false,
+      "de_trop": false,
+      "h8": false,
+      "fin": false,
+      "we": {
+        "name": "..."
+      },
+      "mp": {
+        "name": "..."
+      },
+      "carRequirement": {
+        "name": "No info"
+      },
+      "workerQuanityRequirement": "",
+      "workerQuanityRequirementComment": "",
+      "order": "",
+      "fromWhichCompanySent": {
+        "name": "No info"
+      },
+      "fromWhichCompanySentComment": "",
+      "fromWhichSalesmanOrder": {
+        "name": "No info"
+      },
+      "workPlace": {
+        "name": "No info"
+      },
+      "workStartDate": "",
+      "workDuration": "",
+      "workDescription": "",
+      "workEquipment": {
+        "name": "No info"
+      },
+      "workEquipmentComment": "",
+      "workCity": "",
+      "workAddress": "",
+      "totalUnreachable": {
+        "name": "No info"
+      },
+      "isNew": false,
+      "categories": "",
+      "url_finder": "",
+      "turnoverCategory": "",
+      "industryClassification": "",
+      "s1Year": "",
+      "s1Turnover": "",
+      "s1Change": "",
+      "s1Profit": "",
+      "s1Tax": "",
+      "s1ProfitProc": "",
+      "s1FinResult": "",
+      "s1COP": "",
+      "s2Year": "",
+      "s2Turnover": "",
+      "s2Change": "",
+      "s2Profit": "",
+      "s2Tax": "",
+      "s2ProfitProc": "",
+      "s2FinResult": "",
+      "s2COP": "",
+      "s3Year": "",
+      "s3Turnover": "",
+      "s3Change": "",
+      "s3Profit": "",
+      "s3Tax": "",
+      "s3ProfitProc": "",
+      "s3FinResult": "",
+      "s3COP": "",
+      "s4Year": "",
+      "s4Turnover": "",
+      "s4Change": "",
+      "s4Profit": "",
+      "s4Tax": "",
+      "s4ProfitProc": "",
+      "s4FinResult": "",
+      "s4COP": ""
+    },
+    {
+      "id": "",
+      "competitor": "Unknown",
+      "phone": "",
+      "partner_availability": "",
+      "bankrupt": false,
+      "partner_description": "",
+      "partner_description_comm": "",
+      "call_month": null,
+      "order_month": null,
+      "profession": {
+        "name": "No info"
+      },
+      "welding": {
+        "name": "--------"
+      },
+      "metal": {
+        "name": "No info"
+      },
+      "type_work": {
+        "name": "--------"
+      },
+      "profession_description": "",
+      "welding_description": "",
+      "metal_description": "",
+      "type_work_description": "",
+      "workingMode": false,
+      "professionn2": {
+        "name": "No info"
+      },
+      "welding2": {
+        "name": "--------"
+      },
+      "metal2": {
+        "name": "No info"
+      },
+      "type_work2": {
+        "name": "--------"
+      },
+      "profession_description2": "",
+      "welding_description2": "",
+      "metal_description2": "",
+      "type_work_description2": "",
+      "start_time": "",
+      "start_time2": "",
+      "representative": "",
+      "price": "",
+      "price_comment": "",
+      "price_a_plus": "",
+      "price_a_minus": "",
+      "location": "",
+      "locationApproved": false,
+      "locationCountry": "",
+      "locationCity": "",
+      "locationAddress": "",
+      "locationPostalCode": "",
+      "locationGmap": "",
+      "name1": "",
+      "profession1": {
+        "name": "..."
+      },
+      "mail1": "",
+      "phone1": "",
+      "status1": true,
+      "name2": "",
+      "profession2": {
+        "name": "..."
+      },
+      "mail2": "",
+      "phone2": "",
+      "status2": true,
+      "name3": "",
+      "profession3": {
+        "name": "..."
+      },
+      "mail3": "",
+      "phone3": "",
+      "status3": true,
+      "title": "",
+      "url_kompass": "",
+      "mailCC": "",
+      "dial1M": {
+        "name": "..."
+      },
+      "dial2M": {
+        "name": "..."
+      },
+      "dial3M": {
+        "name": "..."
+      },
+      "dial4M": {
+        "name": "..."
+      },
+      "dial5M": {
+        "name": "..."
+      },
+      "profession1M": {
+        "name": "..."
+      },
+      "profession2M": {
+        "name": "..."
+      },
+      "profession3M": {
+        "name": "..."
+      },
+      "profession4M": {
+        "name": "..."
+      },
+      "profession5M": {
+        "name": "..."
+      },
+      "phone1M": "",
+      "phone2M": "",
+      "phone3M": "",
+      "phone4M": "",
+      "phone5M": "",
+      "mail1M": "",
+      "mail2M": "",
+      "mail3M": "",
+      "mail4M": "",
+      "mail5M": "",
+      "name4": "",
+      "profession4": {
+        "name": "..."
+      },
+      "mail4": "",
+      "phone4": "",
+      "status4": true,
+      "name5": "",
+      "profession5": {
+        "name": "..."
+      },
+      "mail5": "",
+      "phone5": "",
+      "status5": true,
+      "name6": "",
+      "profession6": {
+        "name": "..."
+      },
+      "mail6": "",
+      "phone6": "",
+      "status6": true,
+      "name7": "",
+      "profession7": {
+        "name": "..."
+      },
+      "mail7": "",
+      "phone7": "",
+      "status7": true,
+      "name8": "",
+      "profession8": {
+        "name": "..."
+      },
+      "mail8": "",
+      "phone8": "",
+      "status8": true,
+      "name9": "",
+      "profession9": {
+        "name": "..."
+      },
+      "mail9": "",
+      "phone9": "",
+      "status9": true,
+      "name10": "",
+      "profession10": {
+        "name": "..."
+      },
+      "mail10": "",
+      "phone10": "",
+      "status10": true,
+      "name11": "",
+      "profession11": {
+        "name": "..."
+      },
+      "mail11": "",
+      "phone11": "",
+      "status11": true,
+      "name12": "",
+      "profession12": {
+        "name": "..."
+      },
+      "mail12": "",
+      "phone12": "",
+      "status12": true,
+      "name13": "",
+      "profession13": {
+        "name": "..."
+      },
+      "mail13": "",
+      "phone13": "",
+      "status13": true,
+      "name14": "",
+      "profession14": {
+        "name": "..."
+      },
+      "mail14": "",
+      "phone14": "",
+      "status14": true,
+      "clock": {
+        "name": "No info"
+      },
+      "hours_s": "",
+      "hours_n": "",
+      "language": {
+        "name": "No info"
+      },
+      "housing": {
+        "name": "No info"
+      },
+      "documents": {
+        "name": "No info"
+      },
+      "clock_description": "",
+      "language_description": "",
+      "housing_description": "",
+      "documents_description": "",
+      "kommenti": "",
+      "payDay": "",
+      "payPeriod": "",
+      "eInvoiceEmail": "",
+      "billAndHoursReport": false,
+      "workingDays": "",
+      "eInvoiceEmailEnabled": false,
+      "eInvoiceAddress": "",
+      "eInvoiceOperatorCode": "",
+      "eInvoiceEnabled": false,
+      "lunch": "",
+      "lunchPaidUnpaid": false,
+      "coffeePause": "",
+      "coffeePausePaidUnpaid": false,
+      "coffeePause2": "",
+      "coffeePausePaidUnpaid2": false,
+      "coffeePause3": "",
+      "coffeePausePaidUnpaid3": false,
+      "automaticAccountingSystem": false,
+      "nightShift": false,
+      "nightShiftPaid": false,
+      "nightShiftStart": null,
+      "nightShiftEnd": null,
+      "nightShiftRate": "",
+      "leybl": {
+        "name": "--------"
+      },
+      "leybl_description": "",
+      "ction": {
+        "name": "No info"
+      },
+      "ction_start_time": "",
+      "ction_description": "",
+      "action": {
+        "name": "No info"
+      },
+      "action_start_time": "",
+      "action_start_time2": "",
+      "action_description": "",
+      "action2": {
+        "name": "No info"
+      },
+      "action2_start_time": "",
+      "action2_start_time2": "",
+      "action2_description": "",
+      "date_pup": "2024-07-17T11:56:08.010Z",
+      "controll": {
+        "name": "No info"
+      },
+      "control2": {
+        "name": "No info"
+      },
+      "control3": {
+        "name": "No info"
+      },
+      "orderLossReason": "",
+      "asap": false,
+      "de_trop": false,
+      "h8": false,
+      "fin": false,
+      "we": {
+        "name": "..."
+      },
+      "mp": {
+        "name": "..."
+      },
+      "carRequirement": {
+        "name": "No info"
+      },
+      "workerQuanityRequirement": "",
+      "workerQuanityRequirementComment": "",
+      "order": "",
+      "fromWhichCompanySent": {
+        "name": "No info"
+      },
+      "fromWhichCompanySentComment": "",
+      "fromWhichSalesmanOrder": {
+        "name": "No info"
+      },
+      "workPlace": {
+        "name": "No info"
+      },
+      "workStartDate": "",
+      "workDuration": "",
+      "workDescription": "",
+      "workEquipment": {
+        "name": "No info"
+      },
+      "workEquipmentComment": "",
+      "workCity": "",
+      "workAddress": "",
+      "totalUnreachable": {
+        "name": "No info"
+      },
+      "isNew": false,
+      "categories": "",
+      "url_finder": "",
+      "turnoverCategory": "",
+      "industryClassification": "",
+      "s1Year": "",
+      "s1Turnover": "",
+      "s1Change": "",
+      "s1Profit": "",
+      "s1Tax": "",
+      "s1ProfitProc": "",
+      "s1FinResult": "",
+      "s1COP": "",
+      "s2Year": "",
+      "s2Turnover": "",
+      "s2Change": "",
+      "s2Profit": "",
+      "s2Tax": "",
+      "s2ProfitProc": "",
+      "s2FinResult": "",
+      "s2COP": "",
+      "s3Year": "",
+      "s3Turnover": "",
+      "s3Change": "",
+      "s3Profit": "",
+      "s3Tax": "",
+      "s3ProfitProc": "",
+      "s3FinResult": "",
+      "s3COP": "",
+      "s4Year": "",
+      "s4Turnover": "",
+      "s4Change": "",
+      "s4Profit": "",
+      "s4Tax": "",
+      "s4ProfitProc": "",
+      "s4FinResult": "",
+      "s4COP": ""
+    },
+    {
+      "id": "",
+      "competitor": "CheckCalendar",
+      "phone": "",
+      "partner_availability": "",
+      "bankrupt": false,
+      "partner_description": "",
+      "partner_description_comm": "",
+      "call_month": "24.07.2024",
+      "order_month": "29.07.2024",
+      "profession": {
+        "name": "No info"
+      },
+      "welding": {
+        "name": "--------"
+      },
+      "metal": {
+        "name": "No info"
+      },
+      "type_work": {
+        "name": "--------"
+      },
+      "profession_description": "",
+      "welding_description": "",
+      "metal_description": "",
+      "type_work_description": "",
+      "workingMode": false,
+      "professionn2": {
+        "name": "No info"
+      },
+      "welding2": {
+        "name": "--------"
+      },
+      "metal2": {
+        "name": "No info"
+      },
+      "type_work2": {
+        "name": "--------"
+      },
+      "profession_description2": "",
+      "welding_description2": "",
+      "metal_description2": "",
+      "type_work_description2": "",
+      "start_time": "",
+      "start_time2": "",
+      "representative": "",
+      "price": "",
+      "price_comment": "",
+      "price_a_plus": "",
+      "price_a_minus": "",
+      "location": "",
+      "locationApproved": false,
+      "locationCountry": "",
+      "locationCity": "",
+      "locationAddress": "",
+      "locationPostalCode": "",
+      "locationGmap": "",
+      "name1": "",
+      "profession1": {
+        "name": "..."
+      },
+      "mail1": "",
+      "phone1": "",
+      "status1": true,
+      "name2": "",
+      "profession2": {
+        "name": "..."
+      },
+      "mail2": "",
+      "phone2": "",
+      "status2": true,
+      "name3": "",
+      "profession3": {
+        "name": "..."
+      },
+      "mail3": "",
+      "phone3": "",
+      "status3": true,
+      "title": "",
+      "url_kompass": "",
+      "mailCC": "",
+      "dial1M": {
+        "name": "..."
+      },
+      "dial2M": {
+        "name": "..."
+      },
+      "dial3M": {
+        "name": "..."
+      },
+      "dial4M": {
+        "name": "..."
+      },
+      "dial5M": {
+        "name": "..."
+      },
+      "profession1M": {
+        "name": "..."
+      },
+      "profession2M": {
+        "name": "..."
+      },
+      "profession3M": {
+        "name": "..."
+      },
+      "profession4M": {
+        "name": "..."
+      },
+      "profession5M": {
+        "name": "..."
+      },
+      "phone1M": "",
+      "phone2M": "",
+      "phone3M": "",
+      "phone4M": "",
+      "phone5M": "",
+      "mail1M": "",
+      "mail2M": "",
+      "mail3M": "",
+      "mail4M": "",
+      "mail5M": "",
+      "name4": "",
+      "profession4": {
+        "name": "..."
+      },
+      "mail4": "",
+      "phone4": "",
+      "status4": true,
+      "name5": "",
+      "profession5": {
+        "name": "..."
+      },
+      "mail5": "",
+      "phone5": "",
+      "status5": true,
+      "name6": "",
+      "profession6": {
+        "name": "..."
+      },
+      "mail6": "",
+      "phone6": "",
+      "status6": true,
+      "name7": "",
+      "profession7": {
+        "name": "..."
+      },
+      "mail7": "",
+      "phone7": "",
+      "status7": true,
+      "name8": "",
+      "profession8": {
+        "name": "..."
+      },
+      "mail8": "",
+      "phone8": "",
+      "status8": true,
+      "name9": "",
+      "profession9": {
+        "name": "..."
+      },
+      "mail9": "",
+      "phone9": "",
+      "status9": true,
+      "name10": "",
+      "profession10": {
+        "name": "..."
+      },
+      "mail10": "",
+      "phone10": "",
+      "status10": true,
+      "name11": "",
+      "profession11": {
+        "name": "..."
+      },
+      "mail11": "",
+      "phone11": "",
+      "status11": true,
+      "name12": "",
+      "profession12": {
+        "name": "..."
+      },
+      "mail12": "",
+      "phone12": "",
+      "status12": true,
+      "name13": "",
+      "profession13": {
+        "name": "..."
+      },
+      "mail13": "",
+      "phone13": "",
+      "status13": true,
+      "name14": "",
+      "profession14": {
+        "name": "..."
+      },
+      "mail14": "",
+      "phone14": "",
+      "status14": true,
+      "clock": {
+        "name": "No info"
+      },
+      "hours_s": "",
+      "hours_n": "",
+      "language": {
+        "name": "No info"
+      },
+      "housing": {
+        "name": "No info"
+      },
+      "documents": {
+        "name": "No info"
+      },
+      "clock_description": "",
+      "language_description": "",
+      "housing_description": "",
+      "documents_description": "",
+      "kommenti": "",
+      "payDay": "",
+      "payPeriod": "",
+      "eInvoiceEmail": "",
+      "billAndHoursReport": false,
+      "workingDays": "",
+      "eInvoiceEmailEnabled": false,
+      "eInvoiceAddress": "",
+      "eInvoiceOperatorCode": "",
+      "eInvoiceEnabled": false,
+      "lunch": "",
+      "lunchPaidUnpaid": false,
+      "coffeePause": "",
+      "coffeePausePaidUnpaid": false,
+      "coffeePause2": "",
+      "coffeePausePaidUnpaid2": false,
+      "coffeePause3": "",
+      "coffeePausePaidUnpaid3": false,
+      "automaticAccountingSystem": false,
+      "nightShift": false,
+      "nightShiftPaid": false,
+      "nightShiftStart": null,
+      "nightShiftEnd": null,
+      "nightShiftRate": "",
+      "leybl": {
+        "name": "--------"
+      },
+      "leybl_description": "",
+      "ction": {
+        "name": "No info"
+      },
+      "ction_start_time": "",
+      "ction_description": "",
+      "action": {
+        "name": "No info"
+      },
+      "action_start_time": "",
+      "action_start_time2": "",
+      "action_description": "",
+      "action2": {
+        "name": "No info"
+      },
+      "action2_start_time": "",
+      "action2_start_time2": "",
+      "action2_description": "",
+      "date_pup": "2024-07-17T11:57:41.423Z",
+      "controll": {
+        "name": "No info"
+      },
+      "control2": {
+        "name": "No info"
+      },
+      "control3": {
+        "name": "No info"
+      },
+      "orderLossReason": "",
+      "asap": false,
+      "de_trop": false,
+      "h8": false,
+      "fin": false,
+      "we": {
+        "name": "..."
+      },
+      "mp": {
+        "name": "..."
+      },
+      "carRequirement": {
+        "name": "No info"
+      },
+      "workerQuanityRequirement": "",
+      "workerQuanityRequirementComment": "",
+      "order": "",
+      "fromWhichCompanySent": {
+        "name": "No info"
+      },
+      "fromWhichCompanySentComment": "",
+      "fromWhichSalesmanOrder": {
+        "name": "No info"
+      },
+      "workPlace": {
+        "name": "No info"
+      },
+      "workStartDate": "",
+      "workDuration": "",
+      "workDescription": "",
+      "workEquipment": {
+        "name": "No info"
+      },
+      "workEquipmentComment": "",
+      "workCity": "",
+      "workAddress": "",
+      "totalUnreachable": {
+        "name": "No info"
+      },
+      "isNew": false,
+      "categories": "",
+      "url_finder": "",
+      "turnoverCategory": "",
+      "industryClassification": "",
+      "s1Year": "",
+      "s1Turnover": "",
+      "s1Change": "",
+      "s1Profit": "",
+      "s1Tax": "",
+      "s1ProfitProc": "",
+      "s1FinResult": "",
+      "s1COP": "",
+      "s2Year": "",
+      "s2Turnover": "",
+      "s2Change": "",
+      "s2Profit": "",
+      "s2Tax": "",
+      "s2ProfitProc": "",
+      "s2FinResult": "",
+      "s2COP": "",
+      "s3Year": "",
+      "s3Turnover": "",
+      "s3Change": "",
+      "s3Profit": "",
+      "s3Tax": "",
+      "s3ProfitProc": "",
+      "s3FinResult": "",
+      "s3COP": "",
+      "s4Year": "",
+      "s4Turnover": "",
+      "s4Change": "",
+      "s4Profit": "",
+      "s4Tax": "",
+      "s4ProfitProc": "",
+      "s4FinResult": "",
+      "s4COP": ""
     }
   ]
 }

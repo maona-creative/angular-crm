@@ -1,10 +1,10 @@
-<p>finmetalforms works!</p>
+
 <div class="card">
 
     <nav>
-      <a href="/">Home</a>
-
- </nav>
+      <a href="/" class="p-button font-bold">Home</a>
+      <a href="/finmetal-table" class="p-button font-bold">Finmetal table</a>
+   </nav>
 </div>
 <h2>Change finmetal</h2>
 
@@ -17,8 +17,8 @@
            <input id="competitor" formControlName='competitor' type="text"  class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
          </div>
          <div class="field col-12 md:col-2">
-           <label for="phone">Phone</label>
-           <input id="phone" formControlName='phone' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+           <label for="phone">Phone</label><br>
+           <p-inputMask mask="(999)-999-9999" placeholder="(  )-___-____" id="phone" formControlName='phone' type="text" />
         </div>
         <div class="field col-12 md:col-2">
           <label for="partner_availability">Partners</label><br>
@@ -40,10 +40,11 @@
            <textarea rows="5" cols="30" type="textarea" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
            formControlName="partner_description_comm"></textarea>
         </div>
+        <div class="field col-12 md:col-2"></div>
         <div class="field col-12 md:col-2">
           <label for="call_month">Call month</label>
              <p-calendar id="call_month" 
-             dataType=" " 
+             dataType="string" 
              dateFormat="dd.mm.yy"
              [showTime]="false"
              [iconDisplay]="'input'"
@@ -53,7 +54,7 @@
         <div class="field col-12 md:col-2">
           <label for="order_month">Order month</label>
              <p-calendar id="order_month" 
-             dataType=" " 
+             dataType="string" 
              dateFormat="dd.mm.yy"
              [showTime]="false"
              [iconDisplay]="'input'"
@@ -290,8 +291,8 @@
             <input id="mail1" formControlName='mail1' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
           </div>
           <div class="field col-12 md:col-2">
-            <label for="phone1">Phone 1</label>
-            <input id="phone1" formControlName='phone1' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+            <label for="phone1">Phone 1</label><br>
+            <p-inputMask mask="(999)-999-9999" placeholder="(  )-___-____" id="phone1" formControlName='phone1' type="text" />
           </div>
           <div class="field col-12 md:col-2">
             <label for="status1">Status 1</label><br>
@@ -319,8 +320,8 @@
               <input id="mail2" formControlName='mail2' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
             </div>
             <div class="field col-12 md:col-2">
-              <label for="phone2">Phone 2</label>
-              <input id="phone2" formControlName='phone2' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+              <label for="phone2">Phone 2</label><br>
+              <p-inputMask mask="(999)-999-9999" placeholder="(  )-___-____" id="phone2" formControlName='phone2' type="text" />
             </div>
             <div class="field col-12 md:col-2">
               <label for="status2">Status 2</label><br>
@@ -348,8 +349,8 @@
                 <input id="mail3" formControlName='mail3' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
               </div>
               <div class="field col-12 md:col-2">
-                <label for="phone3">Phone 3</label>
-                <input id="phone3" formControlName='phone3' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                <label for="phone3">Phone 3</label><br>
+                <p-inputMask mask="(999)-999-9999" placeholder="(  )-___-____" id="phone3" formControlName='phone3' type="text" />
               </div>
               <div class="field col-12 md:col-2">
                 <label for="status3">Status 3</label><br>
@@ -403,9 +404,9 @@
           </p-dropdown>
         </div>
         <div class="field col-12 md:col-3">
-        <label for="phone1M">Master Phone 1</label>
-        <input id="phone1M" formControlName='phone1M' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
-        </div>
+        <label for="phone1M">Master Phone 1</label><br>
+        <p-inputMask mask="(999)-999-9999" placeholder="(  )-___-____" id="phone1M" formControlName='phone1M' type="text" />
+      </div>
         <div class="field col-12 md:col-3">
         <label for="mail1M">Master Email 1</label>
         <input id="mail1M" formControlName='mail1M' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
@@ -434,8 +435,8 @@
         </p-dropdown>
       </div>
       <div class="field col-12 md:col-3">
-      <label for="phone2M">Master Phone 2</label>
-      <input id="phone2M" formControlName='phone2M' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+      <label for="phone2M">Master Phone 2</label><br>
+      <p-inputMask mask="(999)-999-9999" placeholder="(  )-___-____" id="phone2M" formControlName='phone2M' type="text" />
       </div>
       <div class="field col-12 md:col-3">
       <label for="mail2M">Master Email 2</label>
@@ -465,8 +466,9 @@
       </p-dropdown>
     </div>
     <div class="field col-12 md:col-3">
-    <label for="phone3M">Master Phone 3</label>
-    <input id="phone3M" formControlName='phone3M' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+    <label for="phone3M">Master Phone 3</label><br>
+    <p-inputMask mask="(999)-999-9999" placeholder="(  )-___-____" id="phone3M" formControlName='phone3M' type="text" />
+    
     </div>
     <div class="field col-12 md:col-3">
     <label for="mail3M">Master Email 3</label>
@@ -496,8 +498,9 @@
     </p-dropdown>
   </div>
   <div class="field col-12 md:col-3">
-  <label for="phone4M">Master Phone 4</label>
-  <input id="phone4M" formControlName='phone4M' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+  <label for="phone4M">Master Phone 4</label><br>
+  <p-inputMask mask="(999)-999-9999" placeholder="(  )-___-____" id="phone4M" formControlName='phone4M' type="text" />
+  
   </div>
   <div class="field col-12 md:col-3">
   <label for="mail4M">Master Email 4</label>
@@ -527,8 +530,8 @@
   </p-dropdown>
 </div>
 <div class="field col-12 md:col-3">
-<label for="phone5M">Master Phone 5</label>
-<input id="phone5M" formControlName='phone5M' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+<label for="phone5M">Master Phone 5</label><br>
+<p-inputMask mask="(999)-999-9999" placeholder="(  )-___-____" id="phone5M" formControlName='phone5M' type="text" />
 </div>
 <div class="field col-12 md:col-3">
 <label for="mail5M">Master Email 5</label>
@@ -561,8 +564,9 @@
             <input id="mail4" formControlName='mail4' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
           </div>
           <div class="field col-12 md:col-2">
-            <label for="phone4">Phone 4</label>
-            <input id="phone4" formControlName='phone4' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+            <label for="phone4">Phone 4</label><br>
+            <p-inputMask mask="(999)-999-9999" placeholder="(  )-___-____" id="phone4" formControlName='phone4' type="text" />
+            
           </div>
           <div class="field col-12 md:col-2">
             <label for="status4">Status 4</label><br>
@@ -590,8 +594,8 @@
               <input id="mail5" formControlName='mail5' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
             </div>
             <div class="field col-12 md:col-2">
-              <label for="phone5">Phone 5</label>
-              <input id="phone5" formControlName='phone5' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+              <label for="phone5">Phone 5</label><br>
+              <p-inputMask mask="(999)-999-9999" placeholder="(  )-___-____" id="phone5" formControlName='phone5' type="text" />
             </div>
             <div class="field col-12 md:col-2">
               <label for="status5">Status 5</label><br>
@@ -619,8 +623,9 @@
                 <input id="mail6" formControlName='mail6' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
               </div>
               <div class="field col-12 md:col-2">
-                <label for="phone6">Phone 6</label>
-                <input id="phone6" formControlName='phone6' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                <label for="phone6">Phone 6</label><br>
+                <p-inputMask mask="(999)-999-9999" placeholder="(  )-___-____" id="phone6" formControlName='phone6' type="text" />
+                
               </div>
               <div class="field col-12 md:col-2">
                 <label for="status6">Status 6</label><br>
@@ -648,8 +653,8 @@
                   <input id="mail7" formControlName='mail7' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
                 </div>
                 <div class="field col-12 md:col-2">
-                  <label for="phone7">Phone 7</label>
-                  <input id="phone7" formControlName='phone7' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                  <label for="phone7">Phone 7</label><br>
+                  <p-inputMask mask="(999)-999-9999" placeholder="(  )-___-____" id="phone7" formControlName='phone7' type="text" />
                 </div>
                 <div class="field col-12 md:col-2">
                   <label for="status7">Status 7</label><br>
@@ -677,13 +682,194 @@
                     <input id="mail8" formControlName='mail8' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
                   </div>
                   <div class="field col-12 md:col-2">
-                    <label for="phone8">Phone 8</label>
-                    <input id="phone8" formControlName='phone8' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                    <label for="phone8">Phone 8</label><br>
+                    <p-inputMask mask="(999)-999-9999" placeholder="(  )-___-____" id="phone8" formControlName='phone8' type="text" />
+                    
                   </div>
                   <div class="field col-12 md:col-2">
                     <label for="status8">Status 8</label><br>
                         <p-inputSwitch id="status8" type="boolean" 
                         formControlName="status8" />
+                    </div>
+                     <!-- Person 9 -->
+                  <div class="field col-12 md:col-2">
+                    <label for="name9">Name 9</label>
+                    <input id="name9" formControlName='name9' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                  </div>
+                  <div class="field col-12 md:col-3">
+                    <label for="profession9">Position</label><br>
+                    <p-dropdown 
+                    id="profession9"
+                    formControlName="profession9"
+                    [options]="position"
+                    optionLabel="name"
+                    placeholder="Select option"
+                    >
+                  </p-dropdown>
+                </div>
+                  <div class="field col-12 md:col-2">
+                    <label for="mail9">Mail 9</label>
+                    <input id="mail9" formControlName='mail9' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                  </div>
+                  <div class="field col-12 md:col-2">
+                    <label for="phone9">Phone 9</label><br>
+                    <p-inputMask mask="(999)-999-9999" placeholder="(  )-___-____" id="phone9" formControlName='phone9' type="text" />
+                    
+                  </div>
+                  <div class="field col-12 md:col-2">
+                    <label for="status9">Status 9</label><br>
+                        <p-inputSwitch id="status9" type="boolean" 
+                        formControlName="status9" />
+                    </div>
+                     <!-- Person 10 -->
+                  <div class="field col-12 md:col-2">
+                    <label for="name10">Name 10</label>
+                    <input id="name10" formControlName='name10' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                  </div>
+                  <div class="field col-12 md:col-3">
+                    <label for="profession10">Position</label><br>
+                    <p-dropdown 
+                    id="profession10"
+                    formControlName="profession10"
+                    [options]="position"
+                    optionLabel="name"
+                    placeholder="Select option"
+                    >
+                  </p-dropdown>
+                </div>
+                  <div class="field col-12 md:col-2">
+                    <label for="mail10">Mail 10</label>
+                    <input id="mail10" formControlName='mail10' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                  </div>
+                  <div class="field col-12 md:col-2">
+                    <label for="phone10">Phone 10</label><br>
+                    <p-inputMask mask="(999)-999-9999" placeholder="(  )-___-____" id="phone10" formControlName='phone10' type="text" />
+                    
+                  </div>
+                  <div class="field col-12 md:col-2">
+                    <label for="status10">Status 10</label><br>
+                        <p-inputSwitch id="status10" type="boolean" 
+                        formControlName="status10" />
+                    </div>
+                        <!-- Person 11 -->
+                  <div class="field col-12 md:col-2">
+                    <label for="name11">Name 11</label>
+                    <input id="name11" formControlName='name11' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                  </div>
+                  <div class="field col-12 md:col-3">
+                    <label for="profession11">Position</label><br>
+                    <p-dropdown 
+                    id="profession11"
+                    formControlName="profession11"
+                    [options]="position"
+                    optionLabel="name"
+                    placeholder="Select option"
+                    >
+                  </p-dropdown>
+                </div>
+                  <div class="field col-12 md:col-2">
+                    <label for="mail11">Mail 11</label>
+                    <input id="mail11" formControlName='mail11' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                  </div>
+                  <div class="field col-12 md:col-2">
+                    <label for="phone11">Phone 11</label><br>
+                    <p-inputMask mask="(999)-999-9999" placeholder="(  )-___-____" id="phone11" formControlName='phone11' type="text" />
+                    
+                  </div>
+                  <div class="field col-12 md:col-2">
+                    <label for="status11">Status 11</label><br>
+                        <p-inputSwitch id="status11" type="boolean" 
+                        formControlName="status11" />
+                    </div>
+                      <!-- Person 12 -->
+                  <div class="field col-12 md:col-2">
+                    <label for="name12">Name 12</label>
+                    <input id="name12" formControlName='name12' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                  </div>
+                  <div class="field col-12 md:col-3">
+                    <label for="profession12">Position</label><br>
+                    <p-dropdown 
+                    id="profession12"
+                    formControlName="profession12"
+                    [options]="position"
+                    optionLabel="name"
+                    placeholder="Select option"
+                    >
+                  </p-dropdown>
+                </div>
+                  <div class="field col-12 md:col-2">
+                    <label for="mail12">Mail 12</label>
+                    <input id="mail12" formControlName='mail12' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                  </div>
+                  <div class="field col-12 md:col-2">
+                    <label for="phone12">Phone 12</label><br>
+                    <p-inputMask mask="(999)-999-9999" placeholder="(  )-___-____" id="phone12" formControlName='phone12' type="text" />
+                    
+                  </div>
+                  <div class="field col-12 md:col-2">
+                    <label for="status12">Status 12</label><br>
+                        <p-inputSwitch id="status12" type="boolean" 
+                        formControlName="status12" />
+                    </div>
+                        <!-- Person 12 -->
+                  <div class="field col-12 md:col-2">
+                    <label for="name13">Name 13</label>
+                    <input id="name13" formControlName='name13' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                  </div>
+                  <div class="field col-12 md:col-3">
+                    <label for="profession13">Position</label><br>
+                    <p-dropdown 
+                    id="profession13"
+                    formControlName="profession13"
+                    [options]="position"
+                    optionLabel="name"
+                    placeholder="Select option"
+                    >
+                  </p-dropdown>
+                </div>
+                  <div class="field col-12 md:col-2">
+                    <label for="mail13">Mail 13</label>
+                    <input id="mail13" formControlName='mail13' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                  </div>
+                  <div class="field col-12 md:col-2">
+                    <label for="phone13">Phone 13</label><br>
+                    <p-inputMask mask="(999)-999-9999" placeholder="(  )-___-____" id="phone13" formControlName='phone13' type="text" />
+                    
+                  </div>
+                  <div class="field col-12 md:col-2">
+                    <label for="status13">Status 13</label><br>
+                        <p-inputSwitch id="status13" type="boolean" 
+                        formControlName="status13" />
+                    </div>
+                      <!-- Person 14 -->
+                  <div class="field col-12 md:col-2">
+                    <label for="name14">Name 14</label>
+                    <input id="name14" formControlName='name14' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                  </div>
+                  <div class="field col-12 md:col-3">
+                    <label for="profession14">Position</label><br>
+                    <p-dropdown 
+                    id="profession14"
+                    formControlName="profession14"
+                    [options]="position"
+                    optionLabel="name"
+                    placeholder="Select option"
+                    >
+                  </p-dropdown>
+                </div>
+                  <div class="field col-12 md:col-2">
+                    <label for="mail14">Mail 14</label>
+                    <input id="mail14" formControlName='mail14' type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                  </div>
+                  <div class="field col-12 md:col-2">
+                    <label for="phone14">Phone 14</label><br>
+                    <p-inputMask mask="(999)-999-9999" placeholder="(  )-___-____" id="phone14" formControlName='phone14' type="text" />
+                    
+                  </div>
+                  <div class="field col-12 md:col-2">
+                    <label for="status14">Status 14</label><br>
+                        <p-inputSwitch id="status14" type="boolean" 
+                        formControlName="status14" />
                     </div>
               </div>
       </p-accordionTab>
@@ -883,7 +1069,7 @@
            <div class="field col-12 md:col-2">
             <label for="nightShiftStart">Night shift start</label>
                <p-calendar id="nightShiftStart" 
-               dataType=" " 
+               dataType="string" 
                dateFormat="dd.mm.yy"
                [showTime]="true"
                [timeOnly]="true"
@@ -895,7 +1081,7 @@
           <div class="field col-12 md:col-2">
             <label for="nightShiftEnd">Night shift end</label>
                <p-calendar id="nightShiftEnd" 
-               dataType=" " 
+               dataType="string" 
                dateFormat="dd.mm.yy"
                [showTime]="true"
                [timeOnly]="true"
@@ -945,7 +1131,7 @@
         <div class="field col-12 md:col-2">
           <label for="ction_start_time">Order date</label>
              <p-calendar id="ction_start_time" 
-             dataType=" " 
+             dataType="string" 
              dateFormat="dd.mm.yy"
              [showTime]="true"
              [iconDisplay]="'input'"
@@ -972,7 +1158,7 @@
       <div class="field col-12 md:col-2">
         <label for="action_start_time">Call date</label><br>
            <p-calendar id="action_start_time" 
-           dataType=" " 
+           dataType="string" 
            dateFormat="dd.mm.yy"
            [showTime]="false"
            [iconDisplay]="'input'"
@@ -982,7 +1168,7 @@
       <div class="field col-12 md:col-2">
         <label for="action_start_time2">Call time</label><br>
            <p-calendar id="action_start_time2" 
-           dataType=" " 
+           dataType="string" 
            dateFormat="dd.mm.yy"
            [showTime]="true"
            [timeOnly]="true"
@@ -1011,7 +1197,7 @@
     <div class="field col-12 md:col-2">
       <label for="action2_start_time">Email date</label><br>
          <p-calendar id="action2_start_time" 
-         dataType=" " 
+         dataType="string" 
          dateFormat="dd.mm.yy"
          [showTime]="false"
          [iconDisplay]="'input'"
@@ -1021,7 +1207,7 @@
     <div class="field col-12 md:col-2">
       <label for="action2_start_time2">Email time</label><br>
          <p-calendar id="action2_start_time2" 
-         dataType=" " 
+         dataType="string" 
          dateFormat="dd.mm.yy"
          [showTime]="true"
          [timeOnly]="true"
@@ -1039,12 +1225,12 @@
     <div class="field col-12 md:col-2">
       <label for="date_pup">Auto date</label><br>
          <p-calendar id="date_pup" 
-         dataType=" " 
-         dateFormat="dd.mm.yy"
+         dataType="string" 
          [showTime]="true"
          [iconDisplay]="'input'"
          [showIcon]="true"
          formControlName="date_pup"
+         
          
          />
        </div>
@@ -1254,7 +1440,7 @@
       <!-- Call -->
       <p-accordionTab header="Call">
         <div class="field col-12">
-          <label for="totalUnreachable">Work Place</label><br>
+          <label for="totalUnreachable">Total lack of dialing</label><br>
           <p-dropdown 
           id="totalUnreachable"
           formControlName="totalUnreachable"

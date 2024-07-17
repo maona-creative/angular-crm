@@ -22,6 +22,7 @@ import { DropdownModule } from 'primeng/dropdown';
 import { CalendarModule } from 'primeng/calendar';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import { InputNumberModule } from 'primeng/inputnumber';
+import { InputMaskModule } from 'primeng/inputmask';
 
 
 
@@ -43,6 +44,8 @@ import { InputNumberModule } from 'primeng/inputnumber';
     CalendarModule,
     InputSwitchModule,
     InputNumberModule,
+    InputMaskModule,
+   
     
     
     
@@ -85,10 +88,16 @@ export class FinmetalformsComponent {
   getCurrentDate(): Date {
     return new Date();
   }
-
  
-  
+  constructor(
+    private router: Router,
+    private fb: FormBuilder,
+    private finmetalService: FinmetalService,
+   
+    
+   ) {}
 
+  
   finmetalForm: FormGroup = new FormGroup({
     id: new FormControl(''), 
     competitor: new FormControl('', Validators.maxLength(75)), //competitors
@@ -279,8 +288,8 @@ export class FinmetalformsComponent {
     //night shift
     nightShift: new FormControl(false), //verbose_name='Night shift'
     nightShiftPaid: new FormControl(false), //verbose_name='Paid'
-    nightShiftStart: new FormControl(''), // time, verbose_name='Night shift start
-    nightShiftEnd: new FormControl(''), // time, verbose_name='Night shift end'
+    nightShiftStart: new FormControl<Date | null>(null), // time, verbose_name='Night shift start
+    nightShiftEnd: new FormControl<Date | null>(null), // time, verbose_name='Night shift end'
     nightShiftRate: new FormControl('', Validators.maxLength(16)), //verbose_name='Rate', number
 
     //profession
@@ -298,7 +307,7 @@ export class FinmetalformsComponent {
     action2_start_time2: new FormControl(''), //verbose_name='Email time'
     action2_description: new FormControl('', Validators.maxLength(512)), //verbose_name='Email comm'
     date_pup: new FormControl<Date>(new Date()), //verbose_name='Auto save', date now
-
+   
     //new question
     controll: new FormControl(this.control[0]), //choices=CONTROLL, verbose_name='Сontrol 1', default='No info'
     control2: new FormControl(this.control[0]), //choices=CONTROLL, verbose_name='Сontrol 2', default='No info'
@@ -379,13 +388,6 @@ export class FinmetalformsComponent {
 
   });
   
-  constructor(
-    private router: Router,
-    private fb: FormBuilder,
-    private finmetalService: FinmetalService
-    
-   ) {}
-
 
    async onSubmit(): Promise<void> {
     const formData = this.finmetalForm.value;

@@ -2,6 +2,7 @@ a {
     color: white;
     margin-left: 10px;
     margin-bottom: 10px;
+    margin-top: 10px;
     text-decoration: none; 
 }
 
@@ -13,4 +14,17 @@ cssCopy.text-success {
   .text-danger {
     color: red;
     
+  }
+
+  p-table {
+    border-collapse: collapse;
+    width: 100%;
+    
+  }
+p-table, td, th {
+    border: 1px solid
+} 
+td, th {
+    text-align: center;
+    padding: 10px
   }
