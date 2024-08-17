@@ -1,5 +1,12 @@
 # DynamicColumn
 
+This project is a Customer Relationship Management (CRM) System designed for B2B companies. It is built using Angular 17 with a simulated back-end using JSON for data handling.
+The application enables businesses to manage client information and track interactions.
+
+FeaturesClient Management: add new information and show table with welders.
+
+JSON Back-End: Uses a mock back-end to simulate data persistence without requiring a full server setup.Tech StackFrontend: Angular 17Back-End Simulation: JSON (Fake Back-End)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
 
 ## Development server
