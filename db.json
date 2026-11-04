@@ -331,6 +331,52 @@
       "workSiteDate": "23.07.2024",
       "freeComment1": "Free comment 1 is working",
       "freeComment2": "Free comment2 is working"
+    },
+    {
+      "id": "",
+      "Super_First_name": "",
+      "Super_Surname": "",
+      "Super_mail": "",
+      "Desired_Job_Category": "",
+      "Desired_position": "",
+      "Super_Telephone": "",
+      "asap": false,
+      "Comment_1": "",
+      "Super_Age": null,
+      "NonGastarbeiter": false,
+      "available": {
+        "name": "No info"
+      },
+      "tatle": "",
+      "tatle_email": "",
+      "start_date": null,
+      "start_time": null,
+      "start_date_email": null,
+      "start_time_email": "",
+      "totalUnreachable2": {
+        "name": "No info"
+      },
+      "totalUnreachable": {
+        "name": "--------"
+      },
+      "calltype": {
+        "name": "No info"
+      },
+      "wrongtel": {
+        "name": "--------"
+      },
+      "expensivness": "",
+      "costPerHour": "",
+      "costPerHourComm": "",
+      "car": {
+        "name": "No info"
+      },
+      "filedFormDate": null,
+      "idPassportDate": null,
+      "assignedDate": null,
+      "workSiteDate": null,
+      "freeComment1": "",
+      "freeComment2": ""
     }
   ],
   "finmetals": [
