@@ -3,7 +3,9 @@
 A small Customer Relationship Management (CRM) web app built with **Angular 18** while I was learning the framework during my internship. It lets a user add and browse two kinds of records:
 
 - **Welders** – candidate records (contact details, desired job category and position, availability, call/email history, salary expectations, documents and comments).
+![Welder table](docs/screenshots/welders_form.png)
 - **FinMetal** – company / partner records (contact info, competitor, partner availability, profession description, comments).
+![Finmetal table](docs/screenshots/finmetal.png)
 
 The back end is simulated with [json-server](https://github.com/typicode/json-server), so the app works with a real REST API (GET and POST) without needing a full server.
 
